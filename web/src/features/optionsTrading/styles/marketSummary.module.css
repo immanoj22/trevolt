@@ -1,0 +1,264 @@
+.marketSummaryPart {}
+
+.favoriteBtn {
+    all: unset;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--fs17);
+    border-radius: 5px;
+    padding: 5px;
+    color: var(--color-green-01);
+}
+
+.selectedCellText {
+    font-size: var(--fs14);
+    color: var(--color-bg8);
+}
+
+.marketSummaryDropdownPart {
+    padding: var(--trade-cards-padding);
+}
+
+.contractDropDownToggle {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: var(--fs14);
+    color: var(--color-bg8);
+    cursor: pointer;
+}
+
+.contractDropDownToggle svg {
+    font-size: var(--fs14);
+    color: var(--color-bg16);
+}
+
+.toggleFavorite {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.toggleFavorite svg,
+.markFavorite svg {
+    color: var(--color-bg16);
+}
+
+.toggleFavorite.active svg,
+.markFavorite.active svg {
+    color: var(--color-yellow-01);
+}
+
+.contractDropDownMenu {
+    width: 560px;
+    padding: 10px !important;
+}
+
+.contractSearchWrap {
+    padding-bottom: 8px;
+}
+
+.contractDropDownList {
+    max-height: 320px;
+    overflow-y: auto;
+}
+
+.contractTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.contractTable th {
+    font-size: var(--fs12);
+    color: var(--color-bg16);
+    font-weight: 400;
+    padding: 6px 8px;
+    position: sticky;
+    top: 0;
+    background: var(--color-bg2);
+}
+
+.contractTable td {
+    font-size: var(--fs13);
+    color: var(--color-bg8);
+    padding: 8px;
+}
+
+.contractTable tr {
+    cursor: pointer;
+}
+
+.contractTable tbody tr:hover {
+    background: var(--color-bg3);
+}
+
+.contractTable tr.activeContract {
+    background: var(--color-bg3);
+}
+
+.contractTable tr.activeContract .contractName {
+    color: var(--color-green-01);
+}
+
+.markFavorite {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    font-size: var(--fs14);
+    color: var(--color-bg16);
+    cursor: pointer;
+}
+
+.callBadge,
+.putBadge {
+    font-size: var(--fs10);
+    line-height: 1;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+.callBadge {
+    color: var(--color-green-01);
+    background: color-mix(in srgb, var(--color-green-01) 15%, transparent);
+}
+
+.putBadge {
+    color: var(--color-red-01);
+    background: color-mix(in srgb, var(--color-red-01) 15%, transparent);
+}
+
+.deltaDropDownToogle {
+    font-size: var(--fs12);
+    color: var(--color-bg16)
+}
+
+.deltaDropDownToogle span {
+    color: var(--color-bg8);
+    padding: 0 5px !important;
+}
+
+.deltaDropDownMenu {
+    font-size: var(--fs12);
+    padding: 0 5px !important;
+}
+
+.deltaDropDownMenu li {
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--fs10);
+    padding: 3px !important;
+}
+
+.deltaDropDownMenu li h5 {
+    font-size: var(--fs12);
+    color: var(--color-bg16)
+}
+
+.deltaDropDownMenu li p {
+    font-size: var(--fs12);
+    color: var(--color-bg8)
+}
+
+/* lotSizeDropDownToggle */
+.lotSizeDropDownToggle {
+    font-size: var(--fs12);
+    color: var(--color-bg16)
+}
+
+.lotSizeDropDownToggle span {
+    color: var(--color-bg8);
+    padding: 0 5px !important;
+}
+
+
+.lotSizeDropDownMenu {
+    width: 400px;
+    font-size: var(--fs12);
+    padding: 0 5px !important;
+}
+
+.lotSizeDropDownMenu li {
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--fs10);
+    padding: 10px !important;
+}
+
+.lotSizeDropDownMenu .dropdownTitle {
+    font-size: var(--fs14);
+    color: var(--color-bg8);
+    border-bottom: 1px solid var(--color-border-04);
+    width: 100%;
+    padding: 0 0 10px 0 !important;
+}
+
+.lotSizeDropDownMenu .dropdownTitle h4 {
+    font-size: inherit;
+}
+
+.lotSizeDropDownMenu li h5 {
+    font-size: var(--fs12);
+    color: var(--color-bg16)
+}
+
+.lotSizeDropDownMenu li p {
+    font-size: var(--fs12);
+    color: var(--color-bg8)
+}
+
+.marketSummaryDetails {}
+
+.marketSummaryDetails ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    padding: var(--trade-cards-padding) !important;
+}
+
+.marketSummaryDetails ul li {
+    text-align: right;
+}
+
+.marketSummaryDetails ul h3 {
+    font-size: var(--fs12);
+    margin-bottom: 5px !important;
+    color: var(--color-bg16)
+}
+
+.marketSummaryDetails ul p {
+    font-size: var(--fs11);
+    color: var(--color-bg8)
+}
+
+.marketSummaryDetails ul li:nth-child(1) {
+    text-align: left;
+}
+
+
+/* media */
+
+@media(max-width:575px) {
+    .marketSummaryDetails ul li {
+        text-align: left;
+    }
+}
+
+@media(min-width:576px) and (max-width:767px) {}
+
+@media(min-width:768px) and (max-width:991px) {}
+
+@media(min-width:992px) and (max-width:1199px) {}
+
+@media(min-width:1200px) and (max-width:1399px) {}
+
+@media(min-width:1400px) and (max-width:1799px) {}
+
+@media(min-width:1800px) {}

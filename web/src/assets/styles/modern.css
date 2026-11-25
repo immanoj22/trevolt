@@ -1,0 +1,78 @@
+/* Trevolt modern layer: soft elevation, gradient actions, glass header, refined type. */
+:root {
+  --radius-l: 14px;
+  --radius-2l: 18px;
+  --radius-10: 12px;
+  --radius-9: 11px;
+  --shadow-soft: 0 1px 2px rgb(15 23 42 / 6%), 0 8px 24px -8px rgb(15 23 42 / 12%);
+  --shadow-lift: 0 2px 4px rgb(15 23 42 / 8%), 0 16px 32px -12px rgb(15 23 42 / 22%);
+  --brand-gradient: linear-gradient(135deg, #4F8DF7 0%, #2563EB 55%, #1D4ED8 100%);
+}
+html { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+body { font-feature-settings: "cv11", "ss01"; letter-spacing: -0.005em; }
+h1, h2, h3, h4, h5 { letter-spacing: -0.02em; font-weight: 600; }
+table, td, th, [class*="price"], [class*="Price"], [class*="amount"], [class*="Amount"], [class*="value"], [class*="Value"] {
+  font-variant-numeric: tabular-nums;
+}
+
+/* soft gradient backdrop behind pages */
+body::before {
+  content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
+  background:
+    radial-gradient(55% 38% at 85% -5%, rgb(37 99 235 / 14%), transparent 70%),
+    radial-gradient(40% 30% at 8% 6%, rgb(99 102 241 / 10%), transparent 70%);
+}
+body[data-theme="dark"]::before {
+  background:
+    radial-gradient(55% 38% at 85% -5%, rgb(59 130 246 / 18%), transparent 70%),
+    radial-gradient(40% 30% at 8% 6%, rgb(99 102 241 / 14%), transparent 70%);
+}
+
+/* glass header */
+.header, [class*="_header_"] {
+  background: color-mix(in srgb, var(--color-bg5) 82%, transparent) !important;
+  -webkit-backdrop-filter: blur(14px) saturate(1.4); backdrop-filter: blur(14px) saturate(1.4);
+  border-bottom: 1px solid var(--color-border-03);
+  box-shadow: 0 8px 24px -14px rgb(15 23 42 / 18%);
+}
+
+/* brand actions: gradient pills with a soft glow */
+body [class*="cardSuccessBtn"]:not(:disabled),
+body [class*="successFillRectangleBtn"]:not(:disabled),
+body [class*="primaryBtn"]:not(:disabled) {
+  background: var(--brand-gradient);
+  border-color: transparent;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0;
+  box-shadow: 0 6px 16px -6px rgb(37 99 235 / 55%);
+  transition: transform .15s ease, box-shadow .15s ease, filter .15s ease;
+}
+body [class*="cardSuccessBtn"]:not(:disabled):hover,
+body [class*="successFillRectangleBtn"]:not(:disabled):hover,
+body [class*="primaryBtn"]:not(:disabled):hover {
+  transform: translateY(-1px); filter: brightness(1.06);
+  box-shadow: 0 10px 22px -8px rgb(37 99 235 / 65%);
+}
+body [class*="outlineBtn"]:not(:disabled) { border-radius: 999px; font-weight: 600; transition: transform .15s ease, box-shadow .15s ease; }
+body [class*="outlineBtn"]:not(:disabled):hover { transform: translateY(-1px); box-shadow: var(--shadow-soft); }
+
+/* elevated surfaces */
+body [class*="graphCard"], body [class*="profileCard"], body [class*="ProfileCard"], body [class*="cardContainer"],
+body [class*="infoCard"], body [class*="statCard"], body [class*="featureCard"], body [class*="experienceCard"],
+body [class*="walletCard"], body [class*="tradeCard"], body [class*="strategyCard"] {
+  border-radius: var(--radius-2l);
+  box-shadow: var(--shadow-soft);
+}
+body[data-theme="light"] [class*="modal-content"] { border-radius: 18px; box-shadow: var(--shadow-lift); }
+
+/* inputs */
+body input.form-control, body [class*="inputField"], body [class*="Input"] input {
+  border-radius: 12px; transition: box-shadow .15s ease, border-color .15s ease;
+}
+body input.form-control:focus, body [class*="Input"] input:focus {
+  box-shadow: 0 0 0 4px rgb(37 99 235 / 16%); border-color: #2563EB;
+}
+/* tables */
+body [class*="table"] tbody tr { transition: background-color .12s ease; }
+body [class*="table"] tbody tr:hover { background-color: color-mix(in srgb, var(--color-bg2) 70%, transparent); }

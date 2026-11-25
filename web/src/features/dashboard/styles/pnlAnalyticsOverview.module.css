@@ -1,0 +1,194 @@
+/* start of common css - start */
+.pageTitle {
+    font-size: var(--fs18);
+}
+
+.pageDescription {
+    font-size: var(--fs14);
+    line-height: 25px;
+    color: var(--color-bg8);
+    font-weight: 400;
+
+}
+
+/* start of common css - end */
+
+.pageHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.bodyInputWrapper {
+    display: flex;
+    align-items: center;
+    gap: 2pc;
+}
+
+.bodyInputWrapper .selectWrapper {
+    width: 15pc;
+}
+
+.pnlCardWrapper {
+    background-color: var(--color-bg2);
+    padding: 1pc;
+    border-radius: 10px;
+    margin-top: 1pc;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10pc, 1fr));
+
+}
+
+.pnlCardWrapper .cardPart h3 {
+    color: var(--text-color-01);
+    font-size: var(--fs15);
+    margin-bottom: 0.5pc !important;
+}
+
+.pnlCardWrapper .cardPart p {
+    font-size: var(--fs20);
+}
+
+.chartContainer {
+    margin: 2pc 0 0 0;
+}
+
+.chartContainer .chartWrapper {
+    overflow-x: auto;
+    overflow-y: hidden !important;
+    width: 100%;
+    height: 13pc !important;
+    padding: 0 !important;
+    display: flex;
+}
+
+.chartContainer .chartWrapper svg {
+    /* height: 13pc !important; */
+}
+
+
+.chartHeaderPart {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1pc;
+    flex-wrap: wrap;
+    gap: 1pc;
+}
+
+.chartLegendPart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1pc;
+    background-color: var(--color-bg10);
+    padding: 8px 10px;
+    border-radius: 2px;
+}
+
+.chartLegendPart p {
+    display: flex;
+    gap: 0.3pc;
+    align-items: center;
+    font-size: var(--fs14);
+}
+
+.chartLegendPart p span {
+    width: 15px;
+    height: 15px;
+    display: flex;
+    border-radius: 3px;
+}
+
+.chartLegendPart p:nth-child(1) span {
+    background-color: var(--color-green-05);
+}
+
+.chartLegendPart p:nth-child(2) span {
+    background-color: var(--color-red-02);
+}
+
+.filterPart {
+    display: flex;
+    gap: 1pc;
+    background-color: var(--color-bg10);
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.filterPart>div {
+    font-size: var(--fs14);
+}
+
+.filterPart input {
+    display: none;
+}
+
+.filterPart input:checked~label {
+    background-color: var(--color-green-02);
+    border-radius: 3px;
+}
+
+.filterPart label {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 0.3pc 0.5pc;
+    cursor: pointer;
+}
+
+.tableContainer .tableHeaderPart {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1pc 0;
+}
+
+.tableContainer .tableHeaderPart h2 {
+    font-size: var(--fs20);
+}
+
+/* media */
+
+@media (max-width:575px) {}
+
+@media (min-width:576px) and (max-width:767px) {}
+
+@media (min-width:768px) and (max-width:991px) {}
+
+@media (max-width:991px) {
+    .content {
+        padding: 20px 20px;
+    }
+
+    .graphSection {
+        padding: 20px;
+    }
+
+    .filterBtn {
+        font-size: var(--fs13);
+        min-width: 100px;
+        padding: 9px 18px;
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {}
+
+@media (min-width:1200px) and (max-width:1399px) {}
+
+@media (min-width:1400px) and (max-width:1799px) {}
+
+@media (min-width:1800px) {
+    .pageTitle {
+        font-size: var(--fs18);
+    }
+
+    .content {
+        font-size: var(--fs20);
+    }
+
+    .chatContent ul li {
+        font-size: var(--fs17);
+    }
+}

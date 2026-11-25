@@ -1,0 +1,151 @@
+.InstitutionalDashboard {
+    font-size: var(--fs18);
+}
+
+.dashboardOverview {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.dashboardOverview .graphCard {
+    /* background: url('../../../assets/image/graphCard.png'); */
+    background: url('../../../assets/image/graphCard.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: var(--space-sm);
+    color: var(--color-similar-02);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    height: 100%;
+    min-height: 220px;
+}
+
+.graphCardTop {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.graphCardLogo {
+    width: 40px;
+    height: auto;
+}
+
+.textXs {
+    font-size: var(--fs13);
+}
+
+.textMd {
+    font-size: var(--fs19);
+    font-weight: 600;
+}
+
+
+.dashboardOverview .card {
+    background: var(--color-bg2);
+    border: 1px solid var(--color-border-03);
+    border-radius: var(--radius-2l);
+    color: var(--color-text-03);
+    padding: var(--space-sm);
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    /* height: 100%; */
+    height: 100%;
+    min-height: 220px;
+
+}
+
+.dashboardOverview .cardTop {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.dashboardOverview .iconWrapper {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.dashboardOverview .cardIcons {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dashboardOverview .cardTitle {
+    font-size: var(--fs15);
+    color: var(--color-text-04);
+    margin-top: 10px !important;
+}
+
+/* sub account */
+
+.InstitutionalSubAccount .subTitle {
+    color: var(--color-text-04);
+    font-size: var(--fs15);
+}
+
+/* user details */
+
+.userTabs .headSection {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: var(--radii-s);
+    width: fit-content;
+    background: var(--color-border-03);
+    padding: 8px 10px;
+    white-space: nowrap;
+}
+
+
+
+/* media query */
+
+@media (max-width:575px) {
+    .dashboardOverview {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .userTabs .headSection {
+        width: 100%;
+        overflow-x: auto;
+    }
+}
+
+@media (min-width:576px) and (max-width:767px) {
+    .dashboardOverview {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .userTabs .headSection {
+        width: 100%;
+        overflow-x: auto;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .dashboardOverview {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    .dashboardOverview {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width:1200px) and (max-width:1399px) {}
+
+@media (min-width:1400px) and (max-width:1799px) {}
+
+@media (min-width:1800px) {}

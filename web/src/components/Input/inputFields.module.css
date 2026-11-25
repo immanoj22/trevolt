@@ -1,0 +1,806 @@
+.defaultSearch {
+    background: var(--color-bg17);
+    color: var(--color-text-03);
+    border: 1px solid var(--color-border-04);
+    width: 150px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 10px;
+    height: 36px;
+    border-radius: var(--radii-s);
+}
+
+.defaultSearch:focus-within {
+    border: 1px solid var(--color-focus-border-02);
+}
+
+.defaultSearch svg {
+    color: var(--color-text-03);
+    opacity: 0.6;
+}
+
+.defaultSearch input {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    display: flex;
+    flex: 1;
+    height: 100%;
+    color: var(--color-text-03);
+    font-weight: 500;
+    font-size: var(--fs13);
+}
+
+.defaultSearch input:-webkit-autofill,
+.defaultSearch input:-webkit-autofill:focus,
+.defaultSearch input:-webkit-autofill:hover {
+    -webkit-text-fill-color: var(--color-text-03) !important;
+    border: none;
+    -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+    -webkit-transition: background-color 5000s ease-in-out 0s;
+    transition: background-color 5000s ease-in-out 0s;
+    caret-color: var(--color-text-03);
+}
+
+.InputWithCurrencyAndLabel {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 8px;
+    background: var(--color-bg17);
+    border: 1px solid var(--color-border-04);
+    font-size: var(--fs12);
+
+}
+
+.InputWithCurrencyAndLabel .label {
+    color: var(--color-text-04);
+}
+
+.InputWithCurrencyAndLabel input {
+    border: none;
+    outline: none;
+    background: transparent;
+    text-align: end;
+}
+
+.InputWithCurrencyAndLabel input:-webkit-autofill,
+.InputWithCurrencyAndLabel input:-webkit-autofill:focus,
+.InputWithCurrencyAndLabel input:-webkit-autofill:hover {
+    -webkit-text-fill-color: var(--color-text-03) !important;
+    border: none;
+    -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+    -webkit-transition: background-color 5000s ease-in-out 0s;
+    transition: background-color 5000s ease-in-out 0s;
+    caret-color: var(--color-text-03);
+}
+
+.InputWithCurrencyAndLabel .currency {
+    background: var(--color-focus-border-01);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.InputWithCurrencyAndLabel .selectOptionPart{
+    width: 60px;
+}
+/* input text start - start */
+
+.InputTextStartCurrencyAndLabel {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 8px;
+    background: var(--color-border-03);
+    border: none !important;
+    outline: none;
+    font-size: var(--fs12);
+    height: 48px;
+}
+
+.InputTextStartCurrencyAndLabel .label {
+    color: var(--color-text-04);
+}
+
+.InputTextStartCurrencyAndLabel input {
+    border: none;
+    outline: none;
+    background: transparent;
+    text-align: start;
+}
+
+.InputTextStartCurrencyAndLabel input:-webkit-autofill,
+.InputTextStartCurrencyAndLabel input:-webkit-autofill:focus,
+.InputTextStartCurrencyAndLabel input:-webkit-autofill:hover {
+    -webkit-text-fill-color: var(--color-text-03) !important;
+    border: none;
+    -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+    -webkit-transition: background-color 5000s ease-in-out 0s;
+    transition: background-color 5000s ease-in-out 0s;
+    caret-color: var(--color-text-03);
+}
+
+.InputTextStartCurrencyAndLabel .currency {
+    background: var(--color-bg3);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+
+/* input text start - end  */
+
+/* input text secondary (changing Bg Color and border) - start */
+
+.InputTextSecondaryCurrencyAndLabel {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 8px;
+    background: var(--color-bg9);
+    border: 1px solid var(--color-border-03) !important;
+    outline: none;
+    font-size: var(--fs12);
+    height: 48px;
+}
+
+.InputTextSecondaryCurrencyAndLabel .label {
+    color: var(--color-text-04);
+}
+
+.InputTextSecondaryCurrencyAndLabel input {
+    border: none;
+    outline: none;
+    background: transparent;
+    text-align: start;
+}
+
+.InputTextSecondaryCurrencyAndLabel input:-webkit-autofill,
+.InputTextSecondaryCurrencyAndLabel input:-webkit-autofill:focus,
+.InputTextSecondaryCurrencyAndLabel input:-webkit-autofill:hover {
+    -webkit-text-fill-color: var(--color-text-03) !important;
+    border: none;
+    -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+    -webkit-transition: background-color 5000s ease-in-out 0s;
+    transition: background-color 5000s ease-in-out 0s;
+    caret-color: var(--color-text-03);
+}
+
+.InputTextSecondaryCurrencyAndLabel .currency {
+    background: var(--color-bg3);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+/* input text secondary - end  */
+
+/* input text third (height: 40) - start  */
+
+.InputTextThirdCurrencyAndLabel {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 8px;
+    background: var(--color-bg9);
+    border: 1px solid var(--color-border-03) !important;
+    outline: none;
+    font-size: var(--fs12);
+    height: 40px;
+}
+
+.InputTextThirdCurrencyAndLabel .label {
+    color: var(--color-text-04);
+}
+
+.InputTextThirdCurrencyAndLabel input {
+    border: none;
+    outline: none;
+    background: transparent;
+    text-align: start;
+}
+
+.InputTextThirdCurrencyAndLabel input:-webkit-autofill,
+.InputTextThirdCurrencyAndLabel input:-webkit-autofill:focus,
+.InputTextThirdCurrencyAndLabel input:-webkit-autofill:hover {
+    -webkit-text-fill-color: var(--color-text-03) !important;
+    border: none;
+    -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+    -webkit-transition: background-color 5000s ease-in-out 0s;
+    transition: background-color 5000s ease-in-out 0s;
+    caret-color: var(--color-text-03);
+}
+
+.InputTextThirdCurrencyAndLabel .currency {
+    background: var(--color-bg3);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.InputTextThirdCurrencyAndLabel2 {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 8px;
+    background: var(--color-bg9);
+    border: 1px solid var(--color-border-01) !important;
+    outline: none;
+    font-size: var(--fs12);
+    height: 40px;
+}
+
+.InputTextThirdCurrencyAndLabel2 .label {
+    color: var(--color-text-04);
+}
+
+.InputTextThirdCurrencyAndLabel2 input {
+    border: none;
+    outline: none;
+    background: transparent;
+    text-align: start;
+}
+
+.InputTextThirdCurrencyAndLabel2 input:-webkit-autofill,
+.InputTextThirdCurrencyAndLabel2 input:-webkit-autofill:focus,
+.InputTextThirdCurrencyAndLabel2 input:-webkit-autofill:hover {
+    -webkit-text-fill-color: var(--color-text-03) !important;
+    border: none;
+    -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+    -webkit-transition: background-color 5000s ease-in-out 0s;
+    transition: background-color 5000s ease-in-out 0s;
+    caret-color: var(--color-text-03);
+}
+
+.InputTextThirdCurrencyAndLabel2 .currency {
+    background: var(--color-bg3);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+/* input text third - end */
+
+/* PasswordInput start */
+
+.passwordInputContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.passwordInputContainer .formLabel {
+    font-size: var(--fs14);
+    font-weight: 500;
+    line-height: 22px;
+    color: var(--color-text-04);
+}
+
+.passwordInputContainer .formPasswordInput {
+    border-radius: var(--radius-8);
+    font-size: var(--fs15);
+    height: 45px;
+    padding: 6px 10px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /*  */
+    background: var(--color-border-03);
+    color: var(--color-text-03);
+}
+
+.passwordInputContainer .formPasswordInput input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    height: 100%;
+    font-size: var(--fs15);
+    display: flex;
+    flex: 1;
+    color: var(--color-bg8);
+}
+
+.passwordInputContainer .formPasswordInput input::placeholder {
+    font-size: var(--fs14);
+}
+
+.passwordInputContainer .formPasswordInput input:-webkit-autofill,
+.passwordInputContainer .formPasswordInput input:-webkit-autofill:focus,
+.passwordInputContainer .formPasswordInput input:-webkit-autofill:hover {
+    -webkit-text-fill-color: var(--color-text-01);
+    border: 1px solid none;
+    -webkit-box-shadow: 0 0 0 1000px var(--color-primaryBg) inset;
+    -webkit-transition: background-color 5000s ease-in-out 0s;
+    transition: background-color 5000s ease-in-out 0s;
+    caret-color: var(--color-text-01);
+}
+
+.passwordInputContainer .formPasswordInput button {
+    background: transparent;
+    border: none;
+    outline: none;
+    height: 100%;
+    color: var(--color-bg8);
+}
+
+.passwordInputContainer .formError {
+    color: var(--color-red-02);
+    font-size: var(--fs15);
+}
+
+/* PasswordInput end */
+
+/* inputComponent start */
+
+.inputComponent {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputComponent .formLabel {
+    font-size: var(--fs14);
+    font-weight: 500;
+    line-height: 22px;
+    color: var(--color-text-04);
+}
+
+.inputComponent .formPasswordInput {
+    /* border-radius: 10px; */
+    border-radius: var(--radius-8);
+    font-size: var(--fs15);
+    height: 45px;
+    padding: 6px 10px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /*  */
+    background: var(--color-border-03);
+    color: var(--color-text-03);
+}
+
+.inputComponent .formTextareaInput {
+    border-radius: 10px;
+    font-size: var(--fs15);
+    /* height: 48px; */
+    padding: 6px 10px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--color-border-03);
+    color: var(--color-text-03);
+}
+
+.inputComponent .formPasswordInput input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    height: 100%;
+    font-size: var(--fs15);
+    display: flex;
+    flex: 1;
+    color: var(--color-bg8);
+}
+
+.inputComponent .formPasswordInput input::placeholder {
+    font-size: var(--fs14);
+}
+
+.inputComponent .formTextareaInput textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    height: 100%;
+    font-size: var(--fs15);
+    display: flex;
+    flex: 1;
+    color: var(--color-bg8);
+}
+
+.inputComponent .formPasswordInput textarea::placeholder {
+    font-size: var(--fs14);
+}
+
+.inputComponent .formPasswordInput button {
+    background: transparent;
+    border: none;
+    outline: none;
+    height: 100%;
+    color: var(--color-bg8);
+}
+
+.inputComponent .formError {
+    color: var(--color-red-02);
+    font-size: var(--fs15);
+}
+
+.inputComponent2 .formPasswordInput {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: var(--radius-8);
+    background: var(--color-bg17);
+    border: 1px solid var(--color-border-04);
+    font-size: var(--fs12);
+    /* height: 40px; */
+}
+
+
+.inputComponent2 input {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.inputComponent input:-webkit-autofill,
+.inputComponent input:-webkit-autofill:focus,
+.inputComponent input:-webkit-autofill:hover {
+    -webkit-text-fill-color: var(--color-text-03) !important;
+    border: none;
+    -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+    -webkit-transition: background-color 5000s ease-in-out 0s;
+    transition: background-color 5000s ease-in-out 0s;
+    caret-color: var(--color-text-03);
+}
+
+
+/* inputComponent end */
+
+.secondarySearch {
+    color: var(--color-text-03);
+    border: 1px solid var(--color-border-02);
+    background: var(--color-bg10);
+    width: 180px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 10px;
+    height: 40px;
+    border-radius: var(--radii-s);
+}
+
+.secondarySearch:focus-within {
+    border: 1px solid var(--color-focus-border-02);
+}
+
+.secondarySearch svg {
+    color: var(--color-text-03);
+    opacity: 0.6;
+}
+
+.secondarySearch input {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    display: flex;
+    flex: 1;
+    height: 100%;
+    color: var(--color-text-03);
+    font-weight: 400;
+    font-size: var(--fs12);
+}
+
+/* search component start (width: 100%) */
+
+.thirdSearch {
+    color: var(--color-text-03);
+    border: 1px solid var(--color-border-02);
+    background: var(--color-bg10);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 10px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+.thirdSearch:focus-within {
+    border: 1px solid var(--color-focus-border-02);
+}
+
+.thirdSearch svg {
+    color: var(--color-text-03);
+    opacity: 0.6;
+}
+
+.thirdSearch input {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    display: flex;
+    flex: 1;
+    height: 100%;
+    color: var(--color-text-03);
+    font-weight: 400;
+    font-size: var(--fs12);
+}
+
+/* search component end  */
+
+.primaryInput input {
+    border-radius: 10px;
+    font-size: var(--fs15);
+    height: 48px;
+    padding: 6px 10px;
+    background: var(--color-bg10);
+    color: var(--color-text-03);
+    border: none;
+    outline: none;
+}
+
+.primaryInputW100 {
+    width: 100%;
+}
+
+.primaryInputW100 input {
+    border-radius: 10px;
+    font-size: var(--fs15);
+    height: 48px;
+    padding: 6px 10px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--color-border-03);
+    color: var(--color-text-03);
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.primaryInputBgTwo input {
+    border-radius: var(--radius-8);
+    font-size: var(--fs15);
+    height: 45px;
+    padding: 6px 10px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* background: var(--color-bg10); */
+    background: var(--color-border-03);
+    color: var(--color-text-03);
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.primaryInputBgThree input {
+    border-radius: var(--radius-8);
+    font-size: var(--fs15);
+    height: 48px;
+    padding: 6px 10px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--color-border-03) !important;
+    color: var(--color-text-03) !important;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+/* primaryInputBgFour - start (bg with border input) */
+
+.primaryInputBgFour input {
+    border-radius: var(--radius-8);
+    font-size: var(--fs15);
+    height: 48px;
+    padding: 6px 10px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--color-bg9) !important;
+    color: var(--color-text-03) !important;
+    border: 1px solid var(--color-border-03) !important;
+    outline: none;
+    width: 100%;
+}
+
+/* primaryInputBgFour - end (bg with border input) */
+
+/* primary textarea - start */
+
+.primaryTextarea textarea {
+    border-radius: 10px;
+    font-size: var(--fs15);
+    min-height: 48px;
+    padding: 6px 10px;
+    background: var(--color-bg10);
+    color: var(--color-text-03);
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+/* primary textarea - end */
+
+/* secondary textarea - start  */
+
+.secondaryTextarea textarea {
+    border-radius: 10px;
+    font-size: var(--fs15);
+    min-height: 48px;
+    padding: 6px 10px;
+    background: var(--color-border-03);
+    color: var(--color-text-03);
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+/* secondary textarea - end  */
+
+/* third textarea - start (change bg color and border) */
+
+.thirdTextarea textarea {
+    border-radius: 10px;
+    font-size: var(--fs15);
+    min-height: 48px;
+    padding: 6px 10px;
+    background: var(--color-bg9);
+    color: var(--color-text-03);
+    border: 1px solid var(--color-border-03);
+    outline: none;
+    width: 100%;
+}
+
+/* third textarea - end */
+
+/* .formFileInput {
+
+} */
+
+.inputComponent .formFileInput {
+    border-radius: 10px;
+    font-size: var(--fs15);
+    padding: 6px 10px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--color-border-03);
+    color: var(--color-text-03);
+    height: 45px;
+}
+
+.inputComponent .formFileInput input[type="file"] {
+    font-size: var(--fs12);
+
+    &::file-selector-button {
+        padding: 0.5em 1.3em;
+        border-radius: 2em;
+        background: var(--color-green-01);
+        border: none;
+        color: var(--color-similar-01);
+        transition: all .25s ease-in-out;
+        cursor: pointer;
+        margin-right: 1em;
+        font-size: var(--fs13);
+    }
+
+
+    &:hover {
+        &::file-selector-button {
+            opacity: 0.8;
+        }
+    }
+}
+
+/* institutional input start */
+
+
+.institutionForm .formPasswordInput {
+    background: var(--color-bg9) !important;
+    border: 1px solid var(--color-border-03) !important;
+}
+
+/* institutional input end */
+
+/* tableInputXs - start */
+
+.tableInputXs input {
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    width: 120px;
+    border-radius: 2px;
+    background: var(--color-bg17);
+    border: 1px solid var(--color-border-04);
+    font-size: var(--fs12);
+    color: var(--color-text-03);
+    text-align: end;
+}
+
+.tableInputXs:focus-within input {
+    border: 1px solid var(--color-focus-border-02);
+}
+
+
+.institutional_UploadBtn .formFileInput {
+    background: var(--color-bg9) !important;
+    border: 1px solid var(--color-border-03) !important;
+}
+
+/* tableInputXs - end */
+
+
+.rangebarInput {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.rangebarInput::-webkit-slider-runnable-track {
+    height: 10px;
+    background: var(--color-bg10);
+    border-radius: 16px;
+}
+
+.rangebarInput::-moz-range-track {
+    height: 10px;
+    background: var(--color-bg10);
+    border-radius: 16px;
+}
+
+.rangebarInput::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 10px;
+    width: 20px;
+    background-color: var(--color-green-01);
+    border-radius: 10px;
+
+}
+
+.rangebarInput::-moz-range-thumb {
+    height: 10px;
+    width: 20px;
+    background-color: var(--color-green-01);
+    border-radius: 10px;
+}
+
+.mt-0 {
+    margin-top: 0 !important;
+}
+
+
+@media (max-width:1399px) {
+    .inputComponent .formPasswordInput {
+        height: 40px;
+        /* border-radius: 6px; */
+    }
+
+    .passwordInputContainer .formPasswordInput {
+        height: 40px;
+        /* border-radius: 6px; */
+    }
+}

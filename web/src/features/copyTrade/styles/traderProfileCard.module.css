@@ -1,0 +1,297 @@
+.card {
+    background-color: var(--color-bg6);
+    padding: 15px;
+    border-radius: var(--radius-2l);
+    transition: 0.5s;
+    box-shadow: var(--box-shadow-04);
+}
+
+.cardHead {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.profileDetails {
+    display: flex;
+    /* align-items: center; */
+    gap: 10px;
+}
+
+.heartBtn {
+    background-color: transparent;
+    border: none;
+    color: var(--color-green-01);
+}
+
+.heartBtn.active {
+    color: var(--color-green-01);
+}
+
+.userProfile {
+    color: var(--color-green-01);
+}
+
+.image {
+    width: 65px;
+    min-width: 65px;
+    max-width: 65px;
+    min-height: 65px;
+    height: 65px;
+    max-height: 65px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.title {
+    font-size: var(--fs15);
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.description {
+    color: var(--color-text-01);
+    font-weight: 300;
+    margin-top: 3px !important;
+    font-size: var(--fs11);
+    line-height: 23px;
+}
+
+.followList {
+    color: var(--color-text-01);
+    font-weight: 300;
+    margin-top: 3px !important;
+    font-size: var(--fs13);
+    line-height: 23px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cardBody {
+    background-color: var(--color-bg4);
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 15px;
+    border-radius: var(--radius-2l);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.label {
+    color: var(--color-text-04);
+    font-size: var(--fs14);
+}
+
+.labelValues {
+    font-size: var(--fs14);
+}
+
+.textEnd {
+    text-align: end;
+}
+
+.chartImage {
+    width: 100px;
+}
+
+.cardPoints {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.cardButtons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.profit {
+    color: var(--color-green-01);
+}
+
+.loss {
+    color: var(--color-red-02);
+}
+
+
+
+/* media  */
+
+@media (max-width:575px) {
+    .card {
+        padding: 15px;
+        /* border-radius: 15px; */
+    }
+
+    /* 
+    .image {
+        width: 45px;
+    }
+
+    .title {
+        font-size: var(--fs14);
+    }
+
+    .description {
+        font-size: var(--fs12);
+    }
+
+    .label {
+        font-size: var(--fs14);
+    }
+
+    .chartImage {
+        width: 60px;
+    } */
+
+    .cardBody {
+        padding: 10px;
+    }
+}
+
+@media (min-width:576px) and (max-width:767px) {
+    .card {
+        padding: 15px;
+        /* border-radius: 15px; */
+    }
+
+    /* .image {
+        width: 50px;
+    }
+
+    .title {
+        font-size: var(--fs14);
+    }
+
+    .description {
+        font-size: var(--fs12);
+    }
+
+    .label {
+        font-size: var(--fs14);
+    } */
+
+    .chartImage {
+        width: 100px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .card {
+        padding: 15px;
+        /* border-radius: 15px; */
+    }
+
+    /* .image {
+        width: 55px;
+    }
+
+    .title {
+        font-size: var(--fs14);
+    }
+
+    .description {
+        font-size: var(--fs12);
+    }
+
+    .label {
+        font-size: var(--fs14);
+    } */
+
+    .chartImage {
+        width: 70px;
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    .card {
+        padding: 15px;
+        /* border-radius: 15px; */
+    }
+
+    /* .image {
+        width: 55px;
+    }
+
+    .title {
+        font-size: var(--fs15);
+    }
+
+    .description {
+        font-size: var(--fs12);
+    }
+
+    .label {
+        font-size: var(--fs14);
+    } */
+
+    .chartImage {
+        width: 70px;
+    }
+}
+
+@media (min-width:1200px) and (max-width:1399px) {}
+
+@media (min-width:1400px) and (max-width:1799px) {
+    .card {
+        padding: 25px;
+        /* border-radius: 20px; */
+    }
+
+    /* .image {
+        width: 65px;
+    } */
+
+    /* .title {
+        font-size: var(--fs15);
+    } */
+
+    /* .description {
+        font-size: var(--fs13);
+    } */
+
+    /* .label {
+        font-size: var(--fs14);
+    } */
+
+    .chartImage {
+        width: 100px;
+    }
+}
+
+@media (min-width:1800px) {
+    .card {
+        padding: 35px;
+        /* border-radius: 20px; */
+    }
+
+    /* .image {
+        width: 70px;
+    } */
+
+    /* .title {
+        font-size: var(--fs18);
+    } */
+    /* 
+    .description {
+        font-size: var(--fs15);
+    } */
+
+    /* .label {
+        font-size: var(--fs16);
+    } */
+
+    .chartImage {
+        width: 100px;
+    }
+}

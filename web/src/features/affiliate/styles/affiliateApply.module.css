@@ -1,0 +1,60 @@
+.affiliateApplyPage {
+    padding-top: var(--header-height);
+}
+
+.affiliateApply {
+    max-width: 900px;
+    margin: 30px auto 70px;
+    padding: 0 30px;
+}
+
+.affiliateApply .headerPart {
+    margin-bottom: 40px;
+}
+
+.affiliateApply .headerPart h2 {
+    font-size: var(--fs20);
+
+}
+
+.affiliateApply .headerPart p {
+    color: var(--color-text-01);
+    font-size: var(--fs13);
+}
+
+.inputWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.inputWrapper>div:nth-child(2) {
+    width: 100%;
+}
+
+.inputHeading {
+    font-size: var(--fs15);
+    font-weight: 500;
+}
+
+.labelText {
+    font-size: var(--fs13);
+}
+
+.socialMediaLinksPart .inputWrapper {
+    position: relative;
+}
+
+.socialMediaLinksPart .inputWrapper>div>div input {
+    padding-left: 38px;
+}
+
+.socialMediaLinksPart .linkIcons {
+    position: absolute;
+    top: 0.7pc;
+    left: 10px;
+    width: 26px;
+    height: 25px;
+    object-fit: contain;
+}

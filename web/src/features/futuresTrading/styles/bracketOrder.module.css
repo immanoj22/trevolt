@@ -1,0 +1,188 @@
+.header {
+    background: var(--color-bg17);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+.featureModalContent .modelLabelText {
+    color: var(--color-text-04);
+    font-size: var(--fs12);
+}
+
+.featureModalContent .modelLabelValue {
+    color: var(--color-text-03);
+    font-size: var(--fs12);
+    font-weight: 500;
+}
+
+.featureModalContent .tabBtnWrapper {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding: 0px;
+    border-radius: 5px;
+}
+
+.featureModalContent .tabBtnWrapper button {
+    color: var(--color-bg8);
+    background: var(--color-bg17);
+    font-size: var(--fs12);
+    padding: 4px 15px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+.featureModalContent .tabBtnWrapper button.isActive {
+    border-color: var(--color-green-01);
+    background-color: var(--color-bg17);
+    color: var(--color-green-01);
+}
+
+.featureModalContent .percentagePart {
+    display: flex;
+    margin: 1rem 0;
+}
+
+.featureModalContent .percentagePart ul {
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.featureModalContent .percentagePart li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.featureModalContent .percentagePart li button {
+    width: 100%;
+    font-size: var(--fs12);
+    padding: 5px 10px;
+    color: var(--color-text-03);
+    background-color: var(--color-bg17);
+    border: none;
+}
+
+.featureModalContent .percentagePart .percentageInput {
+    display: flex;
+    align-items: center;
+    width: 80px;
+    color: var(--color-text-03);
+    background: var(--color-bg17);
+    border: 1px solid var(--color-border-04);
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.featureModalContent .percentagePart input {
+    color: var(--color-bg8);
+    background-color: transparent;
+    width: 100%;
+    outline: none;
+    text-align: right;
+    padding: 0 5px;
+    font-size: var(--fs12);
+    border: none;
+}
+
+.featureModalContent .percentagePart .percentageInput span {
+    font-size: var(--fs12);
+    padding: 0 5px 0 0;
+}
+
+.featureModalContent .percentagePart .percentageInput:focus-within {
+    border-color: var(--color-focus-border-02);
+}
+
+
+/* media */
+
+@media(max-width:575px) {}
+
+@media(min-width:576px) and (max-width:767px) {}
+
+@media(min-width:768px) and (max-width:991px) {
+    .featureModalContent .percentagePart li button {
+        font-size: var(--fs10);
+        padding: 5px;
+    }
+
+    .featureModalContent .tabBtnWrapper button {
+        font-size: var(--fs10);
+        padding: 5px 10px;
+        border-radius: 3px;
+    }
+
+    .featureModalContent .percentagePart .percentageInput {
+        width: 50px;
+        border-radius: 5px;
+    }
+
+    .featureModalContent .percentagePart input {
+        font-size: var(--fs10);
+    }
+
+    .featureModalContent .percentagePart .percentageInput span {
+        font-size: var(--fs10);
+    }
+}
+
+@media(min-width:992px) and (max-width:1199px) {
+    .featureModalContent .percentagePart li button {
+        font-size: var(--fs10);
+        padding: 5px;
+    }
+
+    .featureModalContent .tabBtnWrapper button {
+        font-size: var(--fs10);
+        padding: 5px 10px;
+        border-radius: 3px;
+    }
+
+    .featureModalContent .percentagePart .percentageInput {
+        width: 50px;
+        border-radius: 5px;
+    }
+
+    .featureModalContent .percentagePart input {
+        font-size: var(--fs10);
+    }
+
+    .featureModalContent .percentagePart .percentageInput span {
+        font-size: var(--fs10);
+    }
+}
+
+@media(min-width:1200px) and (max-width:1399px) {
+    .featureModalContent .percentagePart li button {
+        font-size: var(--fs10);
+        padding: 5px;
+    }
+
+    .featureModalContent .tabBtnWrapper button {
+        font-size: var(--fs10);
+        padding: 5px 10px;
+        border-radius: 3px;
+    }
+
+    .featureModalContent .percentagePart .percentageInput {
+        width: 50px;
+        border-radius: 5px;
+    }
+
+    .featureModalContent .percentagePart input {
+        font-size: var(--fs10);
+    }
+
+    .featureModalContent .percentagePart .percentageInput span {
+        font-size: var(--fs10);
+    }
+}
+
+@media(min-width:1400px) and (max-width:1699px) {}
+
+@media(min-width:1700px) {}

@@ -1,0 +1,39 @@
+.exportPage .headerPart {
+    margin-bottom: 2pc;
+}
+
+.exportPage .headerPart h3 {
+    font-size: var(--fs18);
+    margin-bottom: 0.5pc !important;
+}
+
+.exportPage .headerPart p {
+    font-size: var(--fs13);
+    color: var(--color-text-01)
+}
+
+.exportPage .bodyPart {
+    max-width: 30pc;
+    margin-top: 1pc;
+}
+
+.dateWrapper {
+    display: flex;
+    gap: 1pc;
+    margin-top: 1pc;
+}
+
+.dateWrapper>div {
+    width: calc(100%);
+}
+
+.dateWrapper div input {
+    width: 100%;
+    display: block !important;
+}
+
+@media screen and (max-width:375px) {
+    .dateWrapper {
+        flex-direction: column;
+    }
+}

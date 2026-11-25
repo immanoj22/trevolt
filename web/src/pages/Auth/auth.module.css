@@ -1,0 +1,331 @@
+.authContainer {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-top: var(--header-height);
+    background: url("../../assets/image/authBgImg.png") no-repeat;
+    background-size: 100%;
+    position: relative;
+    z-index: 10;
+    background-size: cover;
+
+}
+
+.authContainer::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #000000ef;
+    background-color: var(--color-bg13);
+    z-index: -1;
+    opacity: 98%;
+}
+
+.authFormContainer {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: var(--radius-2l);
+    border: 1px solid var(--color-border-03);
+    background: var(--color-bg9);
+}
+
+.authFormContainer.authFormMd {
+    max-width: 100%;
+}
+
+.logo {
+    width: 100px;
+    min-width: 80px;
+    height: auto;
+}
+
+.pageName {
+    font-weight: 600;
+    font-size: var(--fs30);
+    line-height: 40px;
+    text-align: center;
+}
+
+.singleFormContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.formLabel {
+    font-size: var(--fs14);
+    font-weight: 500;
+    line-height: 22px;
+    color: var(--color-text-04);
+}
+
+.formStandardInput {
+    border-radius: 10px;
+    font-size: var(--fs15);
+    height: 48px;
+    padding: 6px 10px;
+    outline: none;
+    border: none;
+    background: var(--color-border-03);
+    color: var(--color-text-03);
+}
+
+.formStandardInput:focus-within {
+    /* border: 1px solid var(--color-green-01); */
+}
+
+.formPasswordInput {
+    border-radius: 10px;
+    font-size: var(--fs15);
+    height: 48px;
+    padding: 6px 10px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--color-border-03);
+    color: var(--color-text-03);
+}
+
+.formPasswordInput:focus-within {
+    /* border: 1px solid var(--color-green-01); */
+}
+
+.formPasswordInput input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    height: 100%;
+    font-size: var(--fs15);
+    display: flex;
+    flex: 1;
+    color: var(--color-bg8);
+}
+
+.formPasswordInput button {
+    background: transparent;
+    border: none;
+    outline: none;
+    height: 100%;
+    color: var(--color-bg8);
+}
+
+.formError {
+    color: var(--color-red-02);
+    font-size: var(--fs15);
+}
+
+.flexEndContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.flexCenterContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pageNavLinks {
+    color: var(--color-green-01) !important;
+    font-size: var(--fs14) !important;
+}
+
+.formSubmitButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: var(--fs16);
+    font-weight: 600;
+    height: 48px;
+    line-height: 24px;
+    min-height: 48px;
+    min-width: 80px;
+    border: none;
+    outline: none;
+    width: 100%;
+    background: var(--primary-theme-color);
+    color: var(--color-similar-02);
+    padding-left: var(--space-xs);
+    padding-right: var(--space-xs);
+    border-radius: var(--radii-md);
+    text-decoration: none;
+}
+
+.formSubmitButton:hover {
+    opacity: 0.8;
+}
+
+.buttonSm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: var(--fs13);
+    font-weight: 600;
+    line-height: 24px;
+    border: none;
+    outline: none;
+    width: fit-content;
+    height: fit-content;
+    background: var(--color-green-01);
+    color: var(--color-similar-02);
+    padding: 3px 10px;
+    border-radius: var(--radii-s);
+    text-decoration: none;
+    height: 100%;
+}
+
+.buttonSm:hover {
+    opacity: 0.8;
+}
+
+.loadingSpinner {
+    -webkit-animation: spin 2s linear infinite;
+    -moz-animation: spin 2s linear infinite;
+    -o-animation: spin 2s linear infinite;
+    animation: loadingspinner 2s linear infinite;
+}
+
+.emailNotesPart {
+    display: flex;
+    align-items: center;
+    gap: 1pc;
+    background-color: var(--color-bg4);
+    padding: 0.5pc 1pc;
+    border-radius: 0.2pc;
+    margin-top: 2pc;
+    border: 1px solid var(--color-border-03)
+}
+
+.greenText {
+    color: var(--color-green-01) !important;
+}
+
+@-webkit-keyframes loadingspinner {
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes loadingspinner {
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes loadingspinner {
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loadingspinner {
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.notes {
+    font-size: var(--fs13);
+    color: var(--color-text-02);
+}
+
+.notes span {
+    color: var(--color-text-01);
+}
+
+.flexAdjust {
+    display: flex;
+    align-items: end;
+    gap: 10px;
+}
+
+.phoneInputContainer {
+    display: flex;
+    flex: 1;
+}
+
+.formStandardInput:-webkit-autofill,
+.formStandardInput:-webkit-autofill:focus,
+.formStandardInput:-webkit-autofill:hover {
+    -webkit-text-fill-color: var(--color-text-01);
+    border: 1px solid var(--color-border-02);
+    -webkit-box-shadow: 0 0 0 1000px var(--color-primaryBg) inset;
+    -webkit-transition: background-color 5000s ease-in-out 0s;
+    transition: background-color 5000s ease-in-out 0s;
+    caret-color: var(--color-text-01);
+}
+
+.formPasswordInput input:-webkit-autofill,
+.formPasswordInput input:-webkit-autofill:focus,
+.formPasswordInput input:-webkit-autofill:hover {
+    -webkit-text-fill-color: var(--color-text-01);
+    border: 1px solid none;
+    -webkit-box-shadow: 0 0 0 1000px var(--color-primaryBg) inset;
+    -webkit-transition: background-color 5000s ease-in-out 0s;
+    transition: background-color 5000s ease-in-out 0s;
+    caret-color: var(--color-text-01);
+}
+
+/* .authFormContainer .imageSrc {
+
+} */
+
+.bottomInfoTxt {
+    font-size: var(--fs14);
+}
+
+.appleBorder {
+    border: 1px solid var(--color-bg);
+    background: var(--color-bg);
+    color: var(--color-text-01);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 20px;
+    border-radius: var(--radii-s);
+    font-weight: 450;
+    font-size: var(--fs15) !important;
+    height: 40px !important;
+    cursor: pointer;
+}
+
+.appleBorder svg {
+    /* display: none !important; */
+}
+
+.appleBorder:hover {
+    opacity: 0.8;
+}
+
+.appleBorder img {
+    width: 160px;
+}
+
+/* media */
+
+@media(max-width:575px) {
+    .authFormContainer {
+        padding: 20px;
+        border-radius: 15px;
+    }
+}

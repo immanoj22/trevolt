@@ -1,0 +1,467 @@
+.layout {
+    background: var(--color-bg14);
+}
+
+.container {
+    width: 100%;
+    padding: var(--site-padding);
+}
+
+.gridContainer {
+    display: grid;
+    width: 100%;
+    min-width: 0;
+}
+
+.marketTicker {
+    grid-area: marketTicker;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 5px;
+    background: var(--color-bg15);
+}
+
+.marketSummary {
+    grid-area: marketSummary;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 5px;
+    background: var(--color-bg15);
+}
+
+.coinPairs {
+    grid-area: coinPairs;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 5px;
+    background: var(--color-bg15);
+}
+
+
+.tradingChart {
+    grid-area: tradingChart;
+    position: relative;
+    border-radius: 5px;
+    background: var(--color-bg15);
+    overflow: hidden;
+    z-index: 1;
+    min-width: 0;
+    min-height: 0;
+}
+
+
+
+.orderBook {
+    z-index: 2;
+    min-width: 0;
+    overflow: hidden;
+    grid-area: orderBook;
+    background: var(--color-bg15);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 5px;
+}
+
+.recentTrades {
+    z-index: 2;
+    min-width: 0;
+    overflow: hidden;
+    grid-area: recentTrades;
+    background: var(--color-bg15);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 5px;
+}
+
+.tradeActionPanel {
+    z-index: 2;
+    min-width: 0;
+    overflow: hidden;
+    grid-area: tradeActionPanel;
+    background: var(--color-bg15);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 5px;
+}
+
+.tradeActionPanel::after {
+    width: 100%;
+    height: 9px;
+    background: var(--color-bg15);
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+.marketNews {
+    grid-area: marketNews;
+    background: var(--color-bg15);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 5px;
+
+}
+
+.tradeTabs {
+    grid-area: tradeTabs;
+    background: var(--color-bg15);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 5px;
+
+}
+
+/* Drag-to-resize-height handle along the tabs section's own top edge —
+   docked full-width at the bottom of the page (not a free-floating panel
+   like the chart/Order Book/Recent Trades/Trade Action Panel), so only
+   its height is adjustable, via its own top border, the same way a
+   bottom-docked panel resizes in most IDE/dashboard layouts. */
+.tradeTabsResizeHandle {
+    position: absolute;
+    top: -4px;
+    left: 0;
+    right: 0;
+    height: 8px;
+    cursor: ns-resize;
+    touch-action: none;
+    z-index: 3;
+}
+
+/* Hidden by default, same hover-to-reveal pattern as every other panel's
+   own close icon (see orderBook.module.css / tradingChart.module.css). */
+.tradeTabsCloseBtn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 3;
+    font-size: var(--fs18, 18px);
+    color: var(--color-text-04);
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    background: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+}
+
+.tradeTabs:hover .tradeTabsCloseBtn {
+    opacity: 0.6;
+}
+
+.tradeTabsCloseBtn:hover {
+    opacity: 1 !important;
+}
+
+.gridTabsContainer {
+    background: var(--color-bg15);
+    width: 100%;
+    position: relative;
+    border-radius: 5px;
+}
+
+.gridTabsHeader {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 35px;
+    margin: var(--trade-cards-padding);
+}
+
+.gridTabsHeader button {
+    border: none;
+    outline: none;
+    height: 100%;
+    white-space: nowrap;
+    background: transparent;
+    font-size: var(--fs12);
+    position: relative;
+    color: var(--color-text-04);
+    padding: 0px;
+}
+
+.gridTabsHeader button.active {
+    color: var(--color-text-03);
+}
+
+.gridTabsHeader button.active::after {
+    position: absolute;
+    content: '';
+    width: 80%;
+    height: 2px;
+    background: var(--color-green-01);
+    bottom: 0;
+    left: 0px;
+}
+
+.gridTabsBody {
+    height: 550px;
+}
+
+.mobBuySellContainer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: var(--color-primaryBg);
+    height: 52px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    padding: 8px 16px;
+}
+
+.mobBuySellContainer button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color: var(--color-similar-01);
+    font-size: var(--fs14);
+    font-weight: 600;
+}
+
+.mobBuySellContainer button:hover {
+    opacity: 0.8;
+}
+
+.mobBuySellContainer button.buyButton {
+    background: var(--color-green-02);
+}
+
+.mobBuySellContainer button.sellButton {
+    background: var(--color-red-04);
+}
+
+/* start of orderForm modal */
+
+.orderFormModal {
+    background: var(--color-primaryBg) !important;
+    border-top-left-radius: 12px !important;
+    border-top-right-radius: 12px !important;
+    height: fit-content !important;
+}
+
+.orderFormModalHeader {
+    padding: 0px 16px !important;
+    height: 41px !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.orderFormModalBody {
+    padding: 0px !important;
+}
+
+/* end of orderForm modal */
+
+/* media */
+
+@media (max-width:575px) {
+    .container {
+        padding-bottom: 56px;
+    }
+
+    .gridContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media(min-width:576px) and (max-width:767px) {
+    .container {
+        padding-bottom: 56px;
+    }
+
+    .gridContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .marketSummary {
+        height: 56px;
+    }
+}
+
+@media(min-width:768px) and (max-width:991px) {
+    .gridContainer {
+        display: grid;
+        gap: 4px;
+        grid-template:
+            "marketSummary marketSummary marketSummary" 56px
+            "tradingChart tradingChart  tradeActionPanel" 450px "tradeTabs tradeTabs orderBook" minmax(420px, auto) / 1fr 260px 260px
+        ;
+    }
+}
+
+@media(min-width:992px) and (max-width:1199px) {
+    .gridContainer {
+        display: grid;
+        gap: 4px;
+        grid-template:
+            "marketSummary marketSummary marketSummary" 56px
+            "tradingChart tradingChart  tradeActionPanel" 600px "tradeTabs tradeTabs orderBook" minmax(420px, auto) / 1fr 260px 260px
+        ;
+    }
+}
+
+@media(min-width:1200px) and (max-width:1399px) {
+    .gridContainer {
+        display: grid;
+        gap: 4px;
+        grid-template:
+            "marketSummary orderBook tradeActionPanel" 56px
+            "tradingChart   orderBook tradeActionPanel" 320px
+            "tradingChart   recentTrades tradeActionPanel" 150px
+            "tradeTabs      tradeTabs   tradeTabs" minmax(420px, auto) / minmax(600px, 1fr) minmax(0, 320px) minmax(0, 320px);
+        ;
+        /* grid-template:
+            "marketSummary orderBook tradeActionPanel" 56px
+            "tradingChart orderBook tradeActionPanel" 340px "tradeTabs      tradeTabs   tradeTabs" minmax(100px, auto) / minmax(600px, 1fr) 320px 320px;
+        ; */
+    }
+}
+
+@media(min-width:1400px) and (max-width:1799px) {
+    .gridContainer {
+        display: grid;
+        gap: 4px;
+        grid-template:
+            "marketSummary orderBook tradeActionPanel" 56px
+            "tradingChart   orderBook tradeActionPanel" 420px
+            "tradingChart   recentTrades tradeActionPanel" 150px
+            "tradeTabs      tradeTabs   tradeTabs" minmax(420px, auto) / minmax(600px, 1fr) minmax(0, 320px) minmax(0, 320px);
+        ;
+        /* grid-template:
+            "marketSummary marketSummary marketSummary" 56px
+            "tradingChart orderBook tradeActionPanel" 390px "tradingChart recentTrades tradeActionPanel" 150px "tradeTabs tradeTabs tradeTabs" minmax(420px, auto) / 1fr 320px 320px
+        ; */
+    }
+}
+
+@media(min-width:1800px) {
+    .gridContainer {
+        display: grid;
+        gap: 4px;
+        grid-template:
+            "marketSummary orderBook tradeActionPanel" 56px
+            "tradingChart   orderBook tradeActionPanel" 595px
+            "tradingChart   recentTrades tradeActionPanel" 150px
+            "tradeTabs      tradeTabs   tradeTabs" minmax(420px, auto) / minmax(600px, 1fr) minmax(0, 320px) minmax(0, 320px);
+        /* grid-template:
+            "marketSummary marketSummary marketSummary" 56px
+            "tradingChart orderBook tradeActionPanel" 450px "tradingChart recentTrades tradeActionPanel" 150px "tradeTabs tradeTabs tradeTabs" minmax(420px, auto) / 1fr 350px 350px
+        ; */
+    }
+}
+
+
+/* ── Desktop chart/Order Book/Recent Trades layout ──────────────────────
+   The permanent desktop (>=1200px) layout — chart, Order Book and Recent
+   Trades are always free-floating (DraggableResizablePanel: drag header
+   to move, drag corner to resize, click ✕ to close), same as Binance.
+   Trade Action Panel and the bottom tabs stay exactly where they always
+   were. Tablet/mobile are untouched — they still use the responsive grid
+   below. */
+.gridContainerCustomize {
+    display: grid !important;
+    gap: 4px;
+    grid-template:
+        "marketSummary marketSummary marketSummary" 56px
+        "chartCluster  chartCluster  chartCluster" minmax(600px, auto)
+        "tradeTabs     tradeTabs     tradeTabs" minmax(420px, auto)
+        / 1fr 1fr 1fr !important;
+}
+
+.chartCluster {
+    grid-area: chartCluster;
+    position: relative;
+    min-width: 0;
+    min-height: 0;
+    overflow: hidden;
+}
+
+.gridResized640 {
+    grid-template:
+        "marketSummary orderBook    tradeActionPanel" 56px
+        "tradingChart  orderBook    tradeActionPanel" var(--chart-r2, 320px) 
+        "tradingChart  recentTrades tradeActionPanel" var(--chart-r3, 150px) 
+        "tradeTabs     tradeTabs    tradeTabs" minmax(420px, auto) / minmax(600px, 1fr) 320px 320px !important;
+}
+
+.gridResized320 {
+    grid-template:
+        "marketSummary marketSummary tradeActionPanel" 56px
+        "tradingChart  tradingChart  tradeActionPanel" var(--chart-r2, 320px)
+        "tradingChart  tradingChart  tradeActionPanel" var(--chart-r3, 150px)
+        "orderBook     orderBook     recentTrades" 470px
+        "tradeTabs     tradeTabs     tradeTabs" minmax(420px, auto)
+        / 1fr 420px 320px !important;
+}
+
+.gridResizedwithoutSpace {
+    grid-template:
+        "marketSummary marketSummary tradeActionPanel" 56px
+        "tradingChart  tradingChart  tradeActionPanel" calc(var(--chart-r2, 320px) + var(--chart-r3, 150px))
+        "tradeTabs     tradeTabs     tradeTabs" minmax(420px, auto)
+        / 1fr 420px 320px !important;
+}
+
+.gridResizedMin {
+    grid-template:
+        "marketSummary marketSummary marketSummary" 56px
+        "tradingChart  tradingChart  tradingChart" var(--chart-r2, 320px) 
+        "tradingChart  tradingChart  tradingChart" var(--chart-r3, 150px) 
+        "orderBook     recentTrades  tradeActionPanel" 470px
+        "tradeTabs     tradeTabs     tradeTabs" minmax(420px, auto) / 1fr 1fr 1fr !important;
+}
+
+.gridContainerResized {
+    grid-template:
+        "marketSummary    marketSummary marketSummary" 56px
+        "tradingChart     tradingChart  tradingChart" var(--chart-height, 600px) 
+        "tradeActionPanel .             ." var(--action-height, 510px) 
+        "tradeTabs        tradeTabs     orderBook" minmax(420px, auto) / 260px 1fr 260px !important;
+}
+
+
+/* only one open */
+.gridResized320Single {
+    grid-template:
+        "marketSummary marketSummary tradeActionPanel" 56px
+        "tradingChart  tradingChart  tradeActionPanel" var(--chart-r2, 320px)
+        "tradingChart  tradingChart  tradeActionPanel" var(--chart-r3, 150px)
+        "orderBook     orderBook     tradeActionPanel" 470px
+        "tradeTabs     tradeTabs     tradeTabs" minmax(420px, auto)
+        / 1fr 420px 320px !important;
+}
+ .gridResized320NoBottom {
+    grid-template:
+        "marketSummary marketSummary marketSummary" 56px
+        "tradingChart  tradingChart  tradingChart" var(--chart-r2, 320px)
+        "tradingChart  tradingChart  tradingChart" var(--chart-r3, 150px)
+        "orderBook orderBook tradeActionPanel" 470px
+        "tradeTabs tradeTabs tradeTabs" minmax(420px, auto)
+        / 1fr 420px 320px !important;
+}

@@ -1,0 +1,28 @@
+@import "affiliateCommon.module.css";
+
+.innerPageHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.exportBtn {
+    width: 30px;
+    height: 30px;
+    padding: 0 !important;
+    background-color: transparent;
+    border: 1px solid transparent;
+    transition: all 0.1s;
+    border-radius: 2px;
+}
+
+.exportBtn:hover {
+    border-color: var(--color-bg8);
+}
+
+.exportBtn img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}

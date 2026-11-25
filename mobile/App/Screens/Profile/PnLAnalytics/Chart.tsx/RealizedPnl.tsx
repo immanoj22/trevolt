@@ -1,0 +1,121 @@
+import React, { useEffect, useMemo, useState } from "react";
+import { View, ScrollView } from "react-native";
+import { BarChart } from "react-native-gifted-charts";
+
+import Card from "../../../../Components/Card";
+import Text from "../../../../Components/text";
+import NoData from "../../../../Components/Nodata";
+import { Colors } from "../../../../Utilities/uiasset";
+import { windowwidth } from "../../../../Utilities/dimensions";
+import useCustomHooks from "../../../../Actions/Hooks/customhook";
+import { getItem } from "../../../../Actions/Storage/localstorage";
+import { getPnlColor } from "../../../../Utilities/helerfunction";
+
+import { styles } from "../styles";
+
+interface Pnlprops {
+    chartData?: {
+        series: any;
+        categories: any;
+    };
+    amount?: any;
+    rawAmount?: any;
+    noData?: any
+}
+
+const RealizedPnl: React.FC<Pnlprops> = ({ chartData, amount, rawAmount, noData }) => {
+    const { theme, convertValueforChart, convert } = useCustomHooks();
+    const style = styles(theme);
+
+    const [apexState, setApexState] = useState({
+        series: [],
+        options: { xaxis: { categories: [] } }
+    });
+
+    useEffect(() => {
+        if (!chartData) return;
+        setApexState({
+            series: chartData.series ?? [],
+            options: {
+                xaxis: {
+                    categories: chartData.categories ?? []
+                }
+            }
+        });
+    }, [chartData]);
+
+    const convertApexToGiftedData = (apex: any) => {
+        const values = apex?.series?.[0]?.data ?? [];
+        const categories = apex?.options?.xaxis?.categories ?? [];
+
+        return values.map((value: number, index: number) => {
+            const convertedValue = Number(convertValueforChart(value));
+            return {
+                value: convertedValue,
+                label: categories[index] || "",
+                frontColor: getPnlColor(convertedValue),
+                onPress: () => console.log("Pressed bar:", index),
+                labelComponent: () => (
+                    <Text style={style.label}>
+                        {categories[index]}
+                    </Text>
+                ),
+            }
+        });
+    };
+
+    const barData = useMemo(() => convertApexToGiftedData(apexState), [apexState]);
+
+    const chartWidth = Math.max(
+        barData.length * 90,
+        windowwidth - 85
+    );
+
+    return (
+
+        <Card containerStyle={style.container}>
+            <View style={style.contentContainer}>
+                <View style={{ marginTop: "5%", marginBottom: "5%" }}>
+                    <Text size="medium">Realized PNL <Text color={getPnlColor(rawAmount)}>{amount}</Text></Text>
+                </View>
+                <View style={{ marginBottom: "5%", height: 270 }}>
+                    {
+                        !noData ?
+                            <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+                                <BarChart
+                                    data={barData}
+                                    width={chartWidth}
+                                    dashGap={0}
+                                    rulesColor={theme.theme === "dark" ? Colors.datebg_txt : Colors.grey}
+                                    barWidth={8}
+                                    spacing={70}
+                                    noOfSections={5}
+                                    yAxisThickness={1}
+                                    xAxisThickness={1}
+                                    yAxisColor={theme.theme === "dark" ? Colors.datebg_txt : Colors.grey}
+                                    xAxisColor={theme.theme === "dark" ? Colors.datebg_txt : Colors.grey}
+                                    barBorderRadius={4}
+                                    yAxisLabelPrefix={getItem("convertCurrency") === "USDT" ? "$" : "₹"}
+                                    isAnimated
+                                    yAxisTextStyle={style.yaxis}
+                                    initialSpacing={40}
+                                    renderTooltip={(item: any, index: any) => {
+                                        return (
+                                            <View style={style.toolTip} key={index}>
+                                                <Text style={{ fontSize: 10 }}>Profit: {getItem("convertCurrency") === "USDT" ? "$" : "₹"}{convertValueforChart(item.value.toFixed(2))}</Text>
+                                            </View>
+                                        );
+                                    }}
+                                />
+                            </ScrollView> :
+                            <View style={style.noData}>
+                                <NoData />
+                            </View>
+                    }
+                </View>
+            </View>
+        </Card>
+    );
+};
+
+export default RealizedPnl;

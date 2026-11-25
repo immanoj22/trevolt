@@ -1,0 +1,329 @@
+.chartContainer {
+    display: grid;
+    grid-template-areas: "leftTable centerTable rightTable";
+    grid-template-columns: auto 120px auto;
+}
+
+
+
+.leftTable,
+.centerTable,
+.rightTable {
+    overflow-x: scroll;
+    overflow-y: auto;
+    position: relative;
+    /* height: 500px; */
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.leftTable table {
+    direction: rtl;
+}
+
+.leftTable table td {
+    direction: ltr;
+}
+
+.leftTable table thead tr,
+.centerTable table thead tr,
+.rightTable table thead tr {
+    height: 50px;
+    position: relative;
+    z-index: 11;
+
+}
+
+.leftTable table thead th,
+.centerTable table thead th,
+.rightTable table thead th {
+    direction: ltr;
+    background-color: var(--color-bg15);
+    font-size: var(--fs12);
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    position: sticky;
+    text-align: left;
+    text-overflow: ellipsis;
+    top: 0;
+    white-space: nowrap;
+    z-index: 5;
+    font-weight: 400;
+    color: var(--color-text-04);
+    min-width: 90px !important;
+}
+
+.leftTable table thead th .theadValues,
+.rightTable table thead th .theadValues {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.leftTable table thead th .theadValues p,
+.rightTable table thead th .theadValues p {
+    text-align: end;
+}
+
+.leftTable table thead th .theadValues .heads,
+.rightTable table thead th .theadValues .heads {
+    font-size: var(--fs12);
+    font-weight: 450;
+}
+
+.leftTable table thead th .theadValues .subHeads,
+.rightTable table thead th .theadValues .subHeads {
+    font-size: var(--fs10);
+    margin-top: 3px !important;
+}
+
+.leftTable table tbody,
+.centerTable table tbody,
+.rightTable table tbody {
+    font-size: var(--fs12);
+}
+
+.leftTable table tbody tr td,
+.centerTable table tbody tr td,
+.rightTable table tbody tr td {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    height: 45px;
+    border-top: none;
+    /* Remove top border */
+    border-bottom: 1px solid var(--color-border-03);
+    position: relative;
+    /* Required for ::before to position correctly */
+    text-align: end;
+}
+
+.leftTable table tbody tr td .secondaryValue,
+.rightTable table tbody tr td .secondaryValue {
+    font-size: var(--fs10);
+    color: var(--color-text-04);
+}
+
+/* Remove bottom border from last row */
+.leftTable table tbody tr:last-child td,
+.centerTable table tbody tr:last-child td,
+.rightTable table tbody tr:last-child td {
+    /* border-bottom: none; */
+}
+
+.centerTable table {
+    width: 100%;
+}
+
+.centerTable table thead th,
+.centerTable table tbody tr td {
+    text-align: center;
+}
+
+.centerTable {
+    overflow-y: hidden;
+    scroll-snap-stop: always;
+    box-shadow: var(--box-shadow-03);
+    position: relative;
+    z-index: 12;
+}
+
+.insideLeftTable,
+.insideRightTable {
+    border-collapse: collapse;
+    position: relative;
+    width: 100%;
+}
+
+.filterSection {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.filterSection span {
+    border: 1px solid black;
+    font-size: var(--fs20);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    background-color: burlywood;
+    color: white;
+    cursor: pointer;
+}
+
+.filterSection span:hover {
+    opacity: 0.8;
+}
+
+.modalSection {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    border: 1px solid gray;
+    width: 100%;
+    max-width: 250px;
+    height: 300px;
+    overflow: auto;
+    padding: 10px;
+    background-color: antiquewhite;
+    position: absolute;
+    z-index: 999;
+    left: 550px;
+    top: -20px;
+    border-radius: 10px;
+}
+
+.modalSection .modalLeft p {
+    margin-bottom: 12px;
+}
+
+.modalPosition {
+    position: relative;
+}
+
+.hoverTable {
+    background-color: var(--color-bg17);
+}
+
+/* Base selected row: apply bottom border and top border using pseudo-element */
+.leftTable table tbody .selectedRow td,
+.centerTable table tbody .selectedRow td,
+.rightTable table tbody .selectedRow td {
+    border-bottom: 1px solid var(--color-green-01);
+    position: relative;
+}
+
+.leftTable table tbody .selectedIndex td,
+.centerTable table tbody tr .selectedIndex,
+.rightTable table tbody .selectedIndex td {
+    border-bottom: 1px solid var(--color-green-03) !important;
+}
+
+
+.leftTable table tbody .selectedRow td::before,
+.centerTable table tbody .selectedRow td::before,
+.rightTable table tbody .selectedRow td::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    border-top: 1px solid var(--color-green-01);
+    pointer-events: none;
+    z-index: 10;
+}
+
+/* Optional: remove bottom border from previous row if next row is selected — for browsers that support :has */
+.leftTable table tbody tr:has(+ .selectedRow) td,
+.centerTable table tbody tr:has(+ .selectedRow) td,
+.rightTable table tbody tr:has(+ .selectedRow) td {
+    border-bottom: none;
+}
+
+.centerBorderRight {
+    border-right: 1px solid var(--color-green-01) !important;
+}
+
+.centerBorderLeft {
+    border-left: 1px solid var(--color-green-01) !important;
+}
+
+.greenText {
+    color: var(--color-green-03);
+    font-weight: 500;
+}
+
+.redText {
+    color: var(--color-red-01);
+    font-weight: 500;
+}
+
+.centerTableValues {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.centerTableValues .favButton {
+    border: none;
+    background: transparent;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    display: none;
+}
+
+
+
+.centerTableValues .favButton svg {
+    font-size: var(--fs15);
+    fill: var(--color-bg16);
+}
+
+.centerTableValues .favButton.active svg {
+    fill: var(--color-yellow-01);
+}
+
+.centerTableValues .strikeValues {
+    width: 55px;
+    text-align: center;
+}
+
+.centerTable tbody tr:hover td .favButton {
+    display: block;
+}
+
+
+.overlayButtonContainer {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.putFilledRow.buy,
+.callFilledRow.buy {
+    background: var(--color-green-04) !important;
+}
+
+.putFilledRow.sell,
+.callFilledRow.sell {
+    background: var(--color-red-03) !important;
+}
+
+
+.noDataFoundPart td {
+    width: 100%;
+    text-align: center;
+}
+
+
+.noDataFoundPart td>div {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100pc;
+    height: 29pc;
+    font-size: var(--fs8);
+}
+
+
+.insideLeftTable .noDataFoundPart td>div p {
+    position: sticky;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.insideRightTable .noDataFoundPart td>div p {
+    position: sticky;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}

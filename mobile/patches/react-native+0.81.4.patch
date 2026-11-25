@@ -1,0 +1,70 @@
+diff --git a/node_modules/react-native/ReactCommon/jsitooling/React-jsitooling.podspec b/node_modules/react-native/ReactCommon/jsitooling/React-jsitooling.podspec
+index 4b73c02..5fca184 100644
+--- a/node_modules/react-native/ReactCommon/jsitooling/React-jsitooling.podspec
++++ b/node_modules/react-native/ReactCommon/jsitooling/React-jsitooling.podspec
+@@ -28,6 +28,7 @@ Pod::Spec.new do |s|
+   s.source_files           = podspec_sources("react/runtime/*.{cpp,h}", "react/runtime/*.h")
+   s.header_dir             = "react/runtime"
+ 
++  s.module_name = "JSITooling"
+   resolve_use_frameworks(s, header_mappings_dir: "./", module_name: "JSITooling")
+ 
+   s.pod_target_xcconfig    = {
+diff --git a/node_modules/react-native/ReactCommon/react/runtime/React-RuntimeCore.podspec b/node_modules/react-native/ReactCommon/react/runtime/React-RuntimeCore.podspec
+index 24b163f..9f324ad 100644
+--- a/node_modules/react-native/ReactCommon/react/runtime/React-RuntimeCore.podspec
++++ b/node_modules/react-native/ReactCommon/react/runtime/React-RuntimeCore.podspec
+@@ -33,6 +33,7 @@ Pod::Spec.new do |s|
+                                 "CLANG_CXX_LANGUAGE_STANDARD" => rct_cxx_language_standard(),
+                                 "GCC_WARN_PEDANTIC" => "YES" }
+ 
++  s.module_name = "React_RuntimeCore"
+   resolve_use_frameworks(s, header_mappings_dir: "../..", module_name: "React_RuntimeCore")
+ 
+   s.dependency "React-jsiexecutor"
+diff --git a/node_modules/react-native/ReactCommon/react/runtime/platform/ios/React-RuntimeApple.podspec b/node_modules/react-native/ReactCommon/react/runtime/platform/ios/React-RuntimeApple.podspec
+index 7c84db0..243ec89 100644
+--- a/node_modules/react-native/ReactCommon/react/runtime/platform/ios/React-RuntimeApple.podspec
++++ b/node_modules/react-native/ReactCommon/react/runtime/platform/ios/React-RuntimeApple.podspec
+@@ -38,6 +38,7 @@ Pod::Spec.new do |s|
+                                 "CLANG_CXX_LANGUAGE_STANDARD" => rct_cxx_language_standard(),
+                                 "GCC_WARN_PEDANTIC" => "YES" }
+ 
++  s.module_name = "React_RuntimeApple"
+   resolve_use_frameworks(s, header_mappings_dir: "./", module_name: "React_RuntimeApple")
+ 
+   s.dependency "React-jsiexecutor"
+diff --git a/node_modules/react-native/third-party-podspecs/RCT-Folly.podspec b/node_modules/react-native/third-party-podspecs/RCT-Folly.podspec
+index 8852179..d677a15 100644
+--- a/node_modules/react-native/third-party-podspecs/RCT-Folly.podspec
++++ b/node_modules/react-native/third-party-podspecs/RCT-Folly.podspec
+@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
+   spec.dependency "DoubleConversion"
+   spec.dependency "glog"
+   spec.dependency "fast_float", "8.0.0"
+-  spec.dependency "fmt", "11.0.2"
++  spec.dependency "fmt", "11.1.4"
+   spec.compiler_flags = '-Wno-documentation -faligned-new'
+   spec.source_files = 'folly/String.cpp',
+                       'folly/Conv.cpp',
+diff --git a/node_modules/react-native/third-party-podspecs/fmt.podspec b/node_modules/react-native/third-party-podspecs/fmt.podspec
+index 2f38990..b33350d 100644
+--- a/node_modules/react-native/third-party-podspecs/fmt.podspec
++++ b/node_modules/react-native/third-party-podspecs/fmt.podspec
+@@ -8,14 +8,14 @@ fmt_git_url = fmt_config[:git]
+ 
+ Pod::Spec.new do |spec|
+   spec.name = "fmt"
+-  spec.version = "11.0.2"
++  spec.version = "11.1.4"
+   spec.license = { :type => "MIT" }
+   spec.homepage = "https://github.com/fmtlib/fmt"
+   spec.summary = "{fmt} is an open-source formatting library for C++. It can be used as a safe and fast alternative to (s)printf and iostreams."
+   spec.authors = "The fmt contributors"
+   spec.source = {
+     :git => fmt_git_url,
+-    :tag => "11.0.2"
++    :tag => "11.1.4"
+   }
+   spec.pod_target_xcconfig = {
+     "CLANG_CXX_LANGUAGE_STANDARD" => rct_cxx_language_standard(),

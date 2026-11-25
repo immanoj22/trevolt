@@ -1,0 +1,63 @@
+/* Applies wherever a section marks its own existing header with
+   data-panel-drag-handle (Order Book, Recent Trades, the chart, the
+   Buy/Sell panel) — signals "drag here to rearrange" the same way every
+   other window-manager-style UI does. Attribute selectors pass through
+   CSS Modules unhashed, so one rule here covers every panel's header
+   regardless of which component/stylesheet added the attribute. */
+[data-panel-drag-handle] {
+    cursor: grab;
+}
+
+[data-panel-drag-handle]:active {
+    cursor: grabbing;
+}
+
+.panel {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-bg15);
+    border-radius: 5px;
+    border: 1px solid var(--color-bg10, rgba(255, 255, 255, 0.08));
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+}
+
+.body {
+    flex: 1 1 auto;
+    min-height: 0;
+    min-width: 0;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Hidden by default — only reveals itself once the pointer is directly
+   over the resize corner, not the panel as a whole (the close icons on
+   each section instead reveal on hovering the whole section — see
+   orderBook.module.css / recentTrades.module.css / tradingChart.module.css).
+   The hit area (22px) is deliberately bigger than the visible "L" bracket
+   drawn inside it — a target this small at a panel's exact corner is easy
+   to miss by a pixel or two, especially over the chart, where missing it
+   hands the click straight to the TradingView widget underneath instead
+   of starting a resize. z-index guarantees it always wins that overlap
+   regardless of DOM/paint order inside .body. */
+.resizeHandle {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 22px;
+    height: 22px;
+    z-index: 5;
+    cursor: se-resize;
+    touch-action: none;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+    border-right: 3px solid var(--color-bg10, rgba(255, 255, 255, 0.35));
+    border-bottom: 3px solid var(--color-bg10, rgba(255, 255, 255, 0.35));
+    border-radius: 0 0 4px 0;
+}
+
+.resizeHandle:hover {
+    opacity: 1;
+}

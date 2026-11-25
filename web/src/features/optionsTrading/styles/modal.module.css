@@ -1,0 +1,442 @@
+/* modal layout style start */
+.modalPrimary {
+    backdrop-filter: brightness(0.5) !important;
+}
+
+.modalPrimary [class='modal-content'] {
+    background: var(--color-bg15) !important;
+    border-radius: var(--radius-2l) !important;
+}
+
+.modalCloseButton {
+    border: none;
+    outline: none;
+    width: fit-content;
+    background: var(--color-bg10);
+}
+
+.modalCloseButton svg {
+    fill: var(--color-text-03);
+}
+
+.modalPrimaryHeader {
+    position: relative;
+    border: none !important;
+}
+
+.modalPrimaryHeaderBorder {
+    position: relative;
+    border: 1px solid var(--bg-color-08) !important;
+}
+
+.modalHeaderTitle {
+    font-size: var(--fs19);
+    margin-bottom: 0px !important;
+    font-weight: 550;
+    color: var(--color-text-03);
+}
+
+.modalCloseButton {
+    width: 30px;
+    height: 30px;
+    border-radius: var(--radius-8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.modalCloseButton svg {
+    font-size: var(--fs25);
+}
+
+.modalPrimaryBody {
+    padding: 16px 16px !important;
+    position: relative;
+}
+
+.modalPrimaryFooter {
+    padding: 16px !important;
+    border-top: 1px solid var(--color-border-01) !important;
+}
+
+.modalFooterActions {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 15px;
+}
+
+/* modal layout style end */
+
+/* FeatureModalContent start */
+
+.featureModalContent .modelLabelText {
+    color: var(--color-text-04);
+    font-size: var(--fs12);
+}
+
+.featureModalContent .modelLabelValue {
+    color: var(--color-text-03);
+    font-size: var(--fs12);
+    font-weight: 500;
+}
+
+.featureModalContent .tabBtnWrapper {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding: 0px;
+    border-radius: 5px;
+}
+
+.featureModalContent .tabBtnWrapper button {
+    color: var(--color-bg8);
+    background: var(--color-bg17);
+    font-size: var(--fs12);
+    padding: 4px 15px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+.featureModalContent .tabBtnWrapper button.isActive {
+    border-color: var(--color-green-01);
+    background-color: var(--color-bg17);
+    color: var(--color-green-01);
+}
+
+.featureModalContent .percentagePart {
+    display: flex;
+    margin: 1rem 0;
+}
+
+.featureModalContent .percentagePart ul {
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.featureModalContent .percentagePart li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.featureModalContent .percentagePart li button {
+    width: 100%;
+    font-size: var(--fs12);
+    padding: 5px 10px;
+    color: var(--color-text-03);
+    background-color: var(--color-bg17);
+    border: none;
+}
+
+.featureModalContent .percentagePart .percentageInput {
+    display: flex;
+    align-items: center;
+    width: 80px;
+    color: var(--color-text-03);
+    background: var(--color-bg17);
+    border: 1px solid var(--color-border-04);
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.featureModalContent .percentagePart input {
+    color: var(--color-bg8);
+    background-color: transparent;
+    width: 100%;
+    outline: none;
+    text-align: right;
+    padding: 0 5px;
+    font-size: var(--fs12);
+    border: none;
+}
+
+.featureModalContent .percentagePart .percentageInput span {
+    font-size: var(--fs12);
+    padding: 0 5px 0 0;
+}
+
+.featureModalContent .percentagePart .percentageInput:focus-within {
+    border-color: var(--color-green-02);
+}
+
+/* FeatureModalContent end */
+
+/* grossProfitContent start */
+.grossProfitContent {
+    width: 466px;
+    height: 354px;
+    background: url("../../../assets/image/profitBg.svg");
+    position: relative;
+    padding: 20px;
+    color: #fff;
+    --gross-bg: #142600;
+
+}
+
+.grossLoseContent {
+    width: 466px;
+    height: 354px;
+    background: url("../../../assets/image/loseBG.svg");
+    position: relative;
+    padding: 20px;
+    color: #fff;
+    --gross-bg: #260000;
+}
+
+.cardLogo {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.cardLogo img {
+    width: 80px;
+}
+
+.grossDetails {
+    margin-top: 20px;
+}
+
+.grossDetails h1 {
+    font-size: var(--fs40);
+    font-weight: 700;
+    margin-bottom: 5px !important;
+}
+
+.grossDetails h2 {
+    font-size: var(--fs14);
+    font-weight: 400;
+    padding: 0 3px !important;
+
+}
+
+.grossDetails>p {
+    width: 150px;
+    text-align: center;
+    font-size: var(--fs13);
+    font-weight: 400;
+    padding: 10px 20px !important;
+    background-color: var(--gross-bg);
+    border-radius: 100px;
+    line-height: 100%;
+    margin: 10px 0 !important;
+}
+
+.grossDetails>div {
+    margin-top: 15px;
+}
+
+.grossDetails>div>p {
+    font-size: var(--fs20);
+    font-weight: 600;
+    padding: 0 3px !important;
+    margin-top: 5px !important;
+}
+
+.grossValues {
+    width: 90%;
+    display: flex;
+    background-color: var(--gross-bg);
+    position: absolute;
+    bottom: 15px;
+    left: 5%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.grossValues h2 {
+    font-size: var(--fs15);
+}
+
+.grossValues p {
+    font-size: var(--fs20);
+}
+
+.grossValues .qrCodePart {
+    padding: 10px 10px 0 10px;
+    background-color: var(--gross-bg);
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grossValues .qrCodePart img {
+    width: 120px;
+    height: 120px;
+}
+
+.grossValues h2 {
+    font-size: var(--fs15);
+    margin-bottom: 10px !important;
+    font-weight: 300;
+}
+
+.grossValues p {
+    font-size: var(--fs13);
+    font-weight: 700;
+}
+
+.grossValues .qrCodePart p {
+    font-weight: 300;
+}
+
+.shareOptionPart ul {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 !important;
+    gap: 15px;
+}
+
+.grossContentContainer {
+    height: 360px;
+    position: relative;
+}
+
+.grossContentWrapper {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    white-space: nowrap;
+    z-index: -5;
+}
+
+.shareOptionPart ul li button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    font-size: var(--fs18);
+    border: none;
+    color: var(--color-bg8);
+    background-color: var(--color-bg10);
+    border-radius: 100px;
+}
+
+/* grossProfitContent end */
+
+/* leverageModalContent start */
+.leverageModalContent {
+    padding: 10px 4px 4px;
+}
+
+.leverageInputWrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.leverageInputWrapper button {
+    all: unset;
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-8);
+    border: 1px solid var(--color-bg10);
+    background: var(--color-bg2);
+    color: var(--color-text-02);
+    font-size: var(--fs18);
+    cursor: pointer;
+}
+
+.leverageInputWrapper button:hover {
+    background: var(--color-bg10);
+}
+
+.leverageInputWrapper>div {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    border: 1px solid var(--color-bg10);
+    background: var(--color-bg2);
+    border-radius: var(--radius-8);
+    padding: 8px;
+}
+
+.leverageInputWrapper>div input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+    color: var(--color-text-03);
+    font-size: var(--fs16);
+    font-weight: 600;
+}
+
+.leverageInputWrapper>div span {
+    color: var(--color-text-04);
+    font-size: var(--fs14);
+}
+
+.leverageBodyPart {
+    margin: 20px 0 32px;
+}
+
+.leverageBottomPart {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.leverageBottomPart>div:first-child {
+    text-align: center;
+}
+
+.leverageBottomPart div h2 {
+    font-size: var(--fs13);
+    font-weight: 400;
+    color: var(--color-text-04);
+}
+
+.leverageBottomPart div h2 span {
+    color: var(--color-text-02);
+    font-weight: 600;
+}
+
+.leverageBottomPart div p {
+    font-size: var(--fs12);
+    color: var(--color-text-04);
+    margin-top: 4px;
+}
+
+.leverageBottomPart div p span {
+    color: var(--color-text-02);
+}
+
+/* leverageModalContent end */
+
+/* media */
+@media(max-width:575px) {
+    .modalPrimaryBody {
+        padding: 15px;
+    }
+}
+
+@media(min-width:576px) and (max-width:767px) {}
+
+@media(min-width:768px) and (max-width:991px) {}
+
+@media(min-width:992px) and (max-width:1199px) {}
+
+@media(min-width:1200px) and (max-width:1399px) {}
+
+@media(min-width:1400px) and (max-width:1699px) {}
+
+@media(min-width:1700px) {}

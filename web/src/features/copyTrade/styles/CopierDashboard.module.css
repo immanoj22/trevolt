@@ -1,0 +1,275 @@
+.copierProfilePage {
+    padding-top: var(--header-height);
+}
+
+.profit {
+    color: var(--color-green-01);
+}
+
+.loss {
+    color: var(--color-red-02);
+}
+
+.profileBackBtn {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cardTitle {
+    font-size: var(--fs16);
+}
+
+.label {
+    color: var(--color-text-04);
+    font-size: var(--fs14);
+}
+
+.profileContainer {
+    background: var(--color-bg9);
+    border: 1px solid var(--color-border-03);
+    padding: var(--space-xl);
+    border-radius: var(--radius-2l);
+    color: var(--color-text-03);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.profileLeft {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+}
+
+.profileImage {
+    min-width: 80px;
+    width: 80px;
+    max-width: 80px;
+    min-height: 80px;
+    height: 80px;
+    max-height: 80px;
+    border-radius: 50%;
+    border: 1px solid var(--color-border-03);
+    overflow: hidden;
+}
+
+.profileImage img {
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.chartInnerContainer {
+    background: var(--color-bg10);
+    border: 1px solid var(--color-border-03);
+    padding: var(--space-sm);
+    border-radius: var(--radius-2l);
+    color: var(--color-text-03);
+}
+
+.containerFlex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.copierProfileGrids {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+
+.spotTabs {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--color-bg6);
+    padding: 7px 10px;
+    box-shadow: var(--box-shadow-04);
+    border-radius: var(--radii-s);
+    width: fit-content;
+}
+
+.spotTabs button {
+    border: none;
+    outline: none;
+    background: var(--color-bg10);
+    border-radius: var(--radii-s);
+    font-size: var(--fs14);
+    padding: 5px 15px;
+    color: var(--color-text-03);
+}
+
+.spotTabs button.active {
+    background: var(--color-green-01);
+    color: var(--color-similar-01);
+}
+
+.cursorPointer {
+    cursor: pointer;
+}
+
+@media (max-width:575px) {
+    .cardTitle {
+        font-size: var(--fs16);
+    }
+
+    .label {
+        font-size: var(--fs14);
+    }
+
+    .profileImage {
+        min-width: 80px;
+        width: 80px;
+        max-width: 80px;
+        min-height: 80px;
+        height: 80px;
+        max-height: 80px;
+    }
+
+    .copierProfileGrids {
+        margin-top: 40px;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+}
+
+@media (min-width:576px) and (max-width:767px) {
+    .cardTitle {
+        font-size: var(--fs16);
+    }
+
+    .label {
+        font-size: var(--fs14);
+    }
+
+    .profileImage {
+        min-width: 80px;
+        width: 80px;
+        max-width: 80px;
+        min-height: 80px;
+        height: 80px;
+        max-height: 80px;
+    }
+
+    .copierProfileGrids {
+        margin-top: 40px;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .cardTitle {
+        font-size: var(--fs16);
+    }
+
+    .label {
+        font-size: var(--fs14);
+    }
+
+    .profileImage {
+        min-width: 80px;
+        width: 80px;
+        max-width: 80px;
+        min-height: 80px;
+        height: 80px;
+        max-height: 80px;
+    }
+
+    .copierProfileGrids {
+        margin-top: 40px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    .cardTitle {
+        font-size: var(--fs16);
+    }
+
+    .label {
+        font-size: var(--fs14);
+    }
+
+    .profileImage {
+        min-width: 80px;
+        width: 80px;
+        max-width: 80px;
+        min-height: 80px;
+        height: 80px;
+        max-height: 80px;
+    }
+
+    .copierProfileGrids {
+        margin-top: 40px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+
+@media (min-width:1200px) and (max-width:1399px) {}
+
+@media (min-width:1400px) and (max-width:1799) {
+    .cardTitle {
+        font-size: var(--fs17);
+    }
+
+    .label {
+        font-size: var(--fs15);
+    }
+
+    .profileImage {
+        min-width: 100px;
+        width: 100px;
+        max-width: 100px;
+        min-height: 100px;
+        height: 100px;
+        max-height: 100px;
+    }
+
+    .copierProfileGrids {
+        margin-top: 50px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+}
+
+@media (min-width:1800px) {
+    .cardTitle {
+        font-size: var(--fs20);
+    }
+
+    .label {
+        font-size: var(--fs18);
+    }
+
+    .profileImage {
+        min-width: 110px;
+        width: 110px;
+        max-width: 110px;
+        min-height: 110px;
+        height: 110px;
+        max-height: 110px;
+    }
+
+    .copierProfileGrids {
+        margin-top: 40px;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+}

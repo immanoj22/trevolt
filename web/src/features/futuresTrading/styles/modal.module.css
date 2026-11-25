@@ -1,0 +1,838 @@
+/* modal layout style start */
+.modalPrimary {
+    backdrop-filter: brightness(0.5) !important;
+}
+
+.modalPrimary [class='modal-content'] {
+    background: var(--color-bg15) !important;
+    border-radius: var(--radius-2l) !important;
+}
+
+.modalCloseButton {
+    border: none;
+    outline: none;
+    width: fit-content;
+    background: var(--color-bg10);
+}
+
+.modalCloseButton svg {
+    fill: var(--color-text-03);
+}
+
+.modalPrimaryHeader {
+    position: relative;
+    border: none !important;
+}
+
+.modalPrimaryHeaderBorder {
+    position: relative;
+    border: 1px solid var(--bg-color-08) !important;
+}
+
+.modalHeaderTitle {
+    font-size: var(--fs19);
+    margin-bottom: 0px !important;
+    font-weight: 550;
+    color: var(--color-text-03);
+    text-align: center;
+}
+
+.modalCloseButton {
+    width: 30px;
+    height: 30px;
+    border-radius: var(--radius-8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.modalCloseButton svg {
+    font-size: var(--fs25);
+}
+
+.modalPrimaryBody {
+    padding: 16px 16px !important;
+    position: relative;
+
+}
+
+.modalPrimaryFooter {
+    padding: 16px !important;
+    border-top: 1px solid var(--color-border-01) !important;
+}
+
+.modalFooterActions {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 15px;
+}
+
+.modelOverView {}
+
+.modalPrimaryBodyContainer {
+    color: var(--color-text-03);
+}
+
+/* modal layout style end */
+
+/* FeatureModalContent start */
+
+.featureModalContent .modelLabelText {
+    color: var(--color-text-04);
+    font-size: var(--fs12);
+}
+
+.featureModalContent .modelLabelValue {
+    color: var(--color-text-03);
+    font-size: var(--fs12);
+    font-weight: 500;
+}
+
+.featureModalContent .tabBtnWrapper {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding: 0px;
+    border-radius: 5px;
+}
+
+.featureModalContent .tabBtnWrapper button {
+    color: var(--color-bg8);
+    background: var(--color-bg17);
+    font-size: var(--fs12);
+    padding: 4px 15px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+.featureModalContent .tabBtnWrapper button.isActive {
+    border-color: var(--color-green-01);
+    background-color: var(--color-bg17);
+    color: var(--color-green-01);
+}
+
+.featureModalContent .percentagePart {
+    display: flex;
+    margin: 1rem 0;
+}
+
+.featureModalContent .percentagePart ul {
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.featureModalContent .percentagePart li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.featureModalContent .percentagePart li button {
+    width: 100%;
+    font-size: var(--fs12);
+    padding: 5px 10px;
+    color: var(--color-text-03);
+    background-color: var(--color-bg17);
+    border: none;
+}
+
+.featureModalContent .percentagePart .percentageInput {
+    display: flex;
+    align-items: center;
+    width: 80px;
+    color: var(--color-text-03);
+    background: var(--color-bg17);
+    border: 1px solid var(--color-border-04);
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.featureModalContent .percentagePart input {
+    color: var(--color-bg8);
+    background-color: transparent;
+    width: 100%;
+    outline: none;
+    text-align: right;
+    padding: 0 5px;
+    font-size: var(--fs12);
+    border: none;
+}
+
+.featureModalContent .percentagePart .percentageInput span {
+    font-size: var(--fs12);
+    padding: 0 5px 0 0;
+}
+
+.featureModalContent .percentagePart .percentageInput:focus-within {
+    border-color: var(--color-green-02);
+}
+
+/* FeatureModalContent end */
+
+/* leverageModalContent start*/
+.leverageInputWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--color-border-01);
+    background-color: var(--color-bg2);
+}
+
+.leverageInputWrapper div {
+    display: flex;
+    width: 50px;
+}
+
+.leverageInputWrapper div input {
+    color: var(--color-text-03);
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    text-align: right;
+    font-size: var(--fs13);
+}
+
+.leverageInputWrapper div span {
+    color: var(--color-text-03);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--fs12);
+}
+
+.leverageInputWrapper button {
+    color: var(--color-text-03);
+    width: 35px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+}
+
+.leverageBottomPart div {
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-text-03);
+    padding: 10px 0;
+}
+
+.leverageBottomPart div h2 {
+    font-size: var(--fs13);
+}
+
+.leverageBottomPart div p {
+    font-size: var(--fs13);
+}
+
+/* leverageModalContent end */
+
+/* grossProfitContent start */
+
+.grossProfitContent {
+    width: 466px;
+    height: 354px;
+    background: url("../../../assets/image/profitBg.svg");
+    position: relative;
+    padding: 20px;
+    color: #fff;
+    --gross-bg: #142600;
+    --shortOrLong-bg: #ff0000cf;
+
+}
+
+.grossLoseContent {
+    width: 466px;
+    height: 354px;
+    background: url("../../../assets/image/loseBG.svg");
+    position: relative;
+    padding: 20px;
+    color: #fff;
+    --gross-bg: #260000;
+}
+
+.cardLogo {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.cardLogo img {
+    width: 80px;
+}
+
+.grossDetails {
+    margin-top: 20px;
+}
+
+.grossDetails h1 {
+    font-size: var(--fs40);
+    font-weight: 700;
+    margin-bottom: 5px !important;
+}
+
+.grossDetails h2 {
+    font-size: var(--fs17);
+    font-weight: 400;
+    padding: 0 3px !important;
+    color: #e2e2e2;
+    text-transform: capitalize;
+
+}
+
+.grossDetails .shortOrLongLabel {
+    width: 80px;
+    text-align: left;
+    font-size: var(--fs16);
+    font-weight: 400;
+    padding: 10px 15px !important;
+    /* background-color: #ff0000cf; */
+    /* background-color: #ff0000cf; */
+    background-color: var(--shortOrLong-bg);
+    border-radius: 0px;
+    line-height: 100%;
+    margin: 5px 0 !important;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    transform: skew(10px);
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    /* clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%); */
+
+}
+
+
+.grossDetails .dateLabel {
+    width: 110px;
+    text-align: center;
+    font-size: var(--fs13);
+    font-weight: 400;
+    padding: 10px 20px !important;
+    background-color: var(--gross-bg);
+    border-radius: 100px;
+    line-height: 100%;
+    margin: 5px 0 !important;
+}
+
+.grossDetails>div {
+    margin-top: 15px;
+}
+
+.roePart h2 {
+    font-size: 40px;
+}
+
+.roePart h2 span {
+    font-size: 15px;
+}
+
+.roePart p {
+    color: #dadada;
+    font-size: 30px;
+}
+
+.grossDetails>div>p {
+    font-size: var(--fs20);
+    font-weight: 600;
+    padding: 0 3px !important;
+    margin-top: 5px !important;
+}
+
+.grossValues {
+    width: 90%;
+    display: flex;
+    background-color: var(--gross-bg);
+    position: absolute;
+    bottom: 15px;
+    left: 5%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.grossValues h2 {
+    font-size: var(--fs15);
+}
+
+.grossValues p {
+    font-size: var(--fs20);
+}
+
+.grossValues .qrCodePart {
+    padding: 10px 10px 0 10px;
+    background-color: var(--gross-bg);
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grossValues .qrCodePart svg {
+    background-color: #fff;
+    padding: 5px;
+    margin-bottom: 1pc;
+}
+
+.grossValues h2 {
+    font-size: var(--fs15);
+    margin-bottom: 10px !important;
+    font-weight: 300;
+}
+
+.grossValues p {
+    font-size: var(--fs13);
+    font-weight: 700;
+}
+
+.grossValues .qrCodePart p {
+    font-weight: 600;
+    font-size: 14px !important;
+    color: #adadad;
+}
+
+.grossValues .qrCodePart p span {
+    color: white;
+}
+
+.shareOptionPart ul {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 !important;
+    gap: 15px;
+}
+
+.grossContentContainer {
+    height: 360px;
+    position: relative;
+}
+
+.grossContentWrapper {
+    position: absolute;
+    top: 0;
+    /* opacity: 0; */
+    white-space: nowrap;
+    /* z-index: -5; */
+}
+
+.shareOptionPart ul li button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    font-size: var(--fs18);
+    border: none;
+    color: var(--color-bg8);
+    background-color: var(--color-bg10);
+    border-radius: 100px;
+}
+
+/* grossProfitContent end */
+
+
+.modalTabs {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.modalTabs button {
+    border: none;
+    outline: none;
+    background: var(--color-bg10);
+    padding: 5px 20px;
+    border-radius: 3px;
+    font-size: var(--fs14);
+    color: var(--color-text-04);
+}
+
+.modalTabs button.active {
+    background: var(--color-green-01);
+    color: var(--color-similar-01);
+}
+
+.modalFormContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.modalLabel {
+    color: var(--color-text-04);
+    font-size: var(--fs14);
+    font-weight: 500;
+}
+
+.modelValue {
+    color: var(--color-text-03);
+    font-size: var(--fs14);
+    font-weight: 500;
+}
+
+.themeHighlight {
+    font-weight: 500;
+    color: var(--color-green-01);
+}
+
+.percentageContainer {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.percentageContainer button {
+    border: none;
+    outline: none;
+    background: var(--color-bg10);
+    padding: 5px 15px;
+    border-radius: 3px;
+    font-size: var(--fs12);
+    color: var(--color-text-04);
+}
+
+.percentageContainer button.active {
+    background: var(--color-green-01);
+    color: var(--color-similar-01);
+}
+
+/* modal tabs  */
+
+.calcModalTabs {
+    display: flex;
+    align-items: center;
+}
+
+.calcModalTabs button {
+    border: none;
+    outline: none;
+    background: var(--color-bg10);
+    border-radius: 2px;
+    font-size: var(--fs13);
+    padding: 7px 7px;
+    color: var(--color-text-03);
+}
+
+.calcModalTabs button.active {
+    background: var(--color-green-01);
+    color: var(--color-similar-01);
+}
+
+/* switchAccountModelContent */
+.switchAccountModelContent {
+    padding-top: 1pc !important;
+    border-top: 1px solid var(--color-bg10) !important;
+
+}
+
+.switchAccountModelContent .switchAccountListPart input[type=radio] {
+    display: none;
+}
+
+.switchAccountListPart {
+    display: flex;
+    flex-direction: column;
+    gap: 1pc;
+    max-height: 400px;
+    overflow: auto;
+    position: relative;
+}
+
+.switchAccountListPart li.subAccountList {
+    font-size: var(--fs16);
+    display: flex;
+    align-items: center;
+    gap: 0.5pc;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    padding: 0.3pc 1pc !important;
+    border-radius: 3px !important;
+}
+
+.switchAccountListPart li.subAccountList label {
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1pc;
+}
+
+.switchAccountListPart li.subAccountList:hover {
+    background-color: var(--color-bg10);
+}
+
+.switchAccountListPart .selectedText {
+    font-size: var(--fs14);
+    color: var(--color-similar-01);
+    background-color: var(--color-green-01);
+    padding: 0.3pc !important;
+    border-radius: 3px;
+    line-height: 100%;
+    display: flex;
+}
+
+.switchAccountListPart .checkIcon {
+    display: flex;
+    color: var(--color-green-01);
+    opacity: 0;
+    position: absolute;
+    right: 0.5pc;
+}
+
+.switchAccountListPart input:checked+.checkIcon {
+    opacity: 1;
+    /* opacity: 1; */
+}
+
+.switchAccountListPart .subAccountList:has(input:checked) {
+    background-color: var(--color-bg10);
+}
+
+/*  */
+/* Modal container */
+.changeBtn {
+    color: var(--color-green-01);
+    background-color: transparent;
+    border: none;
+}
+
+/* Margin Mode Buttons */
+.modeBtn {
+    flex: 1;
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid var(--color-bg10);
+    background: var(--color-bg10);
+    color: var(--color-text-03);
+    cursor: not-allowed;
+    font-size: var(--fs14);
+}
+
+.modeBtn.active {
+    border: 1px solid var(--color-green-01);
+    background: rgba(99, 255, 107, 0.1);
+    color: var(--color-text-03);
+}
+
+/* Info Section */
+.infoPart h4 {
+    color: var(--color-bg16);
+    font-size: var(--fs16);
+    margin-bottom: 0.4pc !important;
+}
+
+.infoPart p {
+    color: var(--color-bg8);
+    font-size: var(--fs14);
+    display: flex;
+    gap: 0.5pc;
+}
+
+.infoPart p svg {
+    color: var(--color-green-01)
+}
+
+.changeAccountPart {
+    display: flex;
+    flex-direction: column;
+    gap: 1pc;
+    padding-bottom: 1pc !important;
+}
+
+.changeAccountPart .accountCard {
+    border: 1px solid var(--color-border-01);
+    padding: 0.8pc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4pc;
+    position: relative;
+}
+
+.changeAccountPart .accountCard h4 {
+    font-size: var(--fs15);
+    color: var(--color-bg16)
+}
+
+.changeAccountPart .accountCard p {
+    font-size: var(--fs14);
+    color: var(--color-bg10)
+}
+
+.changeAccountPart .successIcon {
+    color: var(--color-bg16);
+    position: absolute;
+    top: 0.5pc;
+    right: 0.5pc;
+}
+
+.accountCard:has(input:checked) {
+    border-color: var(--color-green-01);
+}
+
+.accountCard:has(input:checked) .successIcon {
+    color: var(--color-green-01);
+}
+
+/* orderPlaceModel */
+.orderPlaceModelComponent>div {
+    max-width: 25pc;
+    margin: auto;
+}
+
+.orderPlaceModel {
+    padding: 0.5pc;
+}
+
+.orderPlaceModel .title {
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.orderPlaceModel .subtitle {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.orderPlaceModel .green {
+    color: var(--color-green-01);
+}
+
+.orderPlaceModel .red {
+    color: #ff4d4d;
+}
+
+.orderPlaceModel .warningBox {
+    background: #3a1b2ae8;
+    border-left: 4px solid #ff4d4d;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 13px;
+    border-radius: 4px;
+}
+
+.orderPlaceModel .warningBox p {
+    color: #fff;
+}
+
+.orderPlaceModel .details {
+    font-size: 14px;
+    margin: 15px 0;
+    border: 1px solid var(--color-border-01);
+    padding: 0.5pc 1pc;
+    border-radius: 10px;
+}
+
+.orderPlaceModel .details div {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+
+}
+
+.orderPlaceModel .details div h3 {
+    color: var(--color-bg16);
+    font-size: var(--fs15);
+}
+
+.orderPlaceModel .details div span {
+    color: var(--color-primaryText);
+    font-size: var(--fs14);
+}
+
+.orderPlaceModel .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.orderPlaceModel .footerNote {
+    font-size: 11px;
+    color: var(--color-text-04);
+    line-height: 1.4;
+}
+
+.orderPlaceHeader {
+    border-bottom: 1px solid var(--color-border-02) !important;
+}
+
+.markerModel {
+    padding: 0.5pc;
+}
+
+.markerModalBtn {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    gap: 8px;
+}
+
+.markerModalBtn button {
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    width: 100%;
+    height: 35px;
+    background: none;
+    font-size: var(--fs14);
+    color: var(--color-text-04);
+    background: var(--color-bg17);
+    border-radius: 3px;
+}
+
+.markeOnlyImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-bg17);
+    border-radius: 20px;
+    flex: 1;
+}
+
+.markeOnlyImg Img {
+    margin: 25px 0;
+}
+
+
+/* media */
+
+@media(max-width:575px) {
+
+    .modalPrimaryBody {
+        padding: 15px;
+    }
+}
+
+@media(min-width:576px) and (max-width:767px) {}
+
+@media(min-width:768px) and (max-width:991px) {}
+
+@media(min-width:992px) and (max-width:1199px) {}
+
+@media(min-width:1200px) and (max-width:1399px) {}
+
+@media(min-width:1400px) and (max-width:1699px) {}
+
+@media(min-width:1700px) {}
+
+
+@media screen and (max-width:325px) {
+    .orderPlaceModel .details div {
+        flex-direction: column;
+    }
+}

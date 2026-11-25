@@ -1,0 +1,1371 @@
+.defaultBtn {
+    border: none;
+    outline: none;
+    background: transparent;
+    height: fit-content;
+}
+
+.primaryBtn {
+    border: 1px solid var(--color-green-01);
+    background: var(--color-green-01);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 10px 20px; */
+    padding: 10px 25px;
+    border-radius: var(--radius-30);
+    min-width: 130px;
+    color: var(--color-similar-01);
+    font-weight: 500;
+    font-size: var(--fs16);
+    /* height: fit-content; */
+    height: 40px;
+}
+
+.primaryBtn:hover {
+    opacity: 0.8;
+}
+
+.secondaryBtn {
+    color: var(--color-similar-01);
+}
+
+.primaryBtnXs {
+    border: 1px solid var(--color-green-01);
+    background: var(--color-green-01);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 20px;
+    border-radius: var(--radius-30);
+    min-width: 110px;
+    color: var(--color-similar-01);
+    font-weight: 500;
+    font-size: var(--fs14);
+    height: fit-content;
+}
+
+.primaryBtnXs:hover {
+    opacity: 0.8;
+}
+
+.primaryFillRectangleBtn {
+    border: 1px solid var(--color-green-01);
+    background: var(--color-green-01);
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 100%;
+    color: var(--color-similar-01);
+    font-weight: 500;
+    font-size: var(--fs16);
+    height: fit-content;
+}
+
+.primaryFillRectangleBtn:hover {
+    opacity: 0.8;
+}
+
+.outlineBtn {
+    border: 1px solid var(--color-orange-01);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: var(--radius-30);
+    /* min-width: 180px; */
+    min-width: 130px;
+    color: var(--color-primaryText);
+    font-weight: 500;
+    font-size: var(--fs16);
+    height: 40px;
+    z-index: 1;
+}
+
+.outlineBtn:hover {
+    border: 1px solid var(--color-orange-01);
+    background: var(--color-orange-01);
+    color: var(--color-primaryText);
+    /* height: fit-content; */
+}
+
+.outlineFillBtn {
+    border: 1px solid var(--color-orange-01);
+    background: var(--color-orange-01);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: var(--radius-30);
+    min-width: 180px;
+    color: var(--color-similar-01);
+    font-weight: 500;
+    font-size: var(--fs16);
+    height: fit-content;
+}
+
+.outlineFillBtn:hover {
+    opacity: 0.8;
+}
+
+.textBtn {
+    color: var(--color-primaryText);
+    font-weight: 500;
+    font-size: var(--fs15);
+    height: fit-content;
+}
+
+.textBtn:hover {
+    color: var(--color-orange-01);
+}
+
+.darkFillBtn {
+    border: 1px solid var(--color-border-02);
+    background: var(--color-bg10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: var(--radius-30);
+    min-width: 130px;
+    color: var(--color-primaryText);
+    font-weight: 500;
+    font-size: var(--fs16);
+    /* height: fit-content; */
+    height: 40px;
+}
+
+.darkFillBtn:hover {
+    opacity: 0.8;
+}
+
+.darkFillBtnXs {
+    border: 1px solid var(--color-border-02);
+    background: var(--color-bg10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 20px;
+    border-radius: var(--radius-30);
+    min-width: 110px;
+    color: var(--color-primaryText);
+    font-weight: 500;
+    font-size: var(--fs14);
+    height: fit-content;
+}
+
+.darkFillBtnXs:hover {
+    opacity: 0.8;
+}
+
+.darkFillRectangleBtn {
+    border: 1px solid var(--color-bg4);
+    background: var(--color-bg4);
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: var(--radius-8);
+    width: 100%;
+    color: var(--color-primaryText);
+    font-weight: 500;
+    font-size: var(--fs16);
+    height: fit-content;
+}
+
+.darkFillRectangleBtn:hover {
+    opacity: 0.8;
+}
+
+.darkFillSquareBtn {
+    border: 1px solid var(--color-border-02);
+    background: var(--color-bg10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 20px;
+    border-radius: 5px;
+    min-width: 100px;
+    color: var(--color-primaryText);
+    font-weight: 500;
+    font-size: var(--fs13);
+    height: fit-content;
+}
+
+.darkFillSquareBtn:hover {
+    opacity: 0.8;
+}
+
+.successFillRectangleBtn {
+    border: 1px solid var(--color-green-01);
+    background: var(--color-green-01);
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    /* border-radius: 10px; */
+    border-radius: var(--radius-8);
+    width: 100%;
+    color: var(--color-similar-01);
+    font-weight: 500;
+    font-size: var(--fs15);
+    height: fit-content;
+    height: 45px;
+}
+
+.successFillRectangleBtn:hover {
+    opacity: 0.8;
+}
+
+.successFillRectangleBtnsm {
+    border: 1px solid var(--color-green-01);
+    background: var(--color-green-01);
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    /* border-radius: 10px; */
+    border-radius: var(--radius-8);
+    width: 100%;
+    color: var(--color-similar-01);
+    font-weight: 500;
+    font-size: var(--fs15);
+    height: fit-content;
+    height: 30px;
+}
+
+.successFillRectangleBtnsm:hover {
+    opacity: 0.8;
+}
+
+.successOutLineRectangleBtn {
+    border: 1px solid var(--color-green-01);
+    background: transparent;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: var(--radius-9);
+    width: 100%;
+    color: var(--color-green-01);
+    font-weight: 500;
+    font-size: var(--fs15);
+    height: fit-content;
+}
+
+.successOutLineRectangleBtn:hover {
+    opacity: 0.8;
+}
+
+.successFillRectangleBtnXs {
+    border: 1px solid var(--color-green-03);
+    background: var(--color-green-03);
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 100%;
+    color: var(--color-similar-01);
+    font-weight: 500;
+    font-size: var(--fs14);
+    height: fit-content;
+    /* height: 40px; */
+    height: 35px;
+}
+
+.successFillRectangleBtnXxs {
+    border: 1px solid var(--color-green-03);
+    background: var(--color-green-03);
+    color: var(--color-similar-01);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--fs12);
+    width: 50px;
+    height: 25px;
+    border-radius: 3px;
+}
+
+.successOuterlineButtonXs {
+    border: 1px solid var(--color-green-03);
+    background: transparent;
+    width: 40px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-green-03);
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+.successOuterlineButtonXs:hover {
+    border: 1px solid var(--color-green-03);
+    background: var(--color-green-03);
+    color: var(--color-similar-01);
+}
+
+.dangerFillRectangleBtnXs {
+    border: 1px solid var(--color-red-01);
+    background: var(--color-red-01);
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 100%;
+    color: var(--color-similar-01);
+    font-weight: 500;
+    font-size: var(--fs14);
+    height: fit-content;
+    height: 35px;
+}
+
+.dangerFillRectangleBtnXxs {
+    border: 1px solid var(--color-red-01);
+    background: var(--color-red-01);
+    color: var(--color-similar-01);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--fs12);
+    width: 50px;
+    height: 25px;
+    border-radius: 3px;
+}
+
+.successFillRectangleBtnXxs:hover,
+.dangerFillRectangleBtnXxs:hover {
+    opacity: 0.9;
+}
+
+.invertFillRectangleBtnXs {
+    border: 1px solid var(--color-bg8);
+    background: var(--color-bg8);
+    color: var(--color-invert-text-01);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 20px;
+    border-radius: var(--radii-s);
+    font-weight: 450;
+    font-size: var(--fs15);
+    /* height: fit-content; */
+    height: 40px;
+}
+
+.invertFillRectangleBtnXs:hover {
+    opacity: 0.8;
+}
+
+.invertFillRectangleBtnXs2 {
+    border: 1px solid var(--color-bg12);
+    background: var(--color-bg12);
+    color: var(--color-text-01);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 20px;
+    border-radius: var(--radii-s);
+    font-weight: 450;
+    font-size: var(--fs15);
+    height: 40px;
+}
+
+.invertFillRectangleBtnXs2:hover {
+    opacity: 0.8;
+}
+
+.underlineBtn {
+    color: var(--color-text-01);
+    border-bottom: 1px solid var(--color-text-01);
+    padding: 0px;
+    font-size: var(--fs12);
+    height: fit-content;
+}
+
+.underlineBtn:hover {
+    color: var(--color-orange-01);
+    border-bottom: 1px solid var(--color-orange-01);
+    padding: 0px;
+    font-size: var(--fs12);
+    height: fit-content;
+}
+
+.cardBtn {
+    border: 1px solid var(--color-bg10);
+    background: var(--color-bg10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 20px;
+    border-radius: var(--radius-30);
+    color: var(--color-text-03);
+    font-weight: 500;
+    font-size: var(--fs14);
+    white-space: nowrap;
+    text-decoration: none;
+    min-width: 110px;
+    height: fit-content;
+    height: fit-content;
+}
+
+.cardBtnRectangleSm {
+    border: 1px solid var(--color-bg10);
+    background: var(--color-bg10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 20px;
+    border-radius: var(--radius-30);
+    color: var(--color-text-03);
+    font-weight: 500;
+    font-size: var(--fs14);
+    white-space: nowrap;
+    text-decoration: none;
+    min-width: 110px;
+    height: fit-content;
+    height: fit-content;
+}
+
+.cardBtn:hover,
+.cardBtnSm:hover,
+.cardBtnRectangleXs:hover {
+    opacity: 0.8;
+}
+
+.cardBtnRectangleXs {
+    border: 1px solid var(--color-bg10);
+    background: var(--color-bg10);
+    color: var(--color-text-03);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    border-radius: var(--radii-s);
+    font-weight: 500;
+    font-size: var(--fs13);
+    white-space: nowrap;
+    text-decoration: none;
+    height: fit-content;
+}
+
+.cardBtnRectangleSm {
+    border: 1px solid var(--color-bg10);
+    background: var(--color-bg10);
+    color: var(--color-text-03);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 15px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: var(--fs14);
+    white-space: nowrap;
+    text-decoration: none;
+    height: 40px;
+    min-width: 100px;
+}
+
+.cardLightBtn {
+    border: 1px solid var(--color-bg8);
+    background: var(--color-bg8);
+    color: var(--color-invert-text-01) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 20px;
+    border-radius: var(--radius-30);
+    font-weight: 500;
+    font-size: var(--fs14);
+    white-space: nowrap;
+    text-decoration: none;
+    height: fit-content;
+}
+
+.cardLightBtn:hover {
+    opacity: 0.8;
+}
+
+.cardLightBtnSimilar {
+    border: 1px solid var(--color-border-03);
+    background: var(--color-border-03);
+    color: var(--color-text-03) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 20px;
+    border-radius: var(--radius-30);
+    font-weight: 500;
+    font-size: var(--fs14);
+    white-space: nowrap;
+    text-decoration: none;
+    height: fit-content;
+}
+
+.cardLightBtnSimilar:hover {
+    opacity: 0.8;
+}
+
+.cardSuccessBtn {
+    border: 1px solid var(--color-green-01);
+    background: var(--color-green-01);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 20px;
+    border-radius: var(--radius-30);
+    /* border-radius: var(--radius-8); */
+    color: var(--color-similar-01);
+    font-weight: 500;
+    font-size: var(--fs14);
+    white-space: nowrap;
+    text-decoration: none;
+    /* height: fit-content; */
+    /* height: 40px; */
+}
+
+.cardSuccessBtn_rect {
+    border: 1px solid var(--color-green-01);
+    background: var(--color-green-01);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 20px;
+    /* border-radius: var(--radius-30); */
+    border-radius: var(--radius-8);
+    color: var(--color-similar-01);
+    font-weight: 500;
+    font-size: var(--fs14);
+    white-space: nowrap;
+    text-decoration: none;
+    /* height: fit-content; */
+    height: 40px;
+}
+
+.cardSuccessBtnSm {
+    border: 1px solid var(--color-green-01);
+    background: var(--color-green-01);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 20px;
+    border-radius: var(--radius-8);
+    color: var(--color-similar-01);
+    font-weight: 500;
+    font-size: var(--fs14);
+    white-space: nowrap;
+    text-decoration: none;
+    height: 40px;
+    /* height: fit-content; */
+    min-width: 100px;
+}
+
+.cardSuccessBtnInputAlign {
+    border: 1px solid var(--color-green-01);
+    background: var(--color-green-01);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 15px;
+    border-radius: 8px;
+    color: var(--color-similar-01);
+    font-weight: 500;
+    font-size: var(--fs14);
+    white-space: nowrap;
+    text-decoration: none;
+    height: 48px;
+}
+
+.cardSuccessBtnXs {
+    border: 1px solid var(--color-green-01);
+    background: var(--color-green-01);
+    color: var(--color-similar-01);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: var(--fs13);
+    white-space: nowrap;
+    text-decoration: none;
+    height: fit-content;
+}
+
+.cardSuccessBtnXxs {
+    border: 1px solid var(--color-green-01);
+    background: var(--color-green-01);
+    color: var(--color-similar-01);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: var(--fs12);
+    white-space: nowrap;
+    text-decoration: none;
+    height: 24px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.cardLoseBtnXs {
+    border: 1px solid var(--color-red-01);
+    background: var(--color-red-01);
+    color: var(--color-similar-01);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 7px;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: var(--fs11);
+    white-space: nowrap;
+    text-decoration: none;
+    height: fit-content;
+}
+
+/* .cardSuccessBtnXs {
+    border: 1px solid var(--color-green-01);
+    background: var(--color-green-01);
+    color: var(--color-similar-01);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 7px;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: var(--fs11);
+    white-space: nowrap;
+    text-decoration: none;
+    height: fit-content;
+} */
+
+.cardSuccessBtnXxs:hover,
+.cardSuccessBtnXs:hover,
+.cardSuccessBtnSm:hover,
+.cardSuccessBtn:hover,
+.cardLoseBtnXs:hover,
+.cardLoseBtnXs:hover,
+.cardSuccessBtn_rect:hover {
+    opacity: 0.8;
+}
+
+.greenOutlineBtn {
+    border: 1px solid var(--color-green-01);
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 20px;
+    border-radius: var(--radius-8);
+    color: var(--color-green-01);
+    font-weight: 500;
+    font-size: var(--fs14);
+    white-space: nowrap;
+    text-decoration: none;
+    height: 40px;
+    /* height: fit-content; */
+    min-width: 100px;
+}
+
+.greenOutlineBtn:hover {
+    border: 1px solid var(--color-green-01);
+    background: var(--color-green-01);
+    color: var(--color-similar-01);
+    /* height: fit-content; */
+}
+
+.cardDangerBtn {
+    border: 1px solid var(--color-red-04);
+    background: var(--color-red-04);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 20px;
+    border-radius: var(--radius-30);
+    color: var(--color-similar-01);
+    font-weight: 500;
+    font-size: var(--fs14);
+    white-space: nowrap;
+    text-decoration: none;
+    height: fit-content;
+}
+
+.cardDangerBtn:hover {
+    opacity: 0.8;
+}
+
+
+
+.backBtn {
+    /* border: none; */
+    outline: none;
+    background: transparent;
+    font-size: var(--fs14);
+    color: var(--color-text-01);
+    height: fit-content;
+    padding: 6px 20px;
+    border-radius: var(--radius-30);
+    border: 1px solid var(--color-border-02);
+}
+
+.dangerOuterlineButton {
+    border: 1px solid var(--color-red-01);
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: var(--color-red-01);
+    font-size: var(--fs14);
+    white-space: nowrap;
+    text-decoration: none;
+    height: fit-content;
+    height: 40px;
+    border-radius: 8px;
+}
+
+.dangerOuterlineButtonXs {
+    border: 1px solid var(--color-red-01);
+    background: transparent;
+    width: 40px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-red-01);
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+.dangerOuterlineButton:hover,
+.dangerOuterlineButtonXs:hover {
+    opacity: unset;
+    background: var(--color-red-01);
+    color: var(--color-similar-01);
+}
+
+.darkOutlineButton {
+    background: var(--color-bg17);
+    border: 1px solid var(--color-border-04);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: var(--fs12);
+    white-space: nowrap;
+    text-decoration: none;
+    height: fit-content;
+    height: 23px;
+    border-radius: 5px;
+    color: var(--color-text-03);
+}
+
+.darkOutlineButton.active {
+    background: var(--color-focus-border-01);
+    border: 1px solid var(--color-focus-border-01);
+}
+
+.badgeBtnXs {
+    font-size: var(--fs10);
+    height: 24px;
+    line-height: 10px;
+    width: 54px;
+    background: var(--color-bg17);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    font-size: var(--fs11);
+    color: var(--color-green-01);
+    border-radius: 3px;
+}
+
+.rectIconBtn {
+    color: var(--color-text-03);
+    border: 1px solid var(--color-border-02);
+    background: var(--color-bg10);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+.transBtn {
+    color: var(--bs-heading-color);
+}
+
+.themeTransparent_btn {
+    color: var(--color-green-01) !important;
+}
+
+
+.headingBtn {
+    color: var(--color-text-03);
+    padding: 7px 17px;
+    font-size: var(--fs14);
+    border: none;
+    border-radius: 7px;
+}
+
+.headingBtn:hover {
+    /* border: 1px solid var(--color-green-01); */
+    background: var(--color-green-01);
+    color: var(--color-similar-01);
+    opacity: 1;
+}
+
+.headingBtnActive {
+    border: 1px solid var(--color-green-01);
+    background: var(--color-green-01);
+    color: var(--color-similar-01);
+    padding: 7px 17px;
+    font-size: var(--fs14);
+    border-radius: 7px;
+}
+
+
+.successTextBtn {
+    color: var(--color-green-01);
+    font-size: var(--fs15);
+}
+
+
+/* media */
+
+@media (max-width:575px) {
+    .primaryBtn {
+        padding: 8px 15px;
+        /* border-radius: 35px; */
+        min-width: 125px;
+        font-size: var(--fs14);
+    }
+
+    .primaryBtnXs {
+        padding: 5px 25px;
+        /* border-radius: 30px; */
+        min-width: 92px;
+        font-size: var(--fs11);
+    }
+
+    .primaryFillRectangleBtn {
+        padding: 8px 13px;
+        border-radius: 5px;
+        font-size: var(--fs14);
+    }
+
+    .outlineBtn {
+        padding: 8px 15px;
+        border-radius: 35px;
+        min-width: 125px;
+        font-size: var(--fs14);
+    }
+
+    .outlineFillBtn {
+        padding: 8px 15px;
+        border-radius: 35px;
+        min-width: 125px;
+        font-size: var(--fs14);
+    }
+
+    .darkFillBtn {
+        padding: 8px 15px;
+        border-radius: 35px;
+        min-width: 125px;
+        font-size: var(--fs14);
+    }
+
+    .darkFillBtn {
+        padding: 8px 15px;
+        border-radius: 35px;
+        min-width: 125px;
+        font-size: var(--fs13);
+    }
+
+    .darkFillBtnXs {
+        padding: 5px 25px;
+        /* border-radius: 30px; */
+        min-width: 92px;
+        font-size: var(--fs11);
+    }
+
+    .darkFillRectangleBtn {
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: var(--fs14);
+    }
+
+    .successFillRectangleBtn {
+        padding: 10px 15px;
+        /* border-radius: 5px; */
+        font-size: var(--fs14);
+    }
+
+    .successFillRectangleBtnsm {
+        font-size: var(--fs14);
+    }
+
+    .successOutLineRectangleBtn {
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: var(--fs14);
+    }
+
+    .cardBtn,
+    .cardLightBtn,
+    .cardSuccessBtn,
+    .cardDangerBtn {
+        padding: 7px 25px;
+        /* border-radius: 35px; */
+        font-size: var(--fs14);
+    }
+}
+
+@media (min-width:576px) and (max-width:767px) {
+    .primaryBtn {
+        padding: 8px 15px;
+        /* border-radius: 35px; */
+        min-width: 125px;
+        font-size: var(--fs14);
+    }
+
+    .primaryBtnXs {
+        padding: 5px 25px;
+        /* border-radius: 30px; */
+        min-width: 92px;
+        /* font-size: var(--fs11); */
+        font-size: var(--fs14);
+    }
+
+    .primaryFillRectangleBtn {
+        padding: 8px 13px;
+        border-radius: 5px;
+        font-size: var(--fs15);
+    }
+
+    .outlineBtn {
+        padding: 8px 15px;
+        border-radius: 35px;
+        min-width: 125px;
+        font-size: var(--fs14);
+    }
+
+    .outlineFillBtn {
+        padding: 8px 15px;
+        border-radius: 35px;
+        min-width: 125px;
+        font-size: var(--fs14);
+    }
+
+    .darkFillBtn {
+        padding: 8px 15px;
+        border-radius: 35px;
+        min-width: 125px;
+        font-size: var(--fs14);
+    }
+
+    .darkFillBtn {
+        padding: 8px 15px;
+        border-radius: 35px;
+        min-width: 125px;
+        font-size: var(--fs13);
+    }
+
+    .darkFillBtnXs {
+        padding: 5px 25px;
+        /* border-radius: 30px; */
+        min-width: 92px;
+        font-size: var(--fs14);
+    }
+
+    .darkFillRectangleBtn {
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: var(--fs14);
+    }
+
+    .successFillRectangleBtn {
+        padding: 10px 15px;
+        /* border-radius: 5px; */
+        font-size: var(--fs14);
+    }
+
+    .successFillRectangleBtnsm {
+        font-size: var(--fs14);
+    }
+
+    .successOutLineRectangleBtn {
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: var(--fs14);
+    }
+
+    .cardBtn,
+    .cardLightBtn,
+    .cardSuccessBtn,
+    .cardDangerBtn {
+        padding: 7px 25px;
+        /* border-radius: 35px; */
+        font-size: var(--fs14);
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+
+    .primaryBtn {
+        padding: 8px 15px;
+        /* border-radius: 35px; */
+        min-width: 125px;
+        font-size: var(--fs15);
+    }
+
+    .primaryBtnXs {
+        padding: 5px 25px;
+        /* border-radius: 30px; */
+        min-width: 92px;
+        font-size: var(--fs11);
+    }
+
+    .primaryFillRectangleBtn {
+        padding: 10px 15px;
+        border-radius: 7px;
+        font-size: var(--fs15);
+    }
+
+    .outlineBtn {
+        padding: 8px 15px;
+        border-radius: 35px;
+        min-width: 125px;
+        font-size: var(--fs14);
+    }
+
+    .outlineFillBtn {
+        padding: 8px 15px;
+        border-radius: 35px;
+        min-width: 125px;
+        font-size: var(--fs14);
+    }
+
+    .darkFillBtn {
+        padding: 8px 15px;
+        border-radius: 35px;
+        min-width: 125px;
+        font-size: var(--fs14);
+    }
+
+    .darkFillBtn {
+        padding: 8px 15px;
+        border-radius: 35px;
+        min-width: 125px;
+        font-size: var(--fs13);
+    }
+
+    .darkFillBtnXs {
+        padding: 5px 25px;
+        /* border-radius: 30px; */
+        min-width: 92px;
+        font-size: var(--fs11);
+    }
+
+    .darkFillRectangleBtn {
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: var(--fs14);
+    }
+
+    .successFillRectangleBtn {
+        padding: 10px 15px;
+        /* border-radius: 5px; */
+        font-size: var(--fs14);
+    }
+
+    .successFillRectangleBtnsm {
+        font-size: var(--fs14);
+    }
+
+    .successOutLineRectangleBtn {
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: var(--fs14);
+    }
+
+    .cardBtn,
+    .cardLightBtn,
+    .cardSuccessBtn,
+    .cardDangerBtn {
+        padding: 7px 25px;
+        /* border-radius: 35px; */
+        font-size: var(--fs14);
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    .primaryBtn {
+        padding: 8px 15px;
+        /* border-radius: 35px; */
+        min-width: 125px;
+        font-size: var(--fs14);
+    }
+
+    .primaryBtnXs {
+        padding: 5px 25px;
+        /* border-radius: 30px; */
+        min-width: 92px;
+        font-size: var(--fs11);
+    }
+
+    .primaryFillRectangleBtn {
+        padding: 8px 13px;
+        border-radius: 5px;
+        font-size: var(--fs14);
+    }
+
+    .outlineBtn {
+        padding: 8px 15px;
+        border-radius: 35px;
+        min-width: 125px;
+        font-size: var(--fs14);
+    }
+
+    .outlineFillBtn {
+        padding: 8px 15px;
+        border-radius: 35px;
+        min-width: 125px;
+        font-size: var(--fs14);
+    }
+
+
+    .darkFillBtn {
+        padding: 8px 15px;
+        border-radius: 35px;
+        min-width: 125px;
+        font-size: var(--fs12);
+    }
+
+    .darkFillBtnXs {
+        padding: 5px 25px;
+        /* border-radius: 30px; */
+        min-width: 92px;
+        font-size: var(--fs11);
+    }
+
+    .darkFillRectangleBtn {
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: var(--fs13);
+    }
+
+    .successFillRectangleBtn {
+        padding: 10px 15px;
+        /* border-radius: 5px; */
+        font-size: var(--fs13);
+    }
+
+    .successFillRectangleBtnsm {
+        font-size: var(--fs13);
+    }
+
+    .successOutLineRectangleBtn {
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: var(--fs13);
+    }
+
+    .cardBtn,
+    .cardLightBtn,
+    .cardSuccessBtn,
+    .cardDangerBtn {
+        padding: 7px 25px;
+        /* border-radius: 35px; */
+        font-size: var(--fs14);
+    }
+
+
+}
+
+@media (min-width:1200px) and (max-width:1399px) {
+
+    .primaryBtn {
+        padding: 8px 15px;
+        /* border-radius: 35px; */
+        min-width: 125px;
+        font-size: var(--fs13);
+    }
+
+    .primaryBtnXs {
+        padding: 5px 25px;
+        /* border-radius: 30px; */
+        min-width: 92px;
+        font-size: var(--fs11);
+    }
+
+    .primaryFillRectangleBtn {
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: var(--fs13);
+    }
+
+    .outlineBtn {
+        padding: 8px 15px;
+        border-radius: 35px;
+        min-width: 125px;
+        font-size: var(--fs13);
+    }
+
+    .outlineFillBtn {
+        padding: 8px 15px;
+        border-radius: 35px;
+        min-width: 125px;
+        font-size: var(--fs13);
+    }
+
+    .darkFillBtn {
+        padding: 8px 15px;
+        border-radius: 35px;
+        min-width: 125px;
+        font-size: var(--fs13);
+    }
+
+    .darkFillBtnXs {
+        padding: 5px 25px;
+        /* border-radius: 30px; */
+        min-width: 92px;
+        font-size: var(--fs11);
+    }
+
+
+
+    .darkFillRectangleBtn {
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: var(--fs13);
+    }
+
+    .successFillRectangleBtn {
+        padding: 10px 15px;
+        /* border-radius: 5px; */
+        font-size: var(--fs13);
+    }
+
+    .successFillRectangleBtnsm {
+        font-size: var(--fs13);
+    }
+
+    .successOutLineRectangleBtn {
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: var(--fs13);
+    }
+
+    .cardBtn,
+    .cardLightBtn,
+    .cardSuccessBtn,
+    .cardDangerBtn {
+        padding: 7px 25px;
+        /* border-radius: 35px; */
+        font-size: var(--fs14);
+    }
+
+}
+
+@media (min-width:1400px) and (max-width:1799px) {}
+
+
+@media (max-width:1399px) {
+    .successFillRectangleBtn {
+        height: 40px;
+    }
+}
+
+@media (min-width:1800px) {
+    .primaryBtn {
+        padding: 15px 25px;
+        /* border-radius: 35px; */
+        min-width: 220px;
+        font-size: var(--fs19);
+    }
+
+    .primaryBtnXs {
+        padding: 8px 25px;
+        /* border-radius: 30px; */
+        min-width: 120px;
+        font-size: var(--fs16);
+    }
+
+    .primaryBtnXs:hover {
+        opacity: 0.8;
+    }
+
+    .primaryFillRectangleBtn {
+        padding: 15px 20px;
+        border-radius: 10px;
+        font-size: var(--fs20);
+    }
+
+
+    .outlineBtn {
+        padding: 15px 25px;
+        border-radius: 35px;
+        min-width: 220px;
+        font-size: var(--fs19);
+    }
+
+    .outlineFillBtn {
+        padding: 15px 25px;
+        border-radius: 35px;
+        min-width: 220px;
+        font-size: var(--fs19);
+    }
+
+    .darkFillBtn {
+        padding: 15px 25px;
+        border-radius: 35px;
+        min-width: 220px;
+        font-size: var(--fs19);
+    }
+
+    .darkFillBtnXs {
+        padding: 8px 25px;
+        /* border-radius: 30px; */
+        min-width: 120px;
+        font-size: var(--fs16);
+    }
+
+    /* .darkFillRectangleBtn {
+        padding: 15px 20px;
+        border-radius: 10px;
+        font-size: var(--fs20);
+    } */
+
+    .underlineBtn:hover {
+        font-size: var(--fs13);
+    }
+
+    .cardBtn,
+    .cardLightBtn,
+    .cardSuccessBtn,
+    .cardDangerBtn {
+        padding: 12px 35px;
+        /* border-radius: 35px; */
+        font-size: var(--fs16);
+    }
+
+}

@@ -1,0 +1,1031 @@
+.strategyBuilder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.scrollableBody {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.topHeader {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 8px;
+    column-gap: 10px;
+    padding: var(--trade-cards-padding);
+    border-bottom: 1px solid var(--color-bg10);
+    position: relative;
+}
+
+.topHeader h3 {
+    font-size: var(--fs14);
+    color: var(--color-text-03);
+}
+
+.addFuturesWrapper {
+    position: relative;
+}
+
+.addFuturesBtn {
+    all: unset;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    font-size: var(--fs12);
+    color: var(--color-green-01);
+    transition: opacity 0.15s ease;
+}
+
+.addFuturesBtn:hover {
+    opacity: 0.8;
+}
+
+.addFuturesMenu {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    width: 280px;
+    max-width: calc(100vw - 20px);
+    background: var(--color-bg9);
+    border: 1px solid var(--color-border-03);
+    border-radius: 6px;
+    padding: 10px;
+    z-index: 30;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.addFuturesMenuHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.addFuturesMenuHeader h4 {
+    font-size: var(--fs13);
+    color: var(--color-text-03);
+}
+
+.addFuturesMenuHeader button {
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    color: var(--color-text-04);
+    font-size: var(--fs16);
+}
+
+.addFuturesRow {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    font-size: var(--fs12);
+    color: var(--color-text-02);
+}
+
+.addFuturesActions {
+    display: flex;
+    gap: 6px;
+}
+
+.emptyState {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    gap: 6px;
+}
+
+.emptyGraphic {
+    display: flex;
+    align-items: stretch;
+    gap: 8px;
+    margin-bottom: 20px;
+    padding: 14px;
+    border: 1px solid var(--color-border-03);
+    border-radius: 10px;
+    background: var(--color-bg3, var(--color-bg5));
+}
+
+.emptyCol {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 84px;
+}
+
+.emptyColLabel {
+    font-size: var(--fs10);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: var(--color-text-04);
+    text-align: center;
+    background: var(--color-bg10);
+    border-radius: 5px;
+    padding: 4px 0;
+    margin-bottom: 4px;
+}
+
+.emptyCol div {
+    height: 18px;
+    border-radius: 5px;
+    background: var(--color-bg10);
+}
+
+.emptyRowActive {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 4px;
+    border-radius: 5px;
+    background: var(--color-bg10);
+    color: var(--color-similar-01);
+    font-size: var(--fs12);
+}
+
+.emptyRowActive.puts {
+    justify-content: flex-start;
+    padding-right: 0;
+    padding-left: 4px;
+}
+
+.emptyCheckBadge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 19px;
+    height: 15px;
+    border-radius: 30%;
+    background: var(--color-red-01);
+}
+
+.emptyRowActive.puts .emptyCheckBadge {
+    background: var(--color-green-01);
+}
+
+.emptyStrikesCol {
+    width: 20px;
+    background: var(--color-bg10);
+    color: var(--color-text-04);
+    font-size: var(--fs9);
+    letter-spacing: 1px;
+    writing-mode: vertical-rl;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-top: 20px;
+    border-radius: 3px;
+}
+
+.emptyState h4 {
+    font-size: var(--fs14);
+    color: var(--color-text-03);
+}
+
+.emptyState p {
+    font-size: var(--fs12);
+    color: var(--color-text-04);
+}
+
+.emptyFooter {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.emptyFooter a {
+    font-size: var(--fs12);
+    color: var(--color-green-01);
+    text-decoration: none;
+}
+
+.emptyFooter p {
+    font-size: var(--fs12);
+    color: var(--color-text-04);
+}
+
+.emptyFooter p span {
+    color: var(--color-text-02);
+}
+
+.sbHeader {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 8px;
+    column-gap: 10px;
+    padding: var(--trade-cards-padding);
+    border-bottom: 1px solid var(--color-bg10);
+}
+
+.selectedCountText {
+    font-size: var(--fs12);
+    color: var(--color-text-02);
+    white-space: nowrap;
+}
+
+.multiplierControl {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: auto;
+    font-size: var(--fs12);
+    color: var(--color-text-04);
+}
+
+.multiplierControl button {
+    all: unset;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-bg10);
+    border-radius: 3px;
+    cursor: pointer;
+    color: var(--color-text-02);
+    transition: background-color 0.15s ease;
+}
+
+.multiplierControl button:hover {
+    background-color: var(--color-bg10);
+}
+
+.multiplierValue {
+    min-width: 16px;
+    text-align: center;
+    color: var(--color-text-02);
+}
+
+.deleteAllBtn {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--color-text-04);
+    font-size: var(--fs16);
+    transition: color 0.15s ease;
+}
+
+.deleteAllBtn:hover {
+    color: var(--color-red-01);
+}
+
+.contractsList {
+    flex-shrink: 0;
+    padding: 10px var(--trade-cards-padding);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contractRowWrapper {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.contractRow {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+    padding: 8px;
+    background-color: var(--color-bg2);
+    border: 1px solid var(--color-bg10);
+    border-radius: 6px;
+    transition: border-color 0.15s ease;
+}
+
+.contractRow:hover {
+    border-color: var(--color-focus-border-02);
+}
+
+.contractRowLeftGroup {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+}
+
+.contractRowRightGroup {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    margin-left: auto;
+}
+
+.contractRowLeftGroup> :global(.custom-checkInput__container) {
+    flex-shrink: 0;
+}
+
+.buyBadge,
+.sellBadge {
+    all: unset;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    font-size: var(--fs11);
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.15s ease;
+}
+
+.buyBadge:hover,
+.sellBadge:hover {
+    opacity: 0.85;
+}
+
+.buyBadge {
+    background-color: var(--color-green-03) !important;
+    color: var(--color-similar-01) !important;
+}
+
+.sellBadge {
+    background-color: var(--color-red-01) !important;
+    color: var(--color-similar-01) !important;
+}
+
+.futuresSymbol {
+    font-size: var(--fs12);
+    color: var(--color-text-02);
+    flex: 1;
+    white-space: nowrap;
+}
+
+.multiplierBadge {
+    all: unset;
+    flex-shrink: 0;
+    cursor: pointer;
+    font-size: var(--fs10);
+    font-weight: 600;
+    color: var(--color-text-02);
+    background: var(--color-bg10);
+    padding: 2px 8px;
+    border-radius: 3px;
+    white-space: nowrap;
+    transition: filter 0.15s ease;
+}
+
+.multiplierBadge:hover {
+    filter: brightness(1.2);
+}
+
+.limitPriceHint {
+    width: 100%;
+    font-size: var(--fs10);
+    color: var(--color-red-01);
+    margin: -4px 0 0;
+    padding-left: 6px;
+}
+
+.marketAndLimitPart {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid var(--color-bg10);
+    font-size: var(--fs11);
+    padding: 3px 5px;
+    border-radius: 3px;
+    flex: 0 0 128px;
+    width: 128px;
+    transition: border-color 0.15s ease;
+}
+
+.marketAndLimitPart:has(input:focus) {
+    border-color: var(--color-focus-border-02);
+}
+
+.marketAndLimitPart label {
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 3px;
+    border: 1px solid var(--color-green-02);
+    color: var(--color-green-02);
+    flex-shrink: 0;
+}
+
+.marketAndLimitPart input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--color-bg8);
+    text-align: left;
+    font-size: var(--fs11);
+}
+
+.qtyInputPart {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    gap: 4px;
+    border: 1px solid var(--color-bg10);
+    border-radius: 3px;
+    padding: 3px 6px;
+    font-size: var(--fs11);
+    transition: border-color 0.15s ease;
+}
+
+.qtyInputPart:has(input:focus) {
+    border-color: var(--color-focus-border-02);
+}
+
+.qtyInputPart input {
+    width: 55px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--color-bg8);
+    text-align: right;
+    font-size: var(--fs11);
+}
+
+.qtyInputPart span {
+    color: var(--color-text-04);
+}
+
+.deleteBtn {
+    all: unset;
+    flex-shrink: 0;
+    font-size: var(--fs15);
+    color: var(--color-bg8);
+    cursor: pointer;
+    transition: color 0.15s ease;
+}
+
+.deleteBtn:hover {
+    color: var(--color-red-01);
+}
+
+.payoffSection {
+    border-top: 1px solid var(--color-bg10);
+    padding: 0 var(--trade-cards-padding);
+}
+
+.payoffHeader {
+    all: unset;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    cursor: pointer;
+    color: var(--color-text-03);
+    transition: opacity 0.15s ease;
+}
+
+.payoffHeader:hover {
+    opacity: 0.85;
+}
+
+.payoffHeader h3 {
+    font-size: var(--fs13);
+    font-weight: 500;
+}
+
+.statsRow {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    background-color: var(--color-bg10);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.statsRow p {
+    font-size: var(--fs11);
+    color: var(--color-text-04);
+    margin-bottom: 4px;
+}
+
+.statsRow h4 {
+    font-size: var(--fs13);
+    color: var(--color-text-02);
+}
+
+.statsRow h4:global(.value-profit) {
+    color: var(--color-green-03);
+}
+
+.statsRow h4:global(.value-lose) {
+    color: var(--color-red-02);
+}
+
+.baTabHeader ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+    border-bottom: 1px solid var(--color-bg10);
+}
+
+.baTabHeader ul button {
+    all: unset;
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    font-size: var(--fs12);
+    padding: 8px 10px;
+    color: var(--color-text-01);
+    transition: color 0.15s ease;
+}
+
+.baTabHeader ul button:hover {
+    color: var(--color-text-03);
+}
+
+.baTabHeader ul button::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    border-radius: 100px;
+    background-color: transparent;
+    transition: all 0.3s;
+}
+
+.baTabHeader ul button.isActive {
+    color: var(--color-text-03);
+}
+
+.baTabHeader ul button.isActive::after {
+    background-color: var(--color-green-01);
+}
+
+.baTabBody {
+    padding: 10px 0;
+}
+
+.chartHeaderRow {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 6px;
+    column-gap: 10px;
+    font-size: var(--fs11);
+    color: var(--color-text-04);
+    margin-bottom: 5px;
+}
+
+.legendDot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.legendDot[data-type="expiry"] {
+    background-color: #ff5555;
+}
+
+.legendDot[data-type="target"] {
+    background-color: #008ffb;
+}
+
+.currentPriceBadge {
+    background-color: var(--color-bg10);
+    padding: 2px 8px;
+    border-radius: 3px;
+    color: var(--color-text-02);
+}
+
+.chartWrapper {
+    width: 100%;
+}
+
+.targetsSection {
+    margin: 10px 0;
+}
+
+.targetsHeader {
+    all: unset;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 12px;
+    background: var(--color-bg10);
+    border-radius: 4px;
+    cursor: pointer;
+    color: var(--color-text-02);
+    font-size: var(--fs13);
+    font-weight: 500;
+}
+
+.projectedBanner {
+    text-align: center;
+    font-size: var(--fs12);
+    font-weight: 500;
+    padding: 6px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.projectedProfit {
+    background: rgba(0, 227, 150, 0.12);
+    color: #00e396;
+}
+
+.projectedLoss {
+    background: rgba(255, 85, 85, 0.12);
+    color: #ff5555;
+}
+
+.chartControlBlock {
+    padding: 12px 0;
+}
+
+.chartControlHeader {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    row-gap: 6px;
+    column-gap: 10px;
+    margin-bottom: 8px;
+}
+
+.chartControlLabel h4 {
+    font-size: var(--fs12);
+    color: var(--color-text-02);
+    margin-bottom: 4px;
+}
+
+.chartControlLabel button {
+    all: unset;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    font-size: var(--fs11);
+    color: var(--color-green-01);
+    transition: opacity 0.15s ease;
+}
+
+.chartControlLabel button:hover {
+    opacity: 0.8;
+}
+
+.chartControlValue {
+    font-size: var(--fs13);
+    color: var(--color-text-02);
+    text-align: right;
+}
+
+.chartControlValue p {
+    font-size: var(--fs13);
+    color: var(--color-text-02);
+}
+
+.chartControlValue span {
+    display: block;
+    font-size: var(--fs11);
+    color: var(--color-text-04);
+    margin-top: 3px;
+}
+
+.chartControlValue span em {
+    font-style: normal;
+    color: var(--color-text-04);
+}
+
+.rangeBarPart {
+    position: relative;
+    height: 30px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.rangeBarPart button {
+    all: unset;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: var(--fs12);
+    text-transform: capitalize;
+    color: var(--color-green-01);
+    cursor: pointer;
+}
+
+.rangebarInput {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    border-radius: 16px;
+    height: 6px;
+    background: linear-gradient(to right, var(--color-green-01) var(--progress, 0%), var(--color-bg10) var(--progress, 0%));
+}
+
+.rangebarInput::-webkit-slider-runnable-track {
+    height: 6px;
+    background: transparent;
+    border-radius: 16px;
+}
+
+.rangebarInput::-moz-range-track {
+    height: 6px;
+    background: transparent;
+    border-radius: 16px;
+}
+
+.rangebarInput::-moz-range-progress {
+    height: 6px;
+    background: var(--color-green-01);
+    border-radius: 16px;
+}
+
+.rangebarInput::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 14px;
+    width: 14px;
+    margin-top: -4px;
+    background-color: var(--color-green-01);
+    border-radius: 50%;
+}
+
+.rangebarInput::-moz-range-thumb {
+    height: 14px;
+    width: 14px;
+    background-color: var(--color-green-01);
+    border-radius: 50%;
+}
+
+.pnlTableHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0 10px;
+    font-size: var(--fs12);
+    color: var(--color-text-04);
+}
+
+.groupByExpiryToggle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.expiryGroupHeader {
+    font-size: var(--fs11) !important;
+    color: var(--color-text-04) !important;
+    background: var(--color-bg10);
+    text-align: left !important;
+}
+
+.pnlContractSubLabel {
+    font-size: var(--fs10);
+    color: var(--color-text-04);
+    margin: 0;
+}
+
+.baTab2 {
+    overflow-x: auto;
+}
+
+.baTab2::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+.baTab2::-webkit-scrollbar-track {
+    background: transparent !important;
+}
+
+.baTab2::-webkit-scrollbar-thumb {
+    background: var(--color-border-01) !important;
+    border-radius: 10px;
+}
+
+.baTab2 table {
+    width: 100%;
+    /* the side panel's content area is ~380px (400px offcanvas minus its
+       10px side padding) - the old 420px min-width guaranteed a
+       horizontal overflow (and the resulting unstyled scrollbar showing
+       as a stark white gap) on every render regardless of actual content */
+    min-width: 380px;
+}
+
+.baTab2 th {
+    font-weight: 500;
+    font-size: var(--fs12);
+    padding: 8px 5px;
+    border-bottom: 1px solid var(--color-bg10);
+    color: var(--color-text-02);
+    text-align: right;
+}
+
+.baTab2 th:first-child {
+    text-align: left;
+}
+
+.baTab2 td {
+    font-size: var(--fs12);
+    padding: 8px 5px;
+    text-align: right;
+    color: var(--color-text-02);
+}
+
+.baTab2 td:first-child {
+    text-align: left;
+}
+
+.pnlContractTd {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.pnlContractTd button {
+    all: unset;
+    width: 18px;
+    height: 18px;
+    border: 1px solid;
+    font-size: var(--fs10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    cursor: default;
+}
+
+.pnlContractTd .sellLabel {
+    color: red;
+    border-color: red;
+}
+
+.pnlContractTd .buyLabel {
+    color: green;
+    border-color: green;
+}
+
+.pnlContractTd span {
+    font-size: var(--fs11);
+    color: var(--color-text-02);
+}
+
+.footer {
+    flex-shrink: 0;
+    padding: 10px var(--trade-cards-padding);
+    background-color: var(--color-bg5);
+    border-top: 1px solid var(--color-bg10);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.validationBanner {
+    margin: -10px calc(-1 * var(--trade-cards-padding)) 2px;
+    padding: 8px var(--trade-cards-padding);
+    background-color: rgba(255, 193, 7, 0.15);
+    color: #ffc107;
+    font-size: var(--fs12);
+    text-align: center;
+}
+
+.footerRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: var(--fs12);
+    color: var(--color-text-04);
+}
+
+.footerRow span:last-child {
+    color: var(--color-text-02);
+}
+
+.footer button {
+    font-size: var(--fs13);
+    border-radius: 5px;
+}
+
+.orderbookGreeksPanel {
+    flex-shrink: 0;
+    background-color: var(--color-bg2);
+    border: 1px solid var(--color-bg10);
+    border-radius: 5px;
+    padding: 12px;
+}
+
+.ogPanelHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.ogPanelHeader h4 {
+    font-size: var(--fs13);
+    color: var(--color-text-03);
+}
+
+.ogPanelHeader button {
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    font-size: var(--fs16);
+    color: var(--color-text-04);
+}
+
+.ogTableHead,
+.ogTableRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 6px;
+    font-size: var(--fs11);
+    padding: 3px 0;
+}
+
+.ogTableHead span {
+    color: var(--color-text-04);
+}
+
+.ogTableHead span:nth-child(2),
+.ogTableRow span:nth-child(2) {
+    text-align: center;
+}
+
+.ogTableHead span:last-child,
+.ogTableRow span:last-child {
+    text-align: right;
+}
+
+.ogTableRow {
+    color: var(--color-text-02);
+}
+
+.ogPriceCell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.ogPriceCell em {
+    font-style: normal;
+}
+
+.ogGreeksTitle {
+    font-size: var(--fs13);
+    color: var(--color-text-03);
+    margin: 12px 0 8px;
+}
+
+.ogGreeksRow {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    gap: 10px;
+}
+
+.ogGreeksRow p {
+    font-size: var(--fs11);
+    color: var(--color-text-04);
+    margin-bottom: 4px;
+}
+
+.ogGreeksRow h5 {
+    font-size: var(--fs13);
+    color: var(--color-text-02);
+}

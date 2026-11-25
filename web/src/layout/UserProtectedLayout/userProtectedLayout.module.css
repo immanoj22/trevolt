@@ -1,0 +1,119 @@
+.layoutContainer {
+    padding-top: var(--header-height);
+}
+
+.container {
+    display: flex;
+    position: relative;
+    padding-top: var(--header-height);
+    /* padding-bottom: 80px; */
+}
+
+.offCanvaButton {
+    /* display: none; */
+    position: fixed;
+    top: 50px;
+    left: 0px;
+    background: var(--color-bg10);
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    z-index: 100;
+    border: 1px solid transparent;
+}
+
+body[data-theme="light"] .offCanvaButton {
+    border: 1px solid #c9ccd1;
+    border-left: none;
+}
+
+.offCanvaButton svg {
+    transform: translateX(-1px);
+    transition: .5s all ease-in-out;
+    fill: var(--color-text-03) !important;
+}
+
+.offCanvaButton:hover svg {
+    transform: translateX(1px);
+}
+
+
+.sidebar {
+    position: sticky;
+    /* position: fixed; */
+    top: var(--header-height);
+    background: var(--color-bg7);
+    /* will-change: width; */
+    height: calc(100vh - var(--header-height));
+    min-width: var(--sidebar-width);
+    width: var(--sidebar-width);
+    max-width: var(--sidebar-width);
+}
+
+.main {
+    padding: 25px 50px;
+    min-height: calc(100vh - var(--header-height));
+    /* margin-left: var(--sidebar-width); */
+    width: calc(100% - var(--sidebar-width));
+}
+
+
+
+/* media */
+
+@media (max-width:575px) {
+    .sidebar {
+        display: none;
+    }
+
+    .main {
+        padding-left: 10px;
+        padding-top: 24px;
+        padding-right: 10px;
+        min-height: calc(100vh - var(--header-height));
+        width: 100%;
+    }
+}
+
+@media(min-width:576px) and (max-width:767px) {
+    .sidebar {
+        display: none;
+    }
+
+    .main {
+        padding-left: 10px;
+        padding-top: 24px;
+        padding-right: 10px;
+        min-height: calc(100vh - var(--header-height));
+        width: 100%;
+    }
+}
+
+@media(min-width:768px) and (max-width:991px) {
+    .sidebar {
+        display: none;
+    }
+
+    .main {
+        padding-left: 10px;
+        padding-top: 24px;
+        padding-right: 10px;
+        min-height: calc(100vh - var(--header-height));
+        width: 100%;
+    }
+}
+
+@media(min-width:992px) and (max-width:1199px) {}
+
+@media(min-width:1200px) and (max-width:1399px) {}
+
+@media(min-width:1400px) and (max-width:1799px) {}
+
+@media(min-width:1800px) {
+    .container {
+        max-width: 1920px !important;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}

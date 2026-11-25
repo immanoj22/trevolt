@@ -1,0 +1,900 @@
+:root {
+    /* Font size variables in rem (based on 16px base) */
+    --fs5: 0.3125rem;
+    /* 5px */
+    --fs6: 0.375rem;
+    /* 6px */
+    --fs7: 0.4375rem;
+    /* 7px */
+    --fs8: 0.5rem;
+    /* 8px */
+    --fs9: 0.5625rem;
+    /* 9px */
+    --fs10: 0.625rem;
+    /* 10px */
+    --fs11: 0.6875rem;
+    /* 11px */
+    --fs12: 0.75rem;
+    /* 12px */
+    --fs13: 0.8125rem;
+    /* 13px */
+    --fs14: 0.875rem;
+    /* 14px */
+    --fs15: 0.9375rem;
+    /* 15px */
+    --fs16: 1rem;
+    /* 16px */
+    --fs17: 1.0625rem;
+    /* 17px */
+    --fs18: 1.125rem;
+    /* 18px */
+    --fs19: 1.1875rem;
+    /* 19px */
+    --fs20: 1.25rem;
+    /* 20px */
+    --fs21: 1.3125rem;
+    /* 21px */
+    --fs22: 1.375rem;
+    /* 22px */
+    --fs23: 1.4375rem;
+    /* 23px */
+    --fs24: 1.5rem;
+    /* 24px */
+    --fs25: 1.5625rem;
+    /* 25px */
+    --fs26: 1.625rem;
+    /* 26px */
+    --fs27: 1.6875rem;
+    /* 27px */
+    --fs28: 1.75rem;
+    /* 28px */
+    --fs29: 1.8125rem;
+    /* 29px */
+    --fs30: 1.875rem;
+    /* 30px */
+    --fs31: 1.9375rem;
+    /* 31px */
+    --fs32: 2rem;
+    /* 32px */
+    --fs33: 2.0625rem;
+    /* 33px */
+    --fs34: 2.125rem;
+    /* 34px */
+    --fs35: 2.1875rem;
+    /* 35px */
+    --fs36: 2.25rem;
+    /* 36px */
+    --fs37: 2.3125rem;
+    /* 37px */
+    --fs38: 2.375rem;
+    /* 38px */
+    --fs39: 2.4375rem;
+    /* 39px */
+    --fs40: 2.5rem;
+    /* 40px */
+    --fs41: 2.5625rem;
+    /* 41px */
+    --fs42: 2.625rem;
+    /* 42px */
+    --fs43: 2.6875rem;
+    /* 43px */
+    --fs44: 2.75rem;
+    /* 44px */
+    --fs45: 2.8125rem;
+    /* 45px */
+    --fs46: 2.875rem;
+    /* 46px */
+    --fs47: 2.9375rem;
+    /* 47px */
+    --fs48: 3rem;
+    /* 48px */
+    --fs49: 3.0625rem;
+    /* 49px */
+    --fs50: 3.125rem;
+    /* 50px */
+    --fs51: 3.1875rem;
+    /* 51px */
+    --fs52: 3.25rem;
+    /* 52px */
+    --fs53: 3.3125rem;
+    /* 53px */
+    --fs54: 3.375rem;
+    /* 54px */
+    --fs55: 3.4375rem;
+    /* 55px */
+    --fs56: 3.5rem;
+    /* 56px */
+    --fs57: 3.5625rem;
+    /* 57px */
+    --fs58: 3.625rem;
+    /* 58px */
+    --fs59: 3.6875rem;
+    /* 59px */
+    --fs60: 3.75rem;
+    /* 60px */
+    --fs61: 3.8125rem;
+    /* 61px */
+    --fs62: 3.875rem;
+    /* 62px */
+    --fs63: 3.9375rem;
+    /* 63px */
+    --fs64: 4rem;
+    /* 64px */
+    --fs65: 4.0625rem;
+    /* 65px */
+    --fs66: 4.125rem;
+    /* 66px */
+    --fs67: 4.1875rem;
+    /* 67px */
+    --fs68: 4.25rem;
+    /* 68px */
+    --fs69: 4.3125rem;
+    /* 69px */
+    --fs70: 4.375rem;
+    /* 70px */
+    --fs71: 4.4375rem;
+    /* 71px */
+    --fs72: 4.5rem;
+    /* 72px */
+    --fs73: 4.5625rem;
+    /* 73px */
+    --fs74: 4.625rem;
+    /* 74px */
+    --fs75: 4.6875rem;
+    /* 75px */
+    --fs76: 4.75rem;
+    /* 76px */
+    --fs77: 4.8125rem;
+    /* 77px */
+    --fs78: 4.875rem;
+    /* 78px */
+    --fs79: 4.9375rem;
+    /* 79px */
+    --fs80: 5rem;
+    /* 80px */
+    --fs81: 5.0625rem;
+    /* 81px */
+    --fs82: 5.125rem;
+    /* 82px */
+    --fs83: 5.1875rem;
+    /* 83px */
+    --fs84: 5.25rem;
+    /* 84px */
+    --fs85: 5.3125rem;
+    /* 85px */
+    --fs86: 5.375rem;
+    /* 86px */
+    --fs87: 5.4375rem;
+    /* 87px */
+    --fs88: 5.5rem;
+    /* 88px */
+    --fs89: 5.5625rem;
+    /* 89px */
+    --fs90: 5.625rem;
+    /* 90px */
+    --fs91: 5.6875rem;
+    /* 91px */
+    --fs92: 5.75rem;
+    /* 92px */
+    --fs93: 5.8125rem;
+    /* 93px */
+    --fs94: 5.875rem;
+    /* 94px */
+    --fs95: 5.9375rem;
+    /* 95px */
+    --fs96: 6rem;
+    /* 96px */
+    --fs97: 6.0625rem;
+    /* 97px */
+    --fs98: 6.125rem;
+    /* 98px */
+    --fs99: 6.1875rem;
+    /* 99px */
+    --fs100: 6.25rem;
+    /* 100px */
+    --fs101: 6.3125rem;
+    /* 101px */
+    --fs102: 6.375rem;
+    /* 102px */
+    --fs103: 6.4375rem;
+    /* 103px */
+    --fs104: 6.5rem;
+    /* 104px */
+    --fs105: 6.5625rem;
+    /* 105px */
+    --fs106: 6.625rem;
+    /* 106px */
+    --fs107: 6.6875rem;
+    /* 107px */
+    --fs108: 6.75rem;
+    /* 108px */
+    --fs109: 6.8125rem;
+    /* 109px */
+    --fs110: 6.875rem;
+    /* 110px */
+    --fs111: 6.9375rem;
+    /* 111px */
+    --fs112: 7rem;
+    /* 112px */
+    --fs113: 7.0625rem;
+    /* 113px */
+    --fs114: 7.125rem;
+    /* 114px */
+    --fs115: 7.1875rem;
+    /* 115px */
+    --fs116: 7.25rem;
+    /* 116px */
+    --fs117: 7.3125rem;
+    /* 117px */
+    --fs118: 7.375rem;
+    /* 118px */
+    --fs119: 7.4375rem;
+    /* 119px */
+    --fs120: 7.5rem;
+    /* 120px */
+    --fs121: 7.5625rem;
+    /* 121px */
+    --fs122: 7.625rem;
+    /* 122px */
+    --fs123: 7.6875rem;
+    /* 123px */
+    --fs124: 7.75rem;
+    /* 124px */
+    --fs125: 7.8125rem;
+    /* 125px */
+    --fs126: 7.875rem;
+    /* 126px */
+    --fs127: 7.9375rem;
+    /* 127px */
+    --fs128: 8rem;
+    /* 128px */
+    --fs129: 8.0625rem;
+    /* 129px */
+    --fs130: 8.125rem;
+    /* 130px */
+    --fs131: 8.1875rem;
+    /* 131px */
+    --fs132: 8.25rem;
+    /* 132px */
+    --fs133: 8.3125rem;
+    /* 133px */
+    --fs134: 8.375rem;
+    /* 134px */
+    --fs135: 8.4375rem;
+    /* 135px */
+    --fs136: 8.5rem;
+    /* 136px */
+    --fs137: 8.5625rem;
+    /* 137px */
+    --fs138: 8.625rem;
+    /* 138px */
+    --fs139: 8.6875rem;
+    /* 139px */
+    --fs140: 8.75rem;
+    /* 140px */
+    --fs141: 8.8125rem;
+    /* 141px */
+    --fs142: 8.875rem;
+    /* 142px */
+    --fs143: 8.9375rem;
+    /* 143px */
+    --fs144: 9rem;
+    /* 144px */
+    --fs145: 9.0625rem;
+    /* 145px */
+    --fs146: 9.125rem;
+    /* 146px */
+    --fs147: 9.1875rem;
+    /* 147px */
+    --fs148: 9.25rem;
+    /* 148px */
+    --fs149: 9.3125rem;
+    /* 149px */
+    --fs150: 9.375rem;
+    /* 150px */
+}
+
+.fs5 {
+    font-size: var(--fs5) !important;
+}
+
+.fs6 {
+    font-size: var(--fs6) !important;
+}
+
+.fs7 {
+    font-size: var(--fs7) !important;
+}
+
+.fs8 {
+    font-size: var(--fs8) !important;
+}
+
+.fs9 {
+    font-size: var(--fs9) !important;
+}
+
+.fs10 {
+    font-size: var(--fs10) !important;
+}
+
+.fs11 {
+    font-size: var(--fs11) !important;
+}
+
+.fs12 {
+    font-size: var(--fs12) !important;
+}
+
+.fs13 {
+    font-size: var(--fs13) !important;
+}
+
+.fs14 {
+    font-size: var(--fs14) !important;
+}
+
+.fs15 {
+    font-size: var(--fs15) !important;
+}
+
+.fs16 {
+    font-size: var(--fs16) !important;
+}
+
+.fs17 {
+    font-size: var(--fs17) !important;
+}
+
+.fs18 {
+    font-size: var(--fs18) !important;
+}
+
+.fs19 {
+    font-size: var(--fs19) !important;
+}
+
+.fs20 {
+    font-size: var(--fs20) !important;
+}
+
+.fs21 {
+    font-size: var(--fs21) !important;
+}
+
+.fs22 {
+    font-size: var(--fs22) !important;
+}
+
+.fs23 {
+    font-size: var(--fs23) !important;
+}
+
+.fs24 {
+    font-size: var(--fs24) !important;
+}
+
+.fs25 {
+    font-size: var(--fs25) !important;
+}
+
+.fs26 {
+    font-size: var(--fs26) !important;
+}
+
+.fs27 {
+    font-size: var(--fs27) !important;
+}
+
+.fs28 {
+    font-size: var(--fs28) !important;
+}
+
+.fs29 {
+    font-size: var(--fs29) !important;
+}
+
+.fs30 {
+    font-size: var(--fs30) !important;
+}
+
+.fs31 {
+    font-size: var(--fs31) !important;
+}
+
+.fs32 {
+    font-size: var(--fs32) !important;
+}
+
+.fs33 {
+    font-size: var(--fs33) !important;
+}
+
+.fs34 {
+    font-size: var(--fs34) !important;
+}
+
+.fs35 {
+    font-size: var(--fs35) !important;
+}
+
+.fs36 {
+    font-size: var(--fs36) !important;
+}
+
+.fs37 {
+    font-size: var(--fs37) !important;
+}
+
+.fs38 {
+    font-size: var(--fs38) !important;
+}
+
+.fs39 {
+    font-size: var(--fs39) !important;
+}
+
+.fs40 {
+    font-size: var(--fs40) !important;
+}
+
+.fs41 {
+    font-size: var(--fs41) !important;
+}
+
+.fs42 {
+    font-size: var(--fs42) !important;
+}
+
+.fs43 {
+    font-size: var(--fs43) !important;
+}
+
+.fs44 {
+    font-size: var(--fs44) !important;
+}
+
+.fs45 {
+    font-size: var(--fs45) !important;
+}
+
+.fs46 {
+    font-size: var(--fs46) !important;
+}
+
+.fs47 {
+    font-size: var(--fs47) !important;
+}
+
+.fs48 {
+    font-size: var(--fs48) !important;
+}
+
+.fs49 {
+    font-size: var(--fs49) !important;
+}
+
+.fs50 {
+    font-size: var(--fs50) !important;
+}
+
+.fs51 {
+    font-size: var(--fs51) !important;
+}
+
+.fs52 {
+    font-size: var(--fs52) !important;
+}
+
+.fs53 {
+    font-size: var(--fs53) !important;
+}
+
+.fs54 {
+    font-size: var(--fs54) !important;
+}
+
+.fs55 {
+    font-size: var(--fs55) !important;
+}
+
+.fs56 {
+    font-size: var(--fs56) !important;
+}
+
+.fs57 {
+    font-size: var(--fs57) !important;
+}
+
+.fs58 {
+    font-size: var(--fs58) !important;
+}
+
+.fs59 {
+    font-size: var(--fs59) !important;
+}
+
+.fs60 {
+    font-size: var(--fs60) !important;
+}
+
+.fs61 {
+    font-size: var(--fs61) !important;
+}
+
+.fs62 {
+    font-size: var(--fs62) !important;
+}
+
+.fs63 {
+    font-size: var(--fs63) !important;
+}
+
+.fs64 {
+    font-size: var(--fs64) !important;
+}
+
+.fs65 {
+    font-size: var(--fs65) !important;
+}
+
+.fs66 {
+    font-size: var(--fs66) !important;
+}
+
+.fs67 {
+    font-size: var(--fs67) !important;
+}
+
+.fs68 {
+    font-size: var(--fs68) !important;
+}
+
+.fs69 {
+    font-size: var(--fs69) !important;
+}
+
+.fs70 {
+    font-size: var(--fs70) !important;
+}
+
+.fs71 {
+    font-size: var(--fs71) !important;
+}
+
+.fs72 {
+    font-size: var(--fs72) !important;
+}
+
+.fs73 {
+    font-size: var(--fs73) !important;
+}
+
+.fs74 {
+    font-size: var(--fs74) !important;
+}
+
+.fs75 {
+    font-size: var(--fs75) !important;
+}
+
+.fs76 {
+    font-size: var(--fs76) !important;
+}
+
+.fs77 {
+    font-size: var(--fs77) !important;
+}
+
+.fs78 {
+    font-size: var(--fs78) !important;
+}
+
+.fs79 {
+    font-size: var(--fs79) !important;
+}
+
+.fs80 {
+    font-size: var(--fs80) !important;
+}
+
+.fs81 {
+    font-size: var(--fs81) !important;
+}
+
+.fs82 {
+    font-size: var(--fs82) !important;
+}
+
+.fs83 {
+    font-size: var(--fs83) !important;
+}
+
+.fs84 {
+    font-size: var(--fs84) !important;
+}
+
+.fs85 {
+    font-size: var(--fs85) !important;
+}
+
+.fs86 {
+    font-size: var(--fs86) !important;
+}
+
+.fs87 {
+    font-size: var(--fs87) !important;
+}
+
+.fs88 {
+    font-size: var(--fs88) !important;
+}
+
+.fs89 {
+    font-size: var(--fs89) !important;
+}
+
+.fs90 {
+    font-size: var(--fs90) !important;
+}
+
+.fs91 {
+    font-size: var(--fs91) !important;
+}
+
+.fs92 {
+    font-size: var(--fs92) !important;
+}
+
+.fs93 {
+    font-size: var(--fs93) !important;
+}
+
+.fs94 {
+    font-size: var(--fs94) !important;
+}
+
+.fs95 {
+    font-size: var(--fs95) !important;
+}
+
+.fs96 {
+    font-size: var(--fs96) !important;
+}
+
+.fs97 {
+    font-size: var(--fs97) !important;
+}
+
+.fs98 {
+    font-size: var(--fs98) !important;
+}
+
+.fs99 {
+    font-size: var(--fs99) !important;
+}
+
+.fs100 {
+    font-size: var(--fs100) !important;
+}
+
+.fs101 {
+    font-size: var(--fs101) !important;
+}
+
+.fs102 {
+    font-size: var(--fs102) !important;
+}
+
+.fs103 {
+    font-size: var(--fs103) !important;
+}
+
+.fs104 {
+    font-size: var(--fs104) !important;
+}
+
+.fs105 {
+    font-size: var(--fs105) !important;
+}
+
+.fs106 {
+    font-size: var(--fs106) !important;
+}
+
+.fs107 {
+    font-size: var(--fs107) !important;
+}
+
+.fs108 {
+    font-size: var(--fs108) !important;
+}
+
+.fs109 {
+    font-size: var(--fs109) !important;
+}
+
+.fs110 {
+    font-size: var(--fs110) !important;
+}
+
+.fs111 {
+    font-size: var(--fs111) !important;
+}
+
+.fs112 {
+    font-size: var(--fs112) !important;
+}
+
+.fs113 {
+    font-size: var(--fs113) !important;
+}
+
+.fs114 {
+    font-size: var(--fs114) !important;
+}
+
+.fs115 {
+    font-size: var(--fs115) !important;
+}
+
+.fs116 {
+    font-size: var(--fs116) !important;
+}
+
+.fs117 {
+    font-size: var(--fs117) !important;
+}
+
+.fs118 {
+    font-size: var(--fs118) !important;
+}
+
+.fs119 {
+    font-size: var(--fs119) !important;
+}
+
+.fs120 {
+    font-size: var(--fs120) !important;
+}
+
+.fs121 {
+    font-size: var(--fs121) !important;
+}
+
+.fs122 {
+    font-size: var(--fs122) !important;
+}
+
+.fs123 {
+    font-size: var(--fs123) !important;
+}
+
+.fs124 {
+    font-size: var(--fs124) !important;
+}
+
+.fs125 {
+    font-size: var(--fs125) !important;
+}
+
+.fs126 {
+    font-size: var(--fs126) !important;
+}
+
+.fs127 {
+    font-size: var(--fs127) !important;
+}
+
+.fs128 {
+    font-size: var(--fs128) !important;
+}
+
+.fs129 {
+    font-size: var(--fs129) !important;
+}
+
+.fs130 {
+    font-size: var(--fs130) !important;
+}
+
+.fs131 {
+    font-size: var(--fs131) !important;
+}
+
+.fs132 {
+    font-size: var(--fs132) !important;
+}
+
+.fs133 {
+    font-size: var(--fs133) !important;
+}
+
+.fs134 {
+    font-size: var(--fs134) !important;
+}
+
+.fs135 {
+    font-size: var(--fs135) !important;
+}
+
+.fs136 {
+    font-size: var(--fs136) !important;
+}
+
+.fs137 {
+    font-size: var(--fs137) !important;
+}
+
+.fs138 {
+    font-size: var(--fs138) !important;
+}
+
+.fs139 {
+    font-size: var(--fs139) !important;
+}
+
+.fs140 {
+    font-size: var(--fs140) !important;
+}
+
+.fs141 {
+    font-size: var(--fs141) !important;
+}
+
+.fs142 {
+    font-size: var(--fs142) !important;
+}
+
+.fs143 {
+    font-size: var(--fs143) !important;
+}
+
+.fs144 {
+    font-size: var(--fs144) !important;
+}
+
+.fs145 {
+    font-size: var(--fs145) !important;
+}
+
+.fs146 {
+    font-size: var(--fs146) !important;
+}
+
+.fs147 {
+    font-size: var(--fs147) !important;
+}
+
+.fs148 {
+    font-size: var(--fs148) !important;
+}
+
+.fs149 {
+    font-size: var(--fs149) !important;
+}
+
+.fs150 {
+    font-size: var(--fs150) !important;
+}
+
+html {
+    font-size: 90%;
+    /* font-size: 80%; */
+    /* font-size: 100%; */
+}
+
+@media screen and (min-width:1600px) {
+    html {
+        font-size: 95%;
+    }
+}
+
+@media screen and (max-width:576px) {
+    html {
+        font-size: 85%;
+    }
+}
+
+/* em */
+/* rem */

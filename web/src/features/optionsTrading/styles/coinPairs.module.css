@@ -1,0 +1,83 @@
+.header {
+    padding: var(--site-padding);
+    border-bottom: 1px solid var(--color-border-03);
+}
+
+.body {
+    /* padding: 0px var(--site-padding) var(--site-padding) var(--site-padding); */
+}
+
+.headerTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
+.headerTabs {
+    margin-top: 20px;
+}
+
+.headerTabs button {
+    border: none;
+    outline: none;
+    background: transparent;
+    margin-right: 30px;
+    font-size: var(--fs14);
+    color: var(--color-text-04);
+    position: relative;
+    padding: 0;
+}
+
+.headerTabs button.active {
+    color: var(--color-text-03);
+}
+
+.headerTabs button.active::after {
+    position: absolute;
+    content: '';
+    bottom: -11px;
+    left: 0;
+    width: 80%;
+    height: 2px;
+    background: var(--color-green-01);
+}
+
+.markFavorite {
+    border: none;
+    background: transparent;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    padding: 0px
+}
+
+.markFavorite svg {
+    font-size: var(--fs20);
+    fill: var(--color-bg16);
+}
+
+.markFavorite.active svg {
+    fill: var(--color-yellow-01);
+}
+
+
+/* media */
+
+@media (max-width:575px) {}
+
+@media (min-width:576px) and (max-width:767px) {}
+
+@media (min-width:768px) and (max-width:991px) {}
+
+@media (min-width:992px) and (max-width:1199px) {}
+
+@media (min-width:1200px) and (max-width:1399px) {}
+
+@media (min-width:1400px) and (max-width:1799px) {}
+
+@media (min-width:1800px) {}

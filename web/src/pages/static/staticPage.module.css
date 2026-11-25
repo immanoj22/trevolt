@@ -1,0 +1,1645 @@
+.pageNotFound {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pageNotFound .pageNotFound_title {
+  font-size: var(--fs50);
+  font-weight: 500 !important;
+}
+
+.pageNotFound .pageNotFound_title span {
+  color: var(--color-green-01);
+}
+
+.pageNotFound .pageNotFound_desc {
+  font-size: var(--fs16);
+  margin-top: 2pc !important;
+}
+
+/* contact us */
+
+.contactUs {
+  padding-top: var(--header-height);
+}
+
+.contactUs .title {
+  font-size: var(--fs30);
+  font-weight: 600;
+}
+
+.contactUs .description {
+  font-weight: 500;
+  line-height: 2;
+}
+
+.contactUs .submitBtn button {
+  width: auto;
+  flex: unset;
+}
+
+.contactUsCard {
+  border-radius: 25px;
+  border: 1px solid var(--color-border-03);
+  background: var(--color-bg9);
+  padding: 25px;
+}
+
+/* phone input */
+
+.contactNumber .formLabel {
+  font-size: var(--fs14);
+  font-weight: 500;
+  line-height: 22px;
+  color: var(--color-text-04);
+}
+
+/* policies */
+.policies {
+  padding-top: var(--header-height);
+  padding-inline: 2pc;
+}
+
+.policies * {
+  color: var(--color-bg8) !important;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+/* 
+.policies .listWrapper {
+    margin-top: 2pc;
+}
+
+.policies ol {
+    counter-reset: item;
+    list-style-type: none;
+    padding-left: 20px !important;
+}
+
+.policies ol>li {
+    counter-increment: item;
+    margin: 10px 0 !important;
+    padding-left: 1pc !important;
+    position: relative;
+}
+
+.policies ol li h3 {
+    font-size: var(--fs25);
+}
+
+.policies ol>li::before {
+    content: counters(item, ".") " ";
+    font-weight: bold;
+    margin-right: 6px !important;
+    position: absolute;
+    top: 0;
+    left: -15px;
+    font-size: var(--fs25);
+}
+
+.policies ol>li li::before {
+    font-size: 1pc;
+}
+
+.policies ol ol {
+    counter-reset: item;
+    margin-left: 25px;
+}
+
+.policies ol ul {
+    list-style-type: disc !important;
+    margin-left: 40px !important;
+} */
+
+.linkGreenClr {
+  color: var(--color-green-01) !important;
+}
+
+/* About us css - start */
+
+.aboutusLanding {
+  padding-top: var(--header-height);
+}
+
+.aboutusBanner {
+  padding-top: 150px;
+  z-index: 3;
+  position: relative;
+}
+
+.aboutusBannerContent {
+  /* position: relative; */
+}
+
+.aboutusTitle {
+  width: fit-content;
+  font-weight: 700;
+  font-size: var(--fs40);
+  line-height: 60px;
+  text-transform: capitalize;
+  position: relative;
+  margin: auto !important;
+  display: flex;
+  align-items: center;
+}
+
+.aboutusDescription {
+  max-width: 70pc;
+  font-weight: 300;
+  margin: 1pc auto 0 !important;
+  font-size: var(--fs13);
+  line-height: 24px;
+  text-align: center !important;
+}
+
+.aboutusBannerImage {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.aboutusImageOne {
+  width: 150px;
+  height: 150px;
+  border-radius: 15px;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.aboutusImageTwo {
+  width: 150px;
+  height: 100px;
+  border-radius: 15px;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.aboutusStar {
+  width: 100px;
+  min-width: 100px;
+  max-width: 100px;
+  height: 100px;
+  min-height: 100px;
+  max-height: 100px;
+  margin-top: -3pc;
+  margin-left: -2pc;
+}
+
+.aboutusIdeaSection {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.ideaSectionTitle {
+  font-weight: 700;
+  font-size: var(--fs23);
+  line-height: 35px;
+}
+
+.ideaSectionDescription {
+  font-weight: 300;
+  margin-top: 15px !important;
+  font-size: var(--fs13);
+  line-height: 24px;
+}
+
+.traderDescriptionItalic {
+  border-left: 5px solid var(--color-green-01);
+}
+
+.ideaSectionDescriptionTwo {
+  font-weight: 500;
+  margin-top: 25px !important;
+  font-style: italic;
+  font-size: var(--fs13);
+  line-height: 20px;
+}
+
+.aboutusArrow img {
+  width: 40px;
+  max-width: 40px;
+  min-width: 40px;
+  height: 40px;
+  max-height: 40px;
+  min-height: 40px;
+}
+
+.aboutusArrow {
+  /* display: flex;
+    align-items: center;
+    justify-content: end; */
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.arrowImgFilter {
+  filter: invert(1);
+}
+
+.traderLeft {
+  position: relative;
+}
+
+.traderVideoTitle {
+  font-weight: bold;
+  font-size: var(--fs14);
+}
+
+.traderVideoDesc {
+  font-size: var(--fs13);
+}
+
+.traderRight {
+  position: relative;
+}
+
+.traderVideoHead {
+  width: 10pc;
+  background-color: var(--color-bg4);
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -30px;
+  left: 20px;
+}
+
+.aboutusStarTwo {
+  width: 50px;
+  max-width: 50px;
+  min-width: 50px;
+  height: 50px;
+  max-height: 50px;
+  min-height: 50px;
+  position: absolute;
+  bottom: -70px;
+  left: 340px;
+}
+
+.deleteAccountPage {
+  padding-top: var(--header-height);
+  height: 40pc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.deleteAccountPage .containerPart {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2pc;
+}
+
+.helpSection {
+  text-align: center;
+}
+
+.helpMapSection {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.helpBackground {
+  background: url("../../assets/image/aboutusHelpBGOne.svg") no-repeat;
+  background-size: 300px 100%;
+  background-position: center bottom;
+  width: 300px;
+  height: 100%;
+  padding: 10px;
+}
+
+.helpBackgroundTwo {
+  background: url("../../assets/image/aboutusHelpBGTwo.svg") no-repeat;
+  background-size: 300px 100%;
+  width: 300px;
+  height: 100%;
+  padding: 10px;
+}
+
+.helpTeams {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.helpCardImage {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.helpCardFilterImage {
+  filter: invert(1);
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.helpCardTitle {
+  font-size: var(--fs14);
+  font-weight: 500;
+}
+
+.helpCardDesc {
+  font-size: var(--fs13);
+  font-weight: 200;
+  padding: 0 1pc !important;
+  margin-bottom: 2pc !important;
+  max-height: 6pc;
+  overflow: auto;
+}
+
+.shareLink {
+  max-width: 40pc;
+  display: flex;
+  flex-direction: column;
+  gap: 2pc;
+  margin: auto;
+  padding: 6pc 2pc;
+}
+
+/* About us css - end  */
+
+/* Fees page - start  */
+
+.feesLanding {
+  padding-top: var(--header-height);
+}
+
+.feesBanner {
+  padding-top: 40px;
+  z-index: 3;
+  position: relative;
+}
+
+.FeestitleBanner {
+  border-radius: 25px;
+  border: 1px solid var(--color-border-03);
+  background: var(--color-bg9);
+  padding: 20px;
+}
+
+.feesTitle {
+  font-size: var(--fs40);
+  line-height: 56px;
+  font-weight: 500;
+}
+
+.feesTitleImage {
+  width: 150px;
+  height: 150px;
+}
+.feesTabs {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 100%;
+  border: 1px solid var(--color-border-03);
+  background: var(--color-bg9);
+  padding: 6px;
+  border-radius: 999px;
+  justify-content: center;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.feesTabs button {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--color-text-03);
+  height: 100%;
+  white-space: nowrap;
+  position: relative;
+  height: 30px;
+  font-size: var(--fs14);
+  padding: 4px 20px;
+  border-radius: 999px;
+}
+
+.feesTabs button.active {
+  background: var(--color-green-01);
+  color: var(--color-similar-01);
+}
+.feesTableWrapper {
+  width: 100%;
+  overflow-x: auto;
+  background: var(--color-bg9);
+  border: 1px solid var(--color-border-03);
+  border-radius: 4px;
+}
+
+.feesTableWrapper .feeTable {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+  color: var(--color-bg16);
+}
+
+.feesTableWrapper .feeTable th,
+.feesTableWrapper .feeTable td {
+  padding: 22px 18px;
+  border: 1px solid var(--color-border-03);
+  text-align: left;
+  background: var(--color-bg9);
+}
+
+.feesTableWrapper .feeTable th {
+  color: var(--color-bg16);
+  font-size: var(--fs15);
+  font-weight: 500;
+}
+
+.feesTableWrapper .feeTable td {
+  font-size: var(--fs14);
+}
+
+.feesTableWrapper .valueText {
+  color: var(--color-text-03);
+}
+
+.feesTableWrapper .value {
+  text-align: center;
+  font-weight: 700;
+}
+
+.feesTableWrapper .oldPrice {
+  color: var(--color-bg16);
+  text-decoration: line-through;
+  margin-right: 6px;
+  font-weight: 500;
+}
+
+.feesTableWrapper .newPrice {
+  color: var(--color-green-01);
+  font-weight: 700;
+}
+
+.feesThemePara {
+  color: var(--color-green-01);
+  font-size: var(--fs15);
+}
+
+.feesThemePara span {
+  color: var(--color-bg16);
+  text-decoration: line-through;
+  margin-right: 6px;
+  font-weight: 500;
+}
+
+.feesPara {
+  font-size: var(--fs15);
+}
+
+.feesLabelTitle {
+  font-size: var(--fs20);
+  font-weight: 500;
+}
+
+.tradingCalculator {
+  border: 1px solid var(--color-border-03);
+  border-radius: 25px;
+  /* padding: 20px; */
+}
+
+.tradingCalculatorPadding {
+  padding: 20px;
+}
+
+.tradingCalculatorTabs {
+ overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 100%;
+  border: 1px solid transparent;
+  background: var(--color-bg9);
+  padding: 6px;
+  border-radius: 999px;
+  justify-content: center;
+  width: fit-content;
+
+}
+
+.tradingCalculatorTabs button {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 100%;
+  border: 1px solid var(--color-border-03);
+  background: var(--color-bg9);
+padding: 4px 20px;
+  border-radius: 999px;
+  justify-content: center;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.tradingCalculatorTabs button.active {
+  background: var(--color-green-01);
+  color: var(--color-similar-01);
+}
+
+.dropdownSelect {
+  border: 1px solid var(--color-border-03);
+  padding: 3px 10px;
+  width: fit-content;
+}
+
+.deltaDropDownMenu {
+  font-size: var(--fs12);
+  /* padding: 10px !important; */
+}
+
+.deltaDropDownMenu li {
+  cursor: pointer;
+  padding: 8px;
+  font-size: var(--fs13);
+}
+
+.deltaDropDownMenu li:hover {
+  background-color: var(--color-bg2);
+}
+
+.feesInputs {
+  width: 120px;
+  background-color: transparent !important;
+  border: 1px solid var(--color-border-03) !important;
+  border-radius: 3px !important;
+}
+
+.feesInputs input {
+  text-align: end !important;
+}
+
+.toggleWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  color: #8c97ab;
+  font-size: var(--fs12);
+}
+
+.toggle {
+  width: 34px;
+  height: 18px;
+  background: var(--color-green-01);
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.toggleCircle {
+  width: 14px;
+  height: 14px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  transition: 0.3s;
+}
+
+.toggleRight {
+  right: 2px;
+}
+
+.toggleLeft {
+  left: 2px;
+}
+
+.activeText {
+  color: var(--color-text-03);
+  font-weight: 600;
+}
+
+.activeText {
+  color: var(--color-text-03);
+}
+
+/* ========================= */
+/* FEES EXAMPLES UI START */
+/* ========================= */
+
+.feesExampleWrapper {
+  margin-top: 18px;
+}
+
+.feesExampleTabs {
+ overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 100%;
+  border: 1px solid var(--color-border-03);
+  background: var(--color-bg9);
+  padding: 6px;
+  border-radius: 999px;
+  justify-content: center;
+  width: fit-content;
+ 
+}
+
+.feesExampleTabBtn {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 100%;
+  border: 1px solid transparent;
+  background: var(--color-bg9);
+padding: 4px 20px;
+  border-radius: 999px;
+  justify-content: center;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.feesExampleTabActive {
+  background: var(--color-green-01);
+  color: var(--color-similar-01);
+}
+
+
+
+.feesExampleCard {
+  background: var(--color-bg9);
+  border: 1px solid var(--color-border-03);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: 18px;
+}
+
+.feesExampleCardHeader {
+  background: var(--color-bg2);
+  padding: 20px;
+
+}
+.feesExampleCardHeaderr{
+    background: var(--color-bg2);
+  padding: 20px;
+  border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+}
+.feesExampleCardHeader h3 {
+  color: var(--color-text-03);
+  font-size: var(--fs16);
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.feesExampleCardBody {
+  padding: 34px 30px;
+}
+
+.feesExampleContentBlock {
+  margin-bottom: 42px;
+}
+
+.feesExampleContentBlock:last-child {
+  margin-bottom: 0;
+}
+
+.feesExampleLabel {
+  color: var(--color-bg16);
+  font-size: var(--fs15);
+  margin-bottom: 12px;
+  font-weight: 400;
+}
+
+.feesExampleContentBlock h4 {
+  color: var(--color-text-03);
+  font-size: var(--fs16);
+  font-weight: 600;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.feesExampleContentBlock span {
+  display: block;
+  color: var(--color-bg16);
+  font-size: var(--fs15);
+  line-height: 1.5;
+}
+
+.feesScalperGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 36px;
+}
+
+/* ======================================== */
+/* LIQUIDATION FEES UI START */
+/* ======================================== */
+
+.liquidationTable {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.liquidationTable thead tr {
+  background: #1f2535;
+}
+
+.liquidationTable th {
+  padding: 18px 24px;
+  color: #8e95a9;
+  font-size: var(--fs15);
+  font-weight: 500;
+  text-align: left;
+  border-bottom: 1px solid #2d3446;
+}
+
+.liquidationTable td {
+  padding: 24px;
+  border-bottom: 1px solid #2d3446;
+  vertical-align: top;
+}
+
+.liquidationCategoryBlock h4 {
+  color: #fff;
+  font-size: var(--fs18);
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.liquidationCategoryBlock ul {
+  padding-left: 18px;
+  margin-bottom: 20px;
+}
+
+.liquidationCategoryBlock ul li {
+  color: #8f97aa;
+  margin-bottom: 14px;
+  font-size: var(--fs15);
+}
+
+.liquidationCategoryBlock p {
+  color: #8f97aa;
+  margin-bottom: 16px;
+  font-size: var(--fs15);
+}
+
+.leverageList {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.leverageList span {
+  color: #8f97aa;
+  font-size: var(--fs15);
+}
+
+.liquidationRateBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.liquidationRateBlock span {
+  color: #fff;
+  font-size: var(--fs16);
+  font-weight: 600;
+}
+
+.rateSpacing {
+  height: 32px;
+}
+
+.liquidationBottomContent {
+  margin-top: 28px;
+}
+
+.liquidationBottomContent p {
+  color: #8d94a8;
+  font-size: var(--fs15);
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+.liquidationBottomContent p span {
+  color: #ffb11a;
+  font-weight: 600;
+}
+
+.liquidationBottomContent h5 {
+  color: #ffb11a;
+  font-size: var(--fs15);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  line-height: 1.6;
+}
+
+/* ======================================== */
+/* DEPOSIT FEES UI START */
+/* ======================================== */
+
+.depositFeeWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  margin-top: 30px;
+}
+
+.depositFeeCard {
+  background: var(--color-bg9);
+  border-radius: 8px;
+  padding: 55px 20px;
+  text-align: center;
+}
+
+.depositFeeCard h2 {
+  color: var(--color-similar-03);
+  font-size: var(--fs20);
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.depositFeeCard p {
+  color: var(--color-bg16);
+  font-size: var(--fs16);
+  margin: 0;
+}
+
+.depositBottomText {
+  margin-top: 28px;
+}
+
+.colorGreen {
+  color: var(--color-green-01);
+}
+
+.amountDashed {
+  color: var(--color-bg16);
+  text-decoration: line-through;
+  margin-right: 6px;
+  font-weight: 500;
+}
+
+.feesLabel {
+  font-size: var(--fs15);
+}
+
+.feesLabelAmount {
+  font-size: var(--fs15);
+}
+
+
+/* staticPage.module.css */
+
+.policies :global(.listWrapper) ul {
+  margin-bottom: 13px !important;
+}
+
+.policies h2 {
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 25px;
+}
+
+.policies h3 {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.policies :global(.listWrapper) ol {
+  list-style: none !important;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.policies :global(.listWrapper) ol>li:before {
+  content: none !important;
+  display: none !important;
+}
+
+.policies :global(.listWrapper) ol>li {
+  padding-left: 0 !important;
+}
+
+.policies :global(.listWrapper) ol li ul {
+  list-style-type: disc !important;
+  margin-left: 17px !important;
+}
+
+.policies :global(.listWrapper) p {
+  margin-left: 15px;
+}
+
+.policies :global(.listWrapper)>ul,
+.policies :global(.listWrapper) li>ul {
+  margin-left: 15px;
+  padding-left: 20px;
+}
+
+.policies :global(.listWrapper) ol:not(:global(.lavel-1)) {
+  margin-left: 15px;
+  padding-left: 20px;
+}
+
+
+/* staticPage.module.css */
+
+.policies ol {
+  list-style: none !important;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.policies ol>li:before {
+  content: none !important;
+  display: none !important;
+}
+
+.policies ol>li {
+  padding-left: 0 !important;
+}
+
+.policies h2 {
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 25px;
+}
+
+.policies h3 {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.policies :global(.listWrapper) ul {
+  margin-bottom: 13px !important;
+}
+
+.policies :global(.listWrapper) ol li ul {
+  list-style-type: disc !important;
+  margin-left: 17px !important;
+}
+
+.policies :global(.listWrapper) p {
+  margin-left: 15px;
+}
+
+.policies :global(.listWrapper)>ul,
+.policies :global(.listWrapper) li>ul {
+  margin-left: 15px;
+  padding-left: 20px;
+}
+
+.policies :global(.listWrapper) ol:not(:global(.lavel-1)) {
+  margin-left: 15px;
+  padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .policies h2 {
+    letter-spacing: 0px;
+    font-size: 20px;
+  }
+
+  .policies h3 {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 768px) {
+  .policies h2 {
+    letter-spacing: 0px;
+    font-size: 20px;
+  }
+
+  .policies h3 {
+    font-size: 17px;
+  }
+}
+
+/* ======================================== */
+/* RESPONSIVE */
+/* ======================================== */
+
+@media (max-width: 991px) {
+  .depositFeeWrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .liquidationTable {
+    min-width: 700px;
+  }
+
+  .feesTableWrapper {
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .liquidationTable th,
+  .liquidationTable td {
+    padding: 18px;
+  }
+
+  .depositFeeCard {
+    padding: 40px 20px;
+  }
+
+  .depositFeeCard h2 {
+    font-size: var(--fs36);
+  }
+
+  .depositFeeCard p {
+    font-size: var(--fs16);
+  }
+
+  .liquidationCategoryBlock h4 {
+    font-size: var(--fs16);
+  }
+
+  .liquidationRateBlock span {
+    font-size: var(--fs16);
+  }
+}
+
+/* Fees page - end  */
+
+/* media  */
+
+@media (max-width: 575px) {
+  .aboutusTitle {
+    font-size: var(--fs35);
+    line-height: 50px;
+  }
+
+  .aboutusDescription {
+    margin-top: 15px !important;
+    font-size: var(--fs13);
+    line-height: 24px;
+  }
+
+  .aboutusIdeaSection {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .ideaSectionTitle {
+    font-size: var(--fs19);
+  }
+
+  .ideaSectionDescription {
+    font-size: var(--fs13);
+  }
+
+  .ideaSectionDescriptionTwo {
+    font-size: var(--fs13);
+  }
+
+  .helpCardTitle {
+    font-size: var(--fs14);
+  }
+
+  .helpCardDesc {
+    font-size: var(--fs13);
+  }
+
+  .aboutusBanner {
+    padding-top: 50px;
+  }
+
+  .aboutusImageOne {
+    width: 100%;
+  }
+
+  .aboutusImageTwo {
+    width: 100%;
+  }
+
+  .helpBackgroundTwo {
+    background: url("../../assets/image/aboutusHelpBGOne.svg") no-repeat;
+    background-size: 300px 100%;
+    background-position: center bottom;
+    width: 300px;
+    padding: 10px;
+  }
+
+  .aboutusArrow img {
+    display: none;
+  }
+
+  .feesTableWrapper .feeTable {
+    min-width: 100%;
+  }
+
+  .feesTableWrapper .feeTable th,
+  .feesTableWrapper .feeTable td {
+    padding: 16px 12px;
+    font-size: var(--fs14);
+  }
+
+  .feesTableWrapper .value {
+    white-space: nowrap;
+  }
+
+  .feesExampleTabs {
+    gap: 10px;
+  }
+
+  .feesExampleTabBtn {
+    padding: 10px 14px;
+    font-size: var(--fs14);
+  }
+
+  .feesExampleCardHeader {
+    padding: 22px 20px;
+  }
+
+  .feesExampleCardBody {
+    padding: 24px 20px;
+  }
+
+  .feesExampleCardHeader h3 {
+    font-size: var(--fs18);
+  }
+
+  .feesExampleContentBlock {
+    margin-bottom: 30px;
+  }
+
+  .feesExampleContentBlock h4 {
+    font-size: var(--fs16);
+  }
+
+  .feesScalperGrid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+
+  .feesExampleTabs {
+    width: 100%;
+  }
+
+  .feesTabs {
+    width: 100%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .aboutusTitle {
+    font-size: var(--fs35);
+    line-height: 50px;
+  }
+
+  .feesExampleTabs {
+    width: 100%;
+  }
+
+  .aboutusDescription {
+    margin-top: 15px !important;
+    font-size: var(--fs13);
+    line-height: 24px;
+  }
+
+  .aboutusIdeaSection {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .ideaSectionTitle {
+    font-size: var(--fs19);
+  }
+
+  .ideaSectionDescription {
+    font-size: var(--fs13);
+  }
+
+  .ideaSectionDescriptionTwo {
+    font-size: var(--fs13);
+  }
+
+  .helpCardTitle {
+    font-size: var(--fs14);
+  }
+
+  .helpCardDesc {
+    font-size: var(--fs13);
+  }
+
+  .aboutusBanner {
+    padding-top: 50px;
+  }
+
+  .helpBackgroundTwo {
+    background: url("../../assets/image/aboutusHelpBGOne.svg") no-repeat;
+    background-size: 300px 200px;
+    background-position: center bottom;
+    width: 300px;
+    padding: 10px;
+  }
+
+  .feesTableWrapper .feeTable {
+    min-width: 100%;
+  }
+
+  .feesTableWrapper .feeTable th,
+  .feesTableWrapper .feeTable td {
+    padding: 16px 12px;
+    font-size: var(--fs14);
+  }
+
+  .feesTableWrapper .value {
+    white-space: nowrap;
+  }
+
+  .feesExampleTabs {
+    gap: 10px;
+  }
+
+  .feesExampleTabBtn {
+    padding: 10px 14px;
+    font-size: var(--fs14);
+  }
+
+  .feesExampleCardHeader {
+    padding: 22px 20px;
+  }
+
+  .feesExampleCardBody {
+    padding: 24px 20px;
+  }
+
+  .feesExampleCardHeader h3 {
+    font-size: var(--fs18);
+  }
+
+  .feesExampleContentBlock {
+    margin-bottom: 30px;
+  }
+
+  .feesExampleContentBlock h4 {
+    font-size: var(--fs16);
+  }
+
+  .feesScalperGrid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+
+  .feesTabs {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .aboutusTitle {
+    font-size: var(--fs35);
+    line-height: 50px;
+  }
+
+  .aboutusDescription {
+    margin-top: 15px !important;
+    font-size: var(--fs12);
+    line-height: 22px;
+  }
+
+  .aboutusIdeaSection {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .ideaSectionTitle {
+    font-size: var(--fs23);
+  }
+
+  .ideaSectionDescription {
+    font-size: var(--fs13);
+  }
+
+  .ideaSectionDescriptionTwo {
+    font-size: var(--fs13);
+  }
+
+  .helpCardTitle {
+    font-size: var(--fs14);
+  }
+
+  .helpCardDesc {
+    font-size: var(--fs13);
+  }
+
+  .aboutusBanner {
+    padding-top: 90px !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .aboutusTitle {
+    font-size: var(--fs35);
+    line-height: 50px;
+  }
+
+  .aboutusDescription {
+    margin-top: 15px !important;
+    font-size: var(--fs11);
+    line-height: 22px;
+  }
+
+  .aboutusIdeaSection {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .ideaSectionTitle {
+    font-size: var(--fs23);
+  }
+
+  .ideaSectionDescription {
+    font-size: var(--fs13);
+  }
+
+  .ideaSectionDescriptionTwo {
+    font-size: var(--fs13);
+  }
+
+  .helpCardTitle {
+    font-size: var(--fs14);
+  }
+
+  .helpCardDesc {
+    font-size: var(--fs13);
+  }
+
+  .aboutusBanner {
+    padding-top: 90px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {}
+
+@media (min-width: 1400px) and (max-width: 1799px) {
+  .aboutusTitle {
+    font-size: var(--fs50);
+    line-height: 65px;
+  }
+
+  .aboutusDescription {
+    font-size: var(--fs15);
+    line-height: 26px;
+  }
+
+  .aboutusIdeaSection {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .ideaSectionTitle {
+    font-size: var(--fs30);
+    line-height: 50px;
+  }
+
+  .ideaSectionDescription {
+    font-size: var(--fs15);
+  }
+
+  .ideaSectionDescriptionTwo {
+    font-size: var(--fs15);
+  }
+
+  .helpCardTitle {
+    font-size: var(--fs15);
+  }
+
+  .helpCardDesc {
+    font-size: var(--fs14);
+  }
+
+  .helpBackground {
+    background: url("../../assets/image/aboutusHelpBGOne.svg") no-repeat;
+    background-size: 330px 250px;
+    background-position: center bottom;
+    width: 330px;
+    height: 250px;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .aboutusTitle {
+    font-size: var(--fs60);
+    line-height: 90px;
+  }
+
+  .aboutusDescription {
+    margin-top: 15px !important;
+    font-size: var(--fs18);
+    line-height: 35px;
+  }
+
+  .aboutusIdeaSection {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .ideaSectionTitle {
+    font-size: var(--fs42);
+    line-height: 55px;
+  }
+
+  .ideaSectionDescription {
+    font-size: var(--fs18);
+    line-height: 30px;
+  }
+
+  .ideaSectionDescriptionTwo {
+    font-size: var(--fs18);
+  }
+
+  .helpCardTitle {
+    font-size: var(--fs18);
+  }
+
+  .helpCardDesc {
+    font-size: var(--fs17);
+  }
+
+  .helpBackground {
+    background: url("../../assets/image/aboutusHelpBGOne.svg") no-repeat;
+    background-size: 330px 250px;
+    background-position: center bottom;
+    width: 330px;
+    height: 250px;
+    padding: 10px;
+  }
+}
+
+.feesTableWrapper {
+  width: 100%;
+  background: var(--color-bg9);
+  border-radius: 25px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.liquidationTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.liquidationTable thead {
+  background: var(--color-bg9);
+}
+
+.liquidationTable th {
+  padding: 18px 32px;
+  text-align: left;
+  background: var(--color-bg9);
+  color: #8f97aa;
+  font-size: var(--fs13);
+  font-weight: 500;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.categoryTd {
+  width: 50%;
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.rateTd {
+  width: 50%;
+}
+
+.tableCell {
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionTitle {
+  height: 58px;
+  display: flex;
+  align-items: center;
+  padding: 0 32px;
+  color: var(--color-text-03);
+  font-size: var(--fs15);
+  font-weight: 600;
+}
+
+.tableRow {
+  height: 44px;
+  display: flex;
+  align-items: center;
+  padding: 0 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  color: #9ea7bb;
+  font-size: var(--fs14);
+}
+
+.tableRowCenter {
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  color: var(--color-text-03);
+  font-size: var(--fs14);
+  font-weight: 600;
+  text-align: center;
+}
+
+.tableText {
+  height: 44px;
+  display: flex;
+  align-items: center;
+  padding: 0 32px;
+  color: #9ea7bb;
+  font-size: var(--fs14);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.emptySpace {
+  height: 58px;
+}
+
+.liquidationBottomContent {
+  margin-top: 24px;
+}
+
+.liquidationBottomContent p {
+  color: #8f97aa;
+  font-size: var(--fs14);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.liquidationBottomContent p span {
+  color: #f4b63d;
+  font-weight: 600;
+}
+
+.liquidationBottomContent h5 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #f4b63d;
+  font-size: var(--fs14);
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .feesTableWrapper {
+    overflow-x: auto;
+  }
+
+  .liquidationTable {
+    min-width: 750px;
+  }
+
+  .liquidationTable th {
+    padding: 16px 20px;
+  }
+
+  .sectionTitle,
+  .tableRow,
+  .tableText {
+    padding: 0 20px;
+  }
+
+  .tableRowCenter {
+    font-size: var(--fs12);
+    padding: 0 12px;
+  }
+}

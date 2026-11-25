@@ -1,0 +1,74 @@
+.container {
+    height: 100%;
+}
+
+.header {
+    padding: var(--trade-cards-padding);
+}
+
+.tabCardHeader {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.tabCardHeader button {
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    width: 100%;
+    height: 35px;
+    background: none;
+    font-size: var(--fs14);
+    color: var(--color-text-04);
+    background: var(--color-bg17);
+    border-radius: 3px;
+}
+
+.tabCardHeader button.buy {
+    background: var(--color-green-03);
+    color: var(--color-similar-01);
+}
+
+.tabCardHeader button.sell {
+    background: var(--color-red-01);
+    color: var(--color-similar-01);
+}
+
+.tabCardBody {
+    height: calc(100% - 58px);
+    overflow-y: auto;
+    padding: var(--trade-cards-padding);
+    padding-top: 0px;
+}
+
+.tabCardBody.bracketOrderBody {
+    height: calc(100% - 60px);
+}
+
+.tabCardBody::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+}
+
+.bracketHeader {
+    background: var(--color-bg17);
+    margin: var(--trade-cards-padding);
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+
+.bracketHeader button {
+    padding: 0;
+}
+
+.bracketHeader .title {
+    font-size: var(--fs14);
+}

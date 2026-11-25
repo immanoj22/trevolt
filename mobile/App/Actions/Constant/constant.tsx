@@ -1,0 +1,160 @@
+import { BASE_URL, CRYPTO_SECRET_KEY, MOBILE_APP_SIGNING_SECRET, IMAGE_PROFILE, REFERURL_URL, SOCKET_URL, KYCREDIRECT_URL, SUPPORT_URL, API_URL } from "@env";
+
+export const BASEURL = BASE_URL;
+export const PROFILEURL = IMAGE_PROFILE;
+export const REFERURL = REFERURL_URL;
+export const SECRETKEY = CRYPTO_SECRET_KEY;
+// HMAC-SHA256 key for mobile request signing (CAPTCHA bypass on login/registration).
+// See MOBILE_REQUEST_SIGNING.pdf. Must match the backend's MOBILE_APP_SIGNING_SECRET
+// for the current environment.
+export const MOBILE_SIGNING_SECRET = MOBILE_APP_SIGNING_SECRET;
+export const SOCKETURL = SOCKET_URL;
+export const KYC_URL = KYCREDIRECT_URL;
+export const SUPPORTURL = SUPPORT_URL;
+export const APIURL = API_URL;
+
+export const ENDPOINTS = {
+    register: "/user/registration",
+    registerVerify: "/user/account_verification",
+    login: "/user/login",
+    loginVerify: "/user/login_verification",
+    forgotPassword: "/user/forgot_password",
+    resendlogin: "/user/resend_login_code",
+    resend: "/user/resend_code",
+    userDetails: "/user/get_user_details",
+    updateSettings: "/user/update_user_settings",
+    registerDeviceToken: "/user/register_device_token",
+    KYCVerify: "/user/internal-verification",
+    changeMobileNum: "/user/change_mobilenumber",
+    newNumberOTP: "/user/change_mobilenumber",
+    mobileNumberNew: "/user/change_mobilenumber",
+    changePassword: "/user/change_password",
+    changeEmail: "/user/change_email",
+    verificationMobileCode: "/user/mobile_verification_code",
+    verifyMobile: "/user/verify_mobile_verification",
+    internalkyc: "user/internal-verification",
+    twofa: "user/security/2fa-settings",
+    logout: "user/logout",
+    twofatype: "/user/update_2FA_type",
+    transactionhistory: "user/get_transaction_history",
+    getpassbook: "user/get_passbook_history",
+    cashfree: "user/cashfree_create_request",
+    cashfreestatus: "user/cashfree_verification_status",
+    referaldetails: "user/get_user_refferal_details",
+    referalhistory: "user/get_refferal_transaction_history",
+    googleSignup: "user/signup_with_google",
+    verifyQR: "user/verify-qr",
+    allsession: "user/all-session",
+    deleteSession: "user/delete-session",
+    announcement: "/announcement/announcementListForUser",
+    singInWithApple: "/user/signup_with_apple",
+    updateTab: "/user/updateTab",
+
+    addbank: "wallet/add_bank_account",
+    deletebank: "wallet/delete_bank_account",
+    updatebank: "wallet/update_bank_account",
+    internalfiat: "wallet/internal_fiat_deposit",
+    walletTransfer: "wallet/wallet_transfer",
+    withdrawcode: "wallet/get_withdraw_code",
+    fiatwithdraw: "wallet/internal_fiat_withdraw",
+
+    subAccount: "/subaccount/sub_account",
+    subAccountMargin: "/subaccount/change_margin_mode",
+    subAccountUpdate: "/subaccount/update_preferences",
+    subAccountSwitch: "/subaccount/switch_account",
+
+    affiliateRegister: "/affiliate/affiliate_register",
+    affiliateDetails: "/affiliate/get_affliate_details",
+    manageClicks: "/affiliate/manage_clicks/HILKIA",
+    affiliateSummary: "/affiliate/affiliate_summary_details",
+    affiliateCommission: "/affiliate/affiliate_commission_details",
+    claimReward: "/affiliate/claim_reward_commission",
+
+    getcurrency: "currency/get_currency_details",
+    priceconversion: "currency/price_conversion_list",
+
+    recoverUser: "/user/recovery_user",
+
+    feeSettings: "fee/fee_settings_list",
+
+    pairDetails: "future/get_pair_details",
+    availableMargin: "future/availableMargin",
+    positionOrders: "future/positionOrders",
+    addFavouritePair: "future/addFavouritePair",
+    orderBook: "future/orderBook",
+    singleOrderBook: "future/single_order_book",
+    recentTrade: "future/recentTrade",
+    filledHistory: "future/filledHistory",
+    orderHistory: "future/orderHistory",
+    updateBracket: "future/updateBracketOrders",
+    orderPlaceing: "future/order_placing",
+    leverage: "/future/changeLeverage",
+    futureClose: "future/closePosition",
+    futureClosedOrders: "/future/closedOrders",
+    futureOpenOrders: "future/openOrder",
+    removeBracket: "future/remove_bracket_orders",
+    cancelOrder: "future/cancelOrder",
+    editOpenOrder: "future/addEditOpenOrdersBracketOrder",
+    stopOrders: "future/stopOrders",
+    cancelAllOrders: "future/cancelAllOrder",
+    closeAllPosition: "future/closeAllPosition",
+    updateOrders: "/future/updateOrders",
+    notification: "notification/getAllNotifications",
+    updateNotification: "notification/updateNotification",
+    ogGenerate: "future/og_generate_update",
+    pnlanalysischart: "future/pandl_analysis_chart",
+    pnlsummary: "future/pandl_analysis_summary",
+    pnlOverview: "future/pandl_overview",
+    stressPoints: "/future/stress_pcts",
+
+    createApi: "key/create_apikey",
+    getApi: "key/get_keys",
+    editApi: "key/edit_apikey",
+    deleteApi: "key/delete_key",
+    createWebhook: "algo/create_webhook",
+
+    cmsPage: "cms/getPage",
+
+    trendingTrade: "trending/trendingTradePairs",
+    trendingPopular: "trending/popularTradePairs",
+    tradePairs: "trending/twentyFourHoursTradePairs",
+
+    copyRequest: "copy/requestTrader",
+    mystrategyDetails: "copy/mystrategyDetails",
+    getAllStrategy: "copy/getAllStrategy",
+    editStartegy: "copy/editStartegy",
+    strategyDetails: "copy/strategyDetails",
+    requestCopier: "copy/requestCopier",
+    getCopier: "copy/getCopierTrades",
+    getCopierDetails: "copy/getCopierDetails",
+    setViewers: "copy/setViewers",
+    editCopier: "copy/editCopier",
+    addFav: "copy/addAndremoveFav",
+    inactiveStardegy: "copy/inactiveStardegy",
+    copyOpenOrder: "copy/openOrder",
+    copyOrderHistory: "copy/orderHistory",
+    copyCloseOrders: "copy/closedOrders",
+    copyFills: "copy/tradeHistory",
+    getCopyTradeAssets: "copy/getCopyTradeAssets",
+    commissionHistory: "copy/CommissionHistory",
+    getFollowersDetails: "copy/getFollowersDetails",
+    updateStrategy: "copy/updatecopiedStrategy",
+    investmentChart: "/copy/getReturnOfInvestmentChart",
+    profitandLossChart: "copy/getProfitandLossChart",
+    volumeBreakDown: "copy/getVolumeBreakDown",
+    getCopierStats: "/copy/getCopierStats",
+    performanceDetails: "copy/getPerformanceDetails",
+    positionOrdersCopy: "/copy/positionOrders",
+    copyStopOrders: "/copy/stopOrders",
+
+    getAllContracts: "/option/get_underlying_asset",
+    getContracts: "/option/get_option_details",
+    optionPlacing: "/option/order_placing",
+    basketOrderPlacing: "/option/basket_order_placing",
+
+    checkFace: "/user/checkFaceLiveness",
+    panCardCreate: "/user/panCardNumber_create_request",
+    additionalVerification: "/user/additionalVerification",
+
+    setdefaultbank: '/wallet/set_default_bank_account',
+}

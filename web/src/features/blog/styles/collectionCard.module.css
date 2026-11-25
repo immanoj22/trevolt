@@ -1,0 +1,60 @@
+.collectionCard {
+    border: 1px solid var(--color-border-02);
+    border-radius: 10px;
+    background-color: var(--color-bg2);
+    /* width: fit-content;
+    height: fit-content; */
+    
+}
+
+.collectionImg {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.cardTitle {
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    max-width: 200px;
+}
+
+.cardDescOne {
+    font-size: 13px;
+}
+
+.cardDesc {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 23px;
+    width: 100%;
+    max-width: 250px;
+}
+
+/* media  */
+
+@media (max-width:575px) {
+
+}
+
+@media (min-width:576px) and (max-width:767px) {
+
+}
+
+@media (min-width:768px) and (max-width:991px) {
+
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+
+}
+
+@media (min-width:1200px) and (max-width:1399px) {}
+
+@media (min-width:1400px) and (max-width:1799px) {
+
+}
+
+@media (min-width:1800px) {
+
+}

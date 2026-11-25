@@ -1,0 +1,358 @@
+.container {
+    height: 100%;
+}
+
+.header {
+    padding: 4px var(--trade-cards-padding) 0px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.header p {
+    font-size: var(--fs16);
+    font-weight: 600;
+}
+
+
+/* .body {
+    padding: var(--trade-cards-padding);
+    padding-top: 0px;
+} */
+
+.body::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+}
+
+.body.bracketOrderBody {
+    height: calc(100% - 60px);
+}
+
+.leverageHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    border: 1px solid var(--color-border-02);
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.leverageHeader .leverageValText {
+    color: var(--color-green-01);
+    font-weight: 600;
+    font-size: var(--fs13);
+}
+
+.leverageFormContainer {
+    background-color: var(--color-bg2);
+    border-radius: 5px;
+}
+
+.leverageDropdownOpen {
+    padding: 0px 10px 10px 10px;
+}
+
+.labelHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.label {
+    color: var(--color-text-04);
+    font-size: var(--fs12);
+}
+
+.labelWhite {
+    color: var(--color-text-03);
+    font-size: var(--fs12);
+}
+
+.value {
+    font-size: var(--fs12)
+}
+
+.labelHighlight {
+    font-weight: 500;
+    font-size: var(--fs12);
+}
+
+.controlInputContainer {
+    background: var(--color-bg17);
+    border: 1px solid var(--color-border-04);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+
+.controlInputContainer:focus-within {
+    border: 1px solid var(--color-focus-border-02);
+}
+
+.controlInputContainer button {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--color-text-03);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+}
+
+.controlInputContainer button svg {
+    font-size: var(--fs12);
+}
+
+.controlInputContainer input {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--color-text-03);
+    text-align: center;
+    font-size: var(--fs12);
+    font-weight: 500;
+}
+
+.tabContainer {
+    display: flex;
+    align-items: center;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--color-border-02);
+}
+
+.tabContainer button {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: var(--fs13);
+    color: var(--color-text-04);
+    margin-right: 30px;
+    position: relative;
+    padding: 0;
+}
+
+.tabContainer button.active {
+    color: var(--color-text-03);
+}
+
+.tabContainer button.active::after {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    background: var(--color-green-01);
+    bottom: -9px;
+    left: 0;
+}
+
+.selectButton {
+    position: relative;
+
+}
+
+.selectButton button {
+    margin-right: 0px;
+}
+
+
+.selectButton:hover {
+    opacity: unset;
+}
+
+.selectButtonOptions {
+    /* position: absolute; */
+    border: 1px solid var(--color-border-04);
+    box-shadow: 0px 5px 10px #00000059;
+    background: var(--color-bg10);
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    border-radius: 5px;
+    /* top: 37px; */
+    /* right: 0px; */
+    /* width: 150px; */
+    z-index: 2;
+
+}
+
+.selectButtonOptions li {
+    text-align: start;
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+    color: var(--color-text-03);
+    font-size: var(--fs12);
+    cursor: pointer;
+}
+
+.selectButtonOptions li:hover {
+    opacity: 0.8;
+}
+
+.selectButtonOptions li.active {
+    color: var(--color-green-02);
+}
+
+.percentageContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.actionContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.detailsContainer {
+    padding: 10px;
+    border-radius: 8px;
+    background: var(--color-bg17);
+    border: 1px solid var(--color-border-04);
+}
+
+.detailsList {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.bracketHeader {
+    background: var(--color-bg17);
+    margin: 0 var(--trade-cards-padding);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+
+.bracketHeader button {
+    padding: 0;
+}
+
+.bracketHeader .title {
+    font-size: var(--fs14);
+}
+
+.editBracketPart {
+    margin-top: 1pc;
+    /* border: 1px solid red; */
+}
+
+.editBracketPart .headerPart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.editBracketPart .headerPart h3 {
+    font-size: 0.9pc;
+}
+
+.editBracketPart .headerPart button {
+    background-color: transparent;
+    color: var(--color-green-01);
+    padding: 0.2pc !important;
+    border: none !important;
+    font-size: 1.2pc;
+}
+
+.editBracketPart .bracketBodyPart ul li {
+    display: flex;
+    align-items: center;
+    gap: 0.3pc;
+    margin-bottom: 0.5pc;
+}
+
+.editBracketPart .bracketBodyPart ul li h3 {
+    font-size: 0.8pc;
+    font-weight: normal;
+    color: var(--color-text-04)
+}
+
+.editBracketPart .bracketBodyPart ul li p {
+    font-size: 0.8pc;
+    font-weight: normal;
+    color: var(--color-text-02);
+}
+
+.calculatorBtn {
+    color: var(--color-text-02);
+    background-color: transparent;
+    border: none;
+    font-size: var(--fs13);
+}
+
+.feesTooltipPart {}
+
+/* media */
+
+@media (max-width:575px) {
+    .tabContainer button {
+        margin-right: 15px;
+    }
+
+    .selectButton button {
+        margin-right: 0px;
+    }
+
+}
+
+@media (min-width:576px) and (max-width:767px) {
+    .tabContainer button {
+        margin-right: 15px;
+    }
+
+    .selectButton button {
+        margin-right: 0px;
+    }
+
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .tabContainer button {
+        margin-right: 15px;
+    }
+
+    .selectButton button {
+        margin-right: 0px;
+    }
+
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    .tabContainer button {
+        margin-right: 15px;
+    }
+
+    .selectButton button {
+        margin-right: 0px;
+    }
+
+}
+
+@media (min-width:1200px) and (max-width:1399px) {
+    .tabContainer button {
+        margin-right: 15px;
+    }
+
+    .selectButton button {
+        margin-right: 0px;
+    }
+
+}
+
+@media (min-width:1400px) and (max-width:1799px) {}
+
+@media (min-width:1800px) {}

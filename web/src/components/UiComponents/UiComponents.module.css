@@ -1,0 +1,196 @@
+.notFound {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.defaultDropdownStyle>button {
+    width: fit-content !important;
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-01) !important;
+    background-color: transparent !important;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: var(--fs14);
+    margin: 0px;
+    gap: 5px;
+}
+
+.defaultDropdownStyle button::after {
+    display: none !important;
+}
+
+.defaultDropdownStyle>button:hover,
+.defaultDropdownStyle>button:active,
+.defaultDropdownStyle>button:focus {
+    background: transparent !important;
+    color: var(--color-text-01) !important;
+}
+
+.defaultDropdownStyle>div {
+    background: var(--color-bg15) !important;
+    color: var(--color-text-01) !important;
+    border: none !important;
+    /* box-shadow: 0 0 20px 0 #0000001a; */
+    box-shadow: var(--box-shadow-03);
+    padding: 0 !important;
+}
+
+
+/* start of react slider new - 01 */
+.customRangeWrapper {
+    width: 100%;
+    padding: 20px 10px 30px 10px;
+    position: relative;
+}
+
+.customRangeWrapper .sliderContainer {
+    position: relative;
+    width: 100%;
+    height: 24px;
+}
+
+.customRangeWrapper .customRange {
+    width: 105%;
+    appearance: none;
+    height: 6px;
+    position: relative;
+    left: -5px;
+    border-radius: 3px;
+    background: linear-gradient(to right, var(--color-green-02) 0%, var(--color-green-01) var(--progress), #555555 var(--progress), #555555 100%);
+    outline: none;
+    transition: all 0.3s ease;
+    /* z-index: 10; */
+}
+
+.customRangeWrapper .customRange::-webkit-slider-thumb {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #fff;
+    border: 3px solid var(--color-green-01);
+    cursor: pointer;
+    position: relative;
+    z-index: 15;
+    margin-top: 0px;
+}
+
+.customRangeWrapper .customRange::-moz-range-thumb {
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #fff;
+    border: 3px solid var(--color-green-01);
+    cursor: pointer;
+    position: relative;
+    z-index: 15;
+    margin-top: 0px;
+}
+
+.customRangeWrapper .sliderMarker {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--color-green-01);
+    border: 1px solid #fff;
+    position: absolute;
+    top: 6px;
+    transform: translateX(-50%) !important;
+    z-index: 10;
+    cursor: pointer;
+    /* pointer-events: none; */
+}
+
+.customRangeWrapper .makerWrapper {
+    width: 100%;
+    position: relative;
+    border: 1px solid red;
+}
+
+.customRangeWrapper .makerWrapper span {
+    position: absolute;
+    bottom: -30px;
+    left: -4px;
+    font-size: var(--fs12);
+    color: var(--color-text-01);
+    opacity: 1 !important;
+}
+
+.customRangeWrapper .sliderMarker::after {
+    content: attr(data-label-value);
+    position: absolute;
+    bottom: -30px;
+    left: -4px;
+    font-size: var(--fs12);
+    color: var(--color-text-01);
+    opacity: 1 !important;
+}
+
+.customRangeWrapper .sliderMarker.s25 {
+    left: calc(25% + 3px) !important;
+}
+
+.customRangeWrapper .sliderMarker.s75 {
+    left: calc(75% - 3px) !important;
+}
+
+.customRangeWrapper .sliderMarker.s100 {
+    left: calc(100% - 6px) !important;
+}
+
+.customRangeWrapper .sliderMarker.fill {
+    background: var(--color-green-01) !important;
+    border-color: transparent;
+    /* border: 3px solid var(--color-green-01); */
+}
+
+.customRangeWrapper .sliderMarker.dNone {
+    visibility: hidden;
+}
+
+.customRangeWrapper .sliderMarker.dNone::after {
+    visibility: visible;
+    color: var(--color-green-01);
+}
+
+.customRangeWrapper.disabledPointer {
+    padding: 0.5pc 0.8pc 1.5pc;
+}
+
+.customRangeWrapper.disabledPointer .sliderContainer>div {
+    visibility: hidden;
+}
+
+.customRangeWrapper.disabledPointer .sliderContainer>div::after {
+    visibility: visible;
+}
+
+.customRangeWrapper.disabledPointer .customRange::-webkit-slider-thumb {
+    display: none;
+}
+
+/* end of react slider new - 01 */
+
+
+.tooltipChildrenPart.highlight {
+    position: relative;
+    cursor: pointer;
+}
+
+.tooltipChildrenPart.highlight::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    height: 1px;
+    border-bottom: 0.6mm dotted var(--color-bg8);
+}

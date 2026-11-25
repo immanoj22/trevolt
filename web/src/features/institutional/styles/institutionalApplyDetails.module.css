@@ -1,0 +1,110 @@
+.institutionalDetails {
+    padding-top: var(--header-height);
+}
+
+.contentSection {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.title {
+    /* font-size: var(--fs30); */
+    font-weight: 600;
+}
+
+
+.institutionalDetails .formLabel {
+    font-size: var(--fs14);
+    font-weight: 500;
+    line-height: 22px;
+    color: var(--color-text-04);
+}
+
+
+.applyDetailsImage {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+
+.institutionalDetails .uploadImg img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* media query */
+
+
+@media (max-width:575px) {
+
+    .contentSection {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    /* .title {
+        font-size: var(--fs19);
+    } */
+}
+
+@media (min-width:576px) and (max-width:767px) {
+    .contentSection {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    /* .title {
+        font-size: var(--fs20);
+    } */
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .contentSection {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    /* .title {
+        font-size: var(--fs23);
+    } */
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+
+    .contentSection {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    /* .title {
+        font-size: var(--fs23);
+    } */
+}
+
+@media (min-width:1200px) and (max-width:1399px) {
+    .contentSection {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    /* .title {
+        font-size: var(--fs23);
+    } */
+}
+
+@media (min-width:1400px) and (max-width:1799px) {}
+
+@media (min-width:1800px) {
+    .contentSection {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    /* 
+    .title {
+        font-size: var(--fs30);
+    } */
+}

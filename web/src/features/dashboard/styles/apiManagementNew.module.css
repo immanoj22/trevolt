@@ -1,0 +1,69 @@
+.apiManagementNewPage .pageHeaderPart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2pc;
+}
+
+.apiManagementNewPage .pageTitleText {
+    font-size: var(--fs18);
+}
+
+.apiNotesPart{
+    background-color: var(--color-bg4);
+    padding: 1pc;
+    margin-top: 2pc;
+    border-radius: 10px !important;
+}
+
+.pageDesc {
+    font-size: var(--fs14) !important;
+    margin-bottom: 10px !important;
+}
+
+/* media  */
+
+@media (max-width:575px) {
+    .pageDesc {
+        font-size: var(--fs14);
+        line-height: 24px;
+    }
+}
+
+@media (min-width:576px) and (max-width:767px) {
+    .pageDesc {
+        font-size: var(--fs14);
+        line-height: 24px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .pageDesc {
+        font-size: var(--fs14);
+        line-height: 24px;
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    .pageDesc {
+        font-size: var(--fs14);
+        line-height: 24px;
+    }
+}
+
+@media (min-width:1200px) and (max-width:1399px) {}
+
+@media (min-width:1400px) and (max-width:1799px) {
+    .pageDesc {
+        font-size: var(--fs15);
+        line-height: 24px;
+    }
+}
+
+@media (min-width:1800px) {
+    .pageDesc {
+        font-size: var(--fs18);
+        line-height: 24px;
+    }
+}

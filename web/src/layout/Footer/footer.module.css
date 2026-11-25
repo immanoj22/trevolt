@@ -1,0 +1,711 @@
+.footer {
+    background: var(--color-bg3);
+}
+
+.footerTop {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid var(--color-border-02);
+}
+
+.footerTopWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footerLogoContainer {
+    max-width: 300px;
+}
+
+.footerLogo {
+    width: 150px;
+    height: auto;
+}
+
+.footerDesc {
+    margin-top: 20px !important;
+    font-size: var(--fs14);
+    color: var(--color-text-01);
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.footerMenusTitle {
+    font-weight: 700;
+    font-size: var(--fs15);
+}
+
+.footerMenusUl {
+    margin-top: 20px !important;
+}
+
+
+.footerMenusUl li {
+    margin-bottom: 20px !important;
+}
+
+.footerMenusUl li a {
+    font-size: var(--fs14);
+}
+
+.footerMenusUl li a:hover {
+    color: var(--color-green-02) !important;
+}
+
+.footerSubscribe {
+    max-width: 300px;
+}
+
+.subscribeInput {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--color-border-02);
+    background: var(--color-bg4);
+    border-radius: var(--radius-30);
+}
+
+.subscribeInput input {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    background: transparent;
+    outline: none;
+    border: none;
+    height: 100%;
+    font-size: var(--fs15);
+    color: var(--color-primaryText);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.subscribeInput input::placeholder {
+    opacity: 0.7;
+}
+
+.subscribeInput button {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    background: var(--color-green-01);
+    border-radius: 50%;
+}
+
+.subscribeInput button:hover {
+    opacity: 0.8;
+}
+
+.subscribeInput button svg {
+    fill: var(--color-similar-01)
+}
+
+.footerBottom {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footerBottomLeft {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.footerBoldText {
+    font-weight: 600;
+    font-size: var(--fs15);
+}
+
+.footerSocialIconsContainer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footerSocialLinks:hover {
+    opacity: 0.8;
+}
+
+.footerSocialIcons {
+    width: 25px;
+    height: auto;
+}
+
+.footerCopyright {
+    color: var(--color-text-01);
+    font-weight: 500;
+}
+
+.footerCopyright {
+    font-size: var(--fs13) !important;
+}
+
+.footerCopyright a {
+    margin: 0 10px !important;
+    color: var(--color-green-01) !important;
+}
+
+/* media */
+
+@media (max-width:575px) {
+    .footerTop {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .footerTopWrapper {
+        row-gap: 30px;
+        column-gap: 50px;
+        justify-content: unset;
+    }
+
+    .footerLogoContainer {
+        max-width: 250px;
+    }
+
+    .footerLogo {
+        width: 130px;
+    }
+
+    .footerDesc {
+        margin-top: 20px !important;
+        font-size: var(--fs12);
+        line-height: 22px;
+    }
+
+    .footerMenusTitle {
+        font-size: var(--fs13);
+    }
+
+    .footerMenusUl {
+        margin-top: 10px !important;
+    }
+
+
+    .footerMenusUl li {
+        margin-bottom: 10px !important;
+    }
+
+    .footerMenusUl li a {
+        font-size: var(--fs12);
+    }
+
+
+    .footerSubscribe {
+        max-width: 250px;
+    }
+
+    .subscribeInput {
+        margin-top: 20px;
+        border-radius: 40px;
+    }
+
+    .subscribeInput input {
+        font-size: var(--fs12);
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .subscribeInput button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .subscribeInput button svg {
+        font-size: var(--fs15);
+    }
+
+    .footerBottom {
+        gap: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .footerBottomLeft {
+        gap: 20px;
+    }
+
+    .footerBoldText {
+        font-size: var(--fs13);
+    }
+
+    .footerSocialIconsContainer {
+        gap: 15px;
+    }
+
+
+    .footerSocialIcons {
+        width: 23px;
+    }
+}
+
+@media (min-width:576px) and (max-width:767px) {
+    .footerTop {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .footerTopWrapper {
+        gap: 40px;
+        justify-content: unset;
+    }
+
+    .footerLogoContainer {
+        max-width: 250px;
+    }
+
+    .footerLogo {
+        width: 130px;
+    }
+
+    .footerDesc {
+        margin-top: 20px !important;
+        font-size: var(--fs12);
+        line-height: 22px;
+    }
+
+    .footerMenusTitle {
+        font-size: var(--fs13);
+    }
+
+    .footerMenusUl {
+        margin-top: 10px !important;
+    }
+
+
+    .footerMenusUl li {
+        margin-bottom: 10px !important;
+    }
+
+    .footerMenusUl li a {
+        font-size: var(--fs12);
+    }
+
+
+    .footerSubscribe {
+        max-width: 250px;
+    }
+
+    .subscribeInput {
+        margin-top: 20px;
+        border-radius: 40px;
+    }
+
+    .subscribeInput input {
+        font-size: var(--fs12);
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .subscribeInput button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .subscribeInput button svg {
+        font-size: var(--fs15);
+    }
+
+    .footerBottom {
+        gap: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .footerBottomLeft {
+        gap: 20px;
+    }
+
+    .footerBoldText {
+        font-size: var(--fs13);
+    }
+
+    .footerSocialIconsContainer {
+        gap: 15px;
+    }
+
+
+    .footerSocialIcons {
+        width: 23px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .footerTop {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .footerTopWrapper {
+        gap: 40px;
+        justify-content: unset;
+    }
+
+    .footerLogoContainer {
+        max-width: 250px;
+    }
+
+    .footerLogo {
+        width: 130px;
+    }
+
+    .footerDesc {
+        margin-top: 20px !important;
+        font-size: var(--fs12);
+        line-height: 22px;
+    }
+
+    .footerMenusTitle {
+        font-size: var(--fs13);
+    }
+
+    .footerMenusUl {
+        margin-top: 10px !important;
+    }
+
+
+    .footerMenusUl li {
+        margin-bottom: 10px !important;
+    }
+
+    .footerMenusUl li a {
+        font-size: var(--fs12);
+    }
+
+
+    .footerSubscribe {
+        max-width: 250px;
+    }
+
+    .subscribeInput {
+        margin-top: 20px;
+        border-radius: 40px;
+    }
+
+    .subscribeInput input {
+        font-size: var(--fs12);
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .subscribeInput button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .subscribeInput button svg {
+        font-size: var(--fs15);
+    }
+
+    .footerBottom {
+        gap: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .footerBottomLeft {
+        gap: 20px;
+    }
+
+    .footerBoldText {
+        font-size: var(--fs13);
+    }
+
+    .footerSocialIconsContainer {
+        gap: 15px;
+    }
+
+
+    .footerSocialIcons {
+        width: 23px;
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    .footerTop {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .footerTopWrapper {
+        gap: 40px;
+    }
+
+    .footerLogoContainer {
+        max-width: 250px;
+    }
+
+    .footerLogo {
+        width: 130px;
+    }
+
+    .footerDesc {
+        margin-top: 20px !important;
+        font-size: var(--fs12);
+        line-height: 22px;
+    }
+
+    .footerMenusTitle {
+        font-size: var(--fs13);
+    }
+
+    .footerMenusUl {
+        margin-top: 10px !important;
+    }
+
+
+    .footerMenusUl li {
+        margin-bottom: 10px !important;
+    }
+
+    .footerMenusUl li a {
+        font-size: var(--fs12);
+    }
+
+
+    .footerSubscribe {
+        max-width: 250px;
+    }
+
+    .subscribeInput {
+        margin-top: 20px;
+        border-radius: 40px;
+    }
+
+    .subscribeInput input {
+        font-size: var(--fs12);
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .subscribeInput button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .subscribeInput button svg {
+        font-size: var(--fs15);
+    }
+
+    .footerBottom {
+        gap: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .footerBottomLeft {
+        gap: 20px;
+    }
+
+    .footerBoldText {
+        font-size: var(--fs13);
+    }
+
+    .footerSocialIconsContainer {
+        gap: 15px;
+    }
+
+
+    .footerSocialIcons {
+        width: 23px;
+    }
+
+
+}
+
+@media (min-width:1200px) and (max-width:1399px) {
+    .footerTop {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .footerTopWrapper {
+        gap: 20px;
+    }
+
+    .footerLogoContainer {
+        max-width: 250px;
+    }
+
+    .footerLogo {
+        width: 130px;
+    }
+
+    .footerDesc {
+        margin-top: 20px !important;
+        font-size: var(--fs12);
+        line-height: 22px;
+    }
+
+    .footerMenusTitle {
+        font-size: var(--fs13);
+    }
+
+    .footerMenusUl {
+        margin-top: 10px !important;
+    }
+
+
+    .footerMenusUl li {
+        margin-bottom: 10px !important;
+    }
+
+    .footerMenusUl li a {
+        font-size: var(--fs12);
+    }
+
+
+    .footerSubscribe {
+        max-width: 250px;
+    }
+
+    .subscribeInput {
+        margin-top: 20px;
+        border-radius: 40px;
+    }
+
+    .subscribeInput input {
+        font-size: var(--fs12);
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .subscribeInput button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .subscribeInput button svg {
+        font-size: var(--fs15);
+    }
+
+    .footerBottom {
+        gap: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .footerBottomLeft {
+        gap: 20px;
+    }
+
+    .footerBoldText {
+        font-size: var(--fs13);
+    }
+
+    .footerSocialIconsContainer {
+        gap: 15px;
+    }
+
+
+    .footerSocialIcons {
+        width: 23px;
+    }
+}
+
+@media (min-width:1400px) and (max-width:1799px) {}
+
+@media (min-width:1800px) {
+
+    .footerTop {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .footerTopWrapper {
+        gap: 25px;
+    }
+
+    .footerLogoContainer {
+        max-width: 400px;
+    }
+
+    .footerLogo {
+        width: 190px;
+    }
+
+    .footerDesc {
+        margin-top: 25px !important;
+        font-size: var(--fs17);
+        line-height: 34px;
+    }
+
+    .footerMenusTitle {
+        font-size: var(--fs19);
+    }
+
+    .footerMenusUl {
+        margin-top: 20px !important;
+    }
+
+
+    .footerMenusUl li {
+        margin-bottom: 20px !important;
+    }
+
+    .footerMenusUl li a {
+        font-size: var(--fs16);
+    }
+
+
+
+    .footerSubscribe {
+        max-width: 400px;
+    }
+
+    .subscribeInput {
+        margin-top: 25px;
+        border-radius: 60px;
+    }
+
+    .subscribeInput input {
+        font-size: var(--fs17);
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .subscribeInput button {
+        width: 60px;
+        height: 60px;
+    }
+
+    .subscribeInput button svg {
+        font-size: var(--fs25);
+    }
+
+    .footerBottom {
+        gap: 30px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .footerBottomLeft {
+        gap: 25px;
+    }
+
+    .footerBoldText {
+        font-size: var(--fs18);
+    }
+
+    .footerSocialIconsContainer {
+        gap: 20px;
+    }
+
+
+    .footerSocialIcons {
+        width: 35px;
+    }
+
+}

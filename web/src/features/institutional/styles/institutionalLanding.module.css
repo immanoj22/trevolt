@@ -1,0 +1,798 @@
+.institutionLanding {
+    padding-top: var(--header-height);
+}
+
+
+.BannerSection {
+    min-height: 100%;
+    height: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+}
+
+.BannerSection::after {
+    min-height: 100%;
+    height: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+    background-color: var(--banner-bg);
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+}
+
+.bannerSectionContainer {
+    min-height: 100%;
+    height: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.imgSectionFile {
+    min-height: 100%;
+    height: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.bannerSectionContent {
+    z-index: 3;
+    position: relative;
+}
+
+.bannerRow {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.bannerButtons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.bannerRight {
+    position: relative;
+    display: flex;
+    justify-content: end;
+}
+
+.bannerRightImage {
+    position: relative;
+    z-index: 3;
+}
+
+.bannerCoinOne,
+.bannerCoinTwo {
+    position: absolute;
+}
+
+.bannerCoinOne {
+    z-index: 2;
+    width: 88px;
+    top: 145px;
+    left: 225px;
+    animation: topBottom2 4s infinite;
+    transform: translateY();
+}
+
+.bannerCoinTwo {
+    z-index: 4;
+    width: 77px;
+    top: 180px;
+    left: 465px;
+    animation: topBottom3 4s infinite;
+    transform: translateY();
+}
+
+
+.bannerTitle {
+    font-weight: 700;
+    font-size: var(--fs46);
+    line-height: 65px;
+    text-transform: capitalize;
+}
+
+.bannerTitleXl {
+    font-weight: 700;
+    font-size: var(--fs50);
+    line-height: 58px;
+    text-transform: capitalize;
+}
+
+.bannerDescription {
+    font-weight: 300;
+    margin-top: 25px !important;
+    font-size: var(--fs15);
+    line-height: 26px;
+}
+
+.bannerDescription .bold {
+    color: var(--color-primaryText);
+}
+
+.bannerDescription .boldFw {
+    color: var(--color-primaryText);
+    font-weight: 500;
+}
+
+.bannerDescription .green {
+    font-weight: 500;
+    color: var(--color-green-02);
+}
+
+.bannerDescription .orange {
+    font-weight: 500;
+    color: var(--color-orange-01);
+}
+
+/* signatureService */
+
+.signatureService {
+    background: var(--color-bg1);
+    padding-top: 75px;
+    padding-bottom: 75px;
+    position: relative;
+}
+
+.signatureImageOne {
+    position: absolute;
+    right: 7%;
+    top: 11%;
+    width: 50px;
+    opacity: 0.1;
+}
+
+.signatureImageTwo {
+    position: absolute;
+    left: 7%;
+    bottom: 11%;
+    width: 50px;
+    opacity: 0.1;
+}
+
+.sectionHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.sectionTitle {
+    text-align: center;
+    font-size: var(--fs30);
+    font-weight: 600;
+}
+
+.sectionDescription {
+    text-align: center;
+    color: var(--color-text-01);
+    font-weight: 300;
+    margin-top: 30px !important;
+    font-size: var(--fs15);
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+}
+
+.signatureServiceGrids {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.joinNowButtons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+
+/* trading */
+
+.cryptoTradingImgSection {
+    position: relative;
+    height: auto;
+    width: 80%;
+    margin: auto;
+}
+
+.cryptoTradingImgSection .imgSrc {}
+
+.cryptoTradingCard {
+    position: absolute;
+}
+
+.cryptoTradingCardOne {
+    top: 5%;
+    left: 4%;
+}
+
+.cryptoTradingCardTwo {
+    top: 5%;
+    right: 6%;
+}
+
+.cryptoTradingCardThree {
+    bottom: 5%;
+    left: 4%;
+}
+
+.cryptoTradingCardFour {
+    bottom: 5%;
+    right: 3%;
+}
+
+.cryptoTradingTitle {
+    font-weight: 600;
+    text-align: center;
+}
+
+.cryptoTradingDesc {
+    font-size: var(--fs15);
+    text-align: center;
+}
+
+.joinNowButtonsNew {
+    margin-top: 50px;
+}
+
+.signatureService .sectionTitle {
+    width: 50%;
+    line-height: 40px;
+}
+
+/* media query */
+
+@media (max-width:575px) {
+    /* .cryptoTradingImgSection {
+        width: 100%;
+    }
+
+    .cryptoTradingTitle {}
+
+    .cryptoTradingDesc {} */
+
+
+    .bannerLeft {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .bannerRow {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .bannerTitle {
+        font-size: var(--fs20);
+        line-height: 40px;
+    }
+
+    .bannerTitleXl {
+        font-size: var(--fs35);
+        /* line-height: 50px; */
+    }
+
+    .bannerDescription {
+        margin-top: 25px !important;
+        font-size: var(--fs13);
+        line-height: 24px;
+    }
+
+    .bannerButtons {
+        gap: 20px;
+        margin-top: 40px;
+    }
+
+    .bannerRight {
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bannerCoinOne {
+        width: 34px;
+        top: 65px;
+        left: 98px;
+        animation: topBottom2 4s infinite;
+    }
+
+    .bannerCoinTwo {
+        width: 30px;
+        top: 75px;
+        left: 200px;
+        animation: topBottom3 4s infinite;
+    }
+
+
+
+
+    .signatureService {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+
+    .sectionTitle {
+        font-size: var(--fs19);
+        line-height: 35px;
+    }
+
+    .sectionDescription {
+        margin-top: 15px !important;
+        font-size: var(--fs13);
+        line-height: 26px;
+        max-width: 550px;
+    }
+
+    .signatureServiceGrids {
+        margin-top: 40px;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+
+    .joinNowButtons {
+        margin-top: 50px;
+    }
+
+}
+
+@media (min-width:576px) and (max-width:767px) {
+
+    .bannerLeft {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .bannerRow {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .bannerTitle {
+        font-size: var(--fs20);
+        line-height: 40px;
+    }
+
+    .bannerTitleXl {
+        font-size: var(--fs35);
+        /* line-height: 50px; */
+
+    }
+
+    .bannerDescription {
+        margin-top: 25px !important;
+        font-size: var(--fs13);
+        line-height: 24px;
+    }
+
+    .bannerButtons {
+        gap: 20px;
+        margin-top: 40px;
+    }
+
+    .bannerCoinOne {
+        width: 60px;
+        top: 100px;
+        left: 155px;
+        animation: topBottom2 4s infinite;
+    }
+
+    .bannerCoinTwo {
+        width: 50px;
+        top: 120px;
+        left: 322px;
+        animation: topBottom3 4s infinite;
+    }
+
+    .signatureService {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .sectionTitle {
+        font-size: var(--fs20);
+    }
+
+    .sectionDescription {
+        margin-top: 15px !important;
+        font-size: var(--fs13);
+        max-width: 550px;
+    }
+
+    .signatureServiceGrids {
+        margin-top: 40px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .joinNowButtons {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width:991px) {
+    .signatureService .sectionTitle {
+        width: 100%;
+    }
+
+    .cryptoTradingImgSection {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 30px;
+        width: 100%;
+    }
+
+    .cryptoTradingImgSection .imgSrc {
+        display: none;
+    }
+
+    .cryptoTradingCard {
+        position: unset;
+        padding: 25px;
+        border-radius: 15px;
+        background: var(--color-bg2);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .cryptoTradingDesc {
+        font-size: var(--fs13);
+    }
+
+    .cryptoTradingTitle {
+        font-size: var(--fs18);
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+
+    .bannerLeft {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .bannerRow {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .bannerTitle {
+        font-size: var(--fs30);
+        line-height: 50px;
+    }
+
+    .bannerTitleXl {
+        font-size: var(--fs35);
+        /* line-height: 50px; */
+
+    }
+
+    .bannerDescription {
+        margin-top: 25px !important;
+        font-size: var(--fs12);
+        line-height: 22px;
+    }
+
+    .bannerButtons {
+        gap: 20px;
+        margin-top: 40px;
+    }
+
+    .bannerCoinOne {
+        width: 65px;
+        top: 150px;
+        left: 218px;
+        animation: topBottom2 4s infinite;
+    }
+
+    .bannerCoinTwo {
+        width: 55px;
+        top: 170px;
+        left: 441px;
+        animation: topBottom3 4s infinite;
+    }
+
+    .signatureService {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+
+    .sectionTitle {
+        font-size: var(--fs23);
+    }
+
+    .sectionDescription {
+        margin-top: 20px !important;
+        font-size: var(--fs13);
+        max-width: 550px;
+    }
+
+    .signatureServiceGrids {
+        margin-top: 40px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .joinNowButtons {
+        margin-top: 50px;
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+
+    .bannerRow {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .bannerTitle {
+        font-size: var(--fs30);
+        line-height: 50px;
+    }
+
+    .bannerTitleXl {
+        font-size: var(--fs35);
+        /* line-height: 50px; */
+    }
+
+    .bannerDescription {
+        margin-top: 25px !important;
+        font-size: var(--fs11);
+        line-height: 22px;
+    }
+
+    .bannerButtons {
+        gap: 20px;
+        margin-top: 40px;
+    }
+
+    .bannerCoinOne {
+        width: 65px;
+        top: 120px;
+        left: 160px;
+        animation: topBottom2 4s infinite;
+    }
+
+    .bannerCoinTwo {
+        width: 55px;
+        top: 120px;
+        left: 335px;
+        animation: topBottom3 4s infinite;
+    }
+
+
+    .signatureService {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+
+    .sectionTitle {
+        font-size: var(--fs23);
+    }
+
+    .sectionDescription {
+        margin-top: 20px !important;
+        font-size: var(--fs13);
+        max-width: 550px;
+    }
+
+    .signatureServiceGrids {
+        margin-top: 40px;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+
+    .joinNowButtons {
+        margin-top: 50px;
+    }
+}
+
+
+@media (max-width:1199px) {
+    .bannerTitleXl {
+        line-height: 45px;
+    }
+}
+
+@media (min-width:1200px) and (max-width:1399px) {
+
+    
+
+    .bannerRow {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .bannerTitle {
+        font-size: var(--fs33);
+        line-height: 55px;
+    }
+
+    .bannerTitleXl {
+        font-size: var(--fs40);
+        line-height: 50px;
+    }
+
+    .bannerDescription {
+        margin-top: 25px !important;
+        font-size: var(--fs12);
+        line-height: 24px;
+    }
+
+    .bannerButtons {
+        gap: 20px;
+        margin-top: 50px;
+    }
+
+    .bannerCoinOne {
+        width: 80px;
+        top: 120px;
+        left: 190px;
+        animation: topBottom2 4s infinite;
+    }
+
+    .bannerCoinTwo {
+        width: 65px;
+        top: 150px;
+        left: 400px;
+        animation: topBottom3 4s infinite;
+    }
+
+    .signatureService {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+
+    .sectionTitle {
+        font-size: var(--fs23);
+    }
+
+    .sectionDescription {
+        margin-top: 20px !important;
+        font-size: var(--fs13);
+        max-width: 480px;
+    }
+
+    .signatureServiceGrids {
+        margin-top: 40px;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+
+    .joinNowButtons {
+        margin-top: 50px;
+    }
+}
+
+@media (min-width:992px) and (max-width:1399px) {
+
+    .cryptoTradingImgSection {
+        width: 100%;
+    }
+
+    .cryptoTradingCardOne {
+        top: 5%;
+        left: 4%;
+    }
+
+    .cryptoTradingCardTwo {
+        top: 5%;
+        right: 7%;
+    }
+
+    .cryptoTradingCardThree {
+        bottom: 5%;
+        left: 4%;
+    }
+
+    .cryptoTradingCardFour {
+        bottom: 5%;
+        right: 4%;
+    }
+
+    .cryptoTradingTitle {
+        font-size: var(--fs20);
+    }
+
+    .cryptoTradingDesc {
+        font-size: var(--fs14);
+    }
+}
+
+@media (min-width:1400px) and (max-width:1799px) {}
+
+@media (min-width:1800px) {
+    .bannerRow {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .bannerTitle {
+        font-size: var(--fs58);
+        line-height: 85px;
+    }
+
+    .bannerTitleXl {
+        font-size: var(--fs65);
+        line-height: 75px;
+    }
+
+    .bannerDescription {
+        margin-top: 25px !important;
+        font-size: var(--fs18);
+        line-height: 35px;
+    }
+
+    .bannerButtons {
+        gap: 25px;
+        margin-top: 80px;
+    }
+
+    .bannerCoinOne {
+        width: 100px;
+        top: 160px;
+        left: 312px;
+        animation: topBottom2 4s infinite;
+    }
+
+    .bannerCoinTwo {
+        width: 86px;
+        top: 200px;
+        left: 593px;
+        animation: topBottom3 4s infinite;
+    }
+
+    .signatureService {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+
+    .sectionTitle {
+        font-size: var(--fs42);
+    }
+
+    .sectionDescription {
+        margin-top: 30px !important;
+        font-size: var(--fs18);
+        max-width: 800px;
+    }
+
+    .signatureServiceGrids {
+        margin-top: 60px;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 35px;
+    }
+
+    .joinNowButtons {
+        margin-top: 70px;
+    }
+}

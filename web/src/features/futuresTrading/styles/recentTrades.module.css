@@ -1,0 +1,158 @@
+.container {
+    height: 100%;
+}
+
+.header {
+    height: 45px;
+    padding-left: var(--trade-cards-padding);
+    padding-right: var(--trade-cards-padding);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+}
+
+.header .title {
+    font-size: var(--fs14);
+    font-weight: 500;
+}
+
+.body {
+    padding-left: var(--trade-cards-padding);
+    padding-right: var(--trade-cards-padding);
+}
+
+.bodyHeader {
+    /* height: 30px; */
+    height: 26px;
+    align-items: center;
+    padding: 0px var(--trade-cards-padding);
+    background: var(--color-bg17);
+
+}
+
+.bodyHeaderTitle {
+    font-size: var(--fs12);
+    color: var(--color-text-03);
+}
+
+.pairsRow {
+    height: 24px;
+    padding: 0px var(--trade-cards-padding) 0 var(--trade-cards-padding);
+    align-items: center;
+}
+
+.pairsRow:hover {
+    background: var(--color-bg2);
+}
+
+.pairText {
+    font-size: var(--fs12);
+}
+
+.pairText.high {
+    color: var(--color-green-03);
+}
+
+.pairText.low {
+    color: var(--color-red-01);
+}
+
+.bodyContainer {
+    overflow-y: scroll;
+}
+
+.bodyContainer::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+}
+.containerClosebtn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.orderBookContainer:hover .containerClosebtn {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.orderBookContainer:hover .containerClosebtn:hover {
+    opacity: 1;
+}
+
+
+/* media */
+
+@media (max-width:575px) {}
+
+@media (min-width:576px) and (max-width:767px) {}
+
+@media (min-width:768px) and (max-width:991px) {
+    .bodyHeaderTitle {
+        font-size: var(--fs10);
+    }
+
+    .pairText {
+        font-size: var(--fs10);
+    }
+
+    .pairsRow {
+        height: 23px;
+    }
+
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    .bodyHeaderTitle {
+        font-size: var(--fs10);
+    }
+
+    .pairText {
+        font-size: var(--fs10);
+    }
+
+    .pairsRow {
+        height: 23px;
+    }
+
+}
+
+@media (min-width:1200px) and (max-width:1399px) {
+    .bodyHeaderTitle {
+        font-size: var(--fs10);
+    }
+
+    .pairText {
+        font-size: var(--fs10);
+    }
+
+    .pairsRow {
+        height: 23px;
+    }
+}
+
+@media (min-width:1400px) and (max-width:1799px) {
+    .bodyHeaderTitle {
+        font-size: var(--fs12);
+    }
+
+    .pairText {
+        font-size: var(--fs12);
+    }
+}
+
+@media (min-width:1800px) {
+    .bodyHeaderTitle {
+        font-size: var(--fs12);
+    }
+
+    .pairText {
+        font-size: var(--fs13);
+    }
+
+    .pairsRow {
+        height: 26px;
+    }
+}

@@ -1,0 +1,54 @@
+.listSection {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid var(--color-border-02);
+    cursor: pointer;
+}
+
+.listImg {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+}
+
+.listDesc {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 23px;
+}
+
+.listTitle {
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    max-width: 200px;
+}
+
+/* media  */
+
+@media (max-width:575px) {
+
+}
+
+@media (min-width:576px) and (max-width:767px) {
+
+}
+
+@media (min-width:768px) and (max-width:991px) {
+
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+
+}
+
+@media (min-width:1200px) and (max-width:1399px) {}
+
+@media (min-width:1400px) and (max-width:1799px) {
+
+}
+
+@media (min-width:1800px) {
+
+}

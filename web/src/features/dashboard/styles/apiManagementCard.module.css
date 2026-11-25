@@ -1,0 +1,203 @@
+.card {
+    /* background-color: var(--color-bg4); */
+    margin-top: 25px;
+    margin-bottom: 25px;
+    /* padding: 15px; */
+    border-radius: var(--radius-2l);
+}
+
+.cardTitle {
+    font-size: var(--fs15);
+    width: 100%;
+    height: 4pc;
+    padding: 1.3pc 0 0 0!important;
+    margin: 0 !important;
+    cursor: pointer;
+}
+
+.cardTitlePart{
+    width: 80%;
+    height: 100%;
+}
+
+.scannerImg {
+    min-width: 200px;
+    width: 200px;
+    max-width: 200px;
+    min-height: 200px;
+    height: 200px;
+    max-height: 200px;
+    overflow: hidden;
+    object-fit: cover
+}
+
+.labelTitle {
+    font-size: var(--fs14);
+    color: var(--color-text-04);
+}
+
+.labelValue {
+    font-size: var(--fs16);
+}
+
+.copyBtn {
+    color:var(--color-bg8);
+    border:none !important;
+    background-color: transparent !important;
+}
+
+.qrCodeImg{
+    background-color: #fff;
+    padding: 0.6pc;
+    border-radius: 5px;
+}
+
+.cardHeaderPart{
+    background-color:var(--color-bg4);
+    padding: 0pc 1pc;
+    border-radius: 10px;
+}
+
+.cardBodyPart{
+    background-color:var(--color-bg4);
+    padding: 1pc ;
+    border-top:1px solid  #5b5b5b;
+}
+
+.card:has(.cardBodyPart) .cardHeaderPart{
+    border-radius: 10px  10px 0 0;
+}
+
+.editContainer.isDisabled{
+    pointer-events: none !important;
+    opacity: 0.5;
+}
+
+.fixedAmountField{
+    display: flex;
+    align-items: center;
+    gap:1pc;
+}
+
+.apiListPart{
+    display: flex;
+    flex-wrap: wrap;
+    gap:0.5pc;
+    margin-top: 1pc;
+}
+
+.apiListPart .apiListCard{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    background-color: var(--color-bg14);
+    border-radius: 100px;
+    padding: 4px 4px 4px 10px;
+    gap:1pc;
+    font-size: var(--fs12);
+}
+
+.apiListPart .apiListCard button{
+    background-color: var(--color-bg10);
+    border:none;
+    color:var(--color-bg8);
+    padding: 0 !important;
+    border-radius: 100px;
+    width: 20px;
+    height:20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* media  */
+
+@media (max-width:575px) {
+    .card {
+        padding: 10px;
+    }
+
+    .cardTitle {
+        font-size: var(--fs15);
+    }
+
+    .labelTitle {
+        font-size: var(--fs14);
+    }
+
+    .labelValue {
+        font-size: var(--fs16);
+    }
+}
+
+@media (min-width:576px) and (max-width:767px) {
+    .cardTitle {
+        font-size: var(--fs15);
+    }
+
+    .labelTitle {
+        font-size: var(--fs14);
+    }
+
+    .labelValue {
+        font-size: var(--fs16);
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .cardTitle {
+        font-size: var(--fs15);
+    }
+
+    .labelTitle {
+        font-size: var(--fs14);
+    }
+
+    .labelValue {
+        font-size: var(--fs16);
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    .cardTitle {
+        font-size: var(--fs15);
+    }
+
+    .labelTitle {
+        font-size: var(--fs14);
+    }
+
+    .labelValue {
+        font-size: var(--fs16);
+    }
+}
+
+@media (min-width:1200px) and (max-width:1399px) {}
+
+@media (min-width:1400px) and (max-width:1799px) {
+    .cardTitle {
+        font-size: var(--fs16);
+    }
+
+    .labelTitle {
+        font-size: var(--fs15);
+    }
+
+    .labelValue {
+        font-size: var(--fs17);
+    }
+}
+
+@media (min-width:1800px) {
+    .cardTitle {
+        font-size: var(--fs19);
+    }
+
+    .labelTitle {
+        font-size: var(--fs18);
+    }
+
+    .labelValue {
+        font-size: var(--fs20);
+    }
+}

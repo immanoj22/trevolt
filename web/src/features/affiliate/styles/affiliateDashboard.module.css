@@ -1,0 +1,130 @@
+@import "affiliateCommon.module.css";
+
+.overviewCardWrapper {
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.cardPart {
+    padding: 15px;
+    border-radius: 24px;
+    color: var(--color-similar-01);
+}
+
+
+
+.cardPart .cardIcon {
+    width: 40px;
+}
+
+.cardPart .cardTitleText {
+    font-size: var(--fs17);
+}
+
+.cardPart .cardContentText {
+    font-size: var(--fs12);
+    margin-top: 8px !important;
+}
+
+.cardPart .cardCountText {
+    font-size: var(--fs22);
+    margin-top: 20px !important;
+}
+
+.cardTemplate {
+    background: var(--color-bg9);
+    border: 1px solid var(--color-border-03);
+    border-radius: var(--radius-2l);
+    color: var(--color-text-03);
+    padding: var(--space-sm);
+}
+
+.affiliateRuleWrapper {
+    margin-top: 20px !important;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+
+}
+
+.affiliateRuleWrapper .leftCardWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.labelHeadingText {
+    color: var(--color-text-03);
+    font-size: var(--fs15);
+    font-weight: 500;
+}
+
+.valueText {
+    color: var(--color-text-01);
+    font-size: var(--fs17);
+    margin-block: 10px !important;
+}
+
+.dividerLine {
+    border: 0.1mm solid var(--color-bg10);
+    opacity: 0.5 !important;
+}
+
+.qrcodeImg {
+    width: 150px;
+    height: 150px;
+}
+
+.qrCodeContainer {
+    background: var(--color-similar-01);
+    padding: 10px;
+    height: fit-content;
+}
+
+.qrCodeWrapper {
+    min-height: 150px;
+    height: 150px;
+    max-height: 150px;
+    max-width: 150px;
+    min-height: 150px;
+    min-width: 150px;
+}
+
+.socialMediaBtn {
+    width: 40px;
+    height: 40px;
+    border-radius: 500px;
+    border: none;
+    display: flex;
+    background-color: var(--color-bg10);
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+.socialMediaBtn img {
+    border-radius: inherit;
+    width: 40px;
+    height: 40px;
+}
+
+.socialMediaBtn:hover {
+    transform: scale(1.1);
+}
+
+/* media */
+@media (max-width:575px) {}
+
+@media (min-width:576px) and (max-width:767px) {}
+
+@media (min-width:768px) and (max-width:991px) {}
+
+@media (min-width:992px) and (max-width:1199px) {}
+
+@media (min-width:1200px) and (max-width:1399px) {}
+
+@media (min-width:1400px) and (max-width:1799px) {}
+
+@media (min-width:1800px) {}

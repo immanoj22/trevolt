@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="splash_status_bar_color">#131517</color>
+    <!-- Accent colour applied to the small icon of FCM notifications -->
+    <color name="notification_color">#14A35B</color>
+</resources>

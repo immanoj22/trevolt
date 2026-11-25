@@ -1,0 +1,348 @@
+.tickerListContainer {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 4px 16px;
+    position: relative;
+}
+
+.coinPairsContainer {
+    position: absolute;
+    width: 100%;
+    /* max-width: 550px;
+    height: 350px; */
+    max-width: 425px;
+    height: 200px;
+    background: var(--color-bg15);
+    left: 0;
+    top: 65px;
+    /* Must stack above every other trading-page widget (chart toolbar,
+       draggable/resizable panels, order book, trade action card) — those
+       previously used z-index values up to 10, which occasionally let a
+       repositioned/resized panel paint over this dropdown. */
+    z-index: 1000;
+    border-radius: 5px;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: var(--box-shadow-02);
+    border: 1px solid var(--color-border-02);
+    overflow: hidden;
+}
+
+.coinPairsContainer.active {
+    transform: translateY(0px);
+    transition: all 0.3s ease;
+    opacity: 1;
+    visibility: unset;
+}
+
+
+
+.tickerLeft {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+}
+
+.markFavorite {
+    border: 1px solid var(--color-bg16);
+    padding: 5px;
+    background: transparent;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    width: 25px;
+    height: 25px;
+}
+
+.markFavorite svg {
+    fill: var(--color-bg16);
+}
+
+.markFavorite.active svg {
+    fill: var(--color-yellow-01);
+}
+
+
+.selectedPair {
+    font-size: var(--fs18);
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+}
+
+.selectedPairButton {
+    cursor: pointer;
+}
+
+.selectedPairButton svg {
+    fill: var(--color-text-02);
+    font-size: var(--fs20);
+}
+
+.selectedPairButton.active svg,
+.selectedPairButton:hover svg {
+    fill: var(--color-green-03);
+}
+
+
+.showPrice {
+    font-size: var(--fs18);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    line-height: 24px;
+    font-weight: 500;
+    margin-bottom: 0px;
+
+}
+
+.showPrice.high {
+    color: var(--color-green-03);
+}
+
+.showPrice.low {
+    color: var(--color-red-01);
+}
+
+/* Up/down arrow rendered inline before the price text (see MarketSummary.jsx).
+   Inherits color from .showPrice.high / .showPrice.low above via
+   currentColor, so it always matches the price color with no extra
+   high/low rules needed here. font-size is relative (em) so it scales
+   automatically with .showPrice at every breakpoint already defined below
+   (mobile, 1200-1399px, etc.) without additional media queries. */
+.priceDirectionIcon {
+    color: currentColor;
+    font-size: 1.3em;
+    flex-shrink: 0;
+}
+
+.subPrice {
+    color: var(--color-text-04);
+    font-size: var(--fs11);
+    font-weight: 400;
+    margin-top: 2px !important;
+}
+
+.tickerRight {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    width: 100%;
+    align-items: center;
+    position: relative;
+}
+
+.tickerValueContainer {
+    height: 100%;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    gap: 10px;
+}
+
+.headerScrollButton {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.headerScrollButton svg {
+    fill: var(--color-text-03)
+}
+
+.headerScrollButton:hover svg {
+    fill: var(--color-text-01)
+}
+
+
+.leftNav {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.leftNav svg {
+    fill: var(--color-text-03);
+}
+
+.rightNav {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.rightNav svg {
+    fill: var(--color-text-03);
+}
+
+.tickerValueWrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    transition: all 0.3s ease;
+    scroll-behavior: smooth;
+}
+
+.tickerValueWrapper.active {
+    /* overflow-x: scroll;
+    scrollbar-width: none; */
+}
+
+.tickerItemLabel {
+    color: var(--color-text-04);
+    font-size: var(--fs13);
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 3px !important;
+    white-space: nowrap;
+}
+
+.tickerPriceText {
+    font-size: var(--fs12);
+    line-height: 16px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.nowPrice {
+    width: 5pc;
+}
+
+.tickerPriceText.high {
+    color: var(--color-green-03);
+}
+
+.tickerPriceText.low {
+    color: var(--color-red-01);
+}
+
+.tickerActionContainer {
+    padding-left: 16px;
+}
+
+.settings {
+    border: none;
+    outline: none;
+    background: transparent;
+    height: 100%;
+}
+
+.settings svg path {
+    color: var(--color-text-03);
+}
+
+.settings:hover svg path {
+    color: var(--color-text-01);
+}
+
+
+/* media */
+
+@media (max-width:575px) {
+    .tickerListContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 16px;
+        padding: var(--trade-cards-padding);
+    }
+
+    .tickerValueWrapper {
+        width: 100% !important;
+        display: flex;
+        flex-wrap: wrap;
+        overflow-x: unset;
+        scrollbar-width: unset;
+    }
+
+    .nowPrice {
+        display: flex;
+        align-items: end;
+        gap: 10px;
+    }
+
+    .showPrice {
+        font-size: var(--fs20);
+        line-height: 20px;
+
+    }
+
+    .subPrice {
+        font-size: var(--fs10);
+        margin-top: 0px;
+    }
+
+    .headerScrollButton {
+        display: none;
+    }
+
+    .tickerActionContainer {
+        display: none;
+    }
+
+    .coinPairsContainer {
+        top: 45px;
+    }
+
+}
+
+@media (min-width:576px) and (max-width:767px) {
+    .tickerActionContainer {
+        display: none;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .tickerActionContainer {
+        display: none;
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    .tickerActionContainer {
+        display: none;
+    }
+
+}
+
+@media (min-width:1200px) and (max-width:1399px) {
+    .selectedPair {
+        font-size: var(--fs16);
+    }
+
+    .showPrice {
+        font-size: var(--fs16);
+    }
+
+    .subPrice {
+        font-size: var(--fs10);
+    }
+
+    .tickerValueWrapper {
+        gap: 20px;
+    }
+
+    .tickerItemLabel {
+        font-size: var(--fs9);
+    }
+
+    .tickerPriceText {
+        font-size: var(--fs10);
+    }
+}
+
+@media (min-width:1400px) and (max-width:1799px) {}
+
+@media (min-width:1800px) {}

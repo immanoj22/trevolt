@@ -1,0 +1,97 @@
+.comingSoonBox img.logo {
+    cursor: pointer;
+    max-width: 200px;
+}
+
+.logoRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+/* Same badge as the header's "Demo" label (config.ENV !== 'live') — see
+   header.module.css .headerSingleMenusLinks.demoLabel — reusing the exact
+   same color variable there so this reads as the same badge, just shown
+   here instead of in the header. Only rendered when the showDemoBadge prop
+   is explicitly passed (see ComingSoon.jsx); every other usage of this
+   component is unaffected. */
+.demoBadge {
+    display: inline-flex;
+    padding: 3px 10px;
+    background-color: var(--color-orange-01);
+    border-radius: 3px;
+    color: #fff;
+    font-size: var(--fs11);
+}
+ 
+.homeButton {
+    margin-top: 12px;
+    padding: 0.7rem 1.8rem;
+    border: none;
+    border-radius: 8px;
+    background: var(--color-green-01);
+    color: var(--color-similar-01);
+    font-weight: 600;
+    cursor: pointer;
+    align-self: center;
+    transition: opacity 0.2s ease;
+}
+
+.homeButton:hover {
+    opacity: 0.85;
+}
+
+/* Applied automatically whenever config.ENV !== 'live' (see isDemoEnv in
+   ComingSoon.jsx) — same vivid orange already used for this app's other
+   primary CTA buttons (Signup, Start Trading — see button.module.css /
+   landing.module.css), not the muted brownish tone used for the small
+   "Demo" text badge above, since a full-size button needs the more
+   saturated color to read correctly. Live production is completely
+   unaffected: .homeButton's own green background above still applies
+   there, this class is simply never added. */
+.homeButtonDemo {
+    background: var(--color-orange-01);
+}
+
+.comingSoonOverlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* BUG FIX: this had no background at all — only the smaller centered
+       .comingSoonBox below did, and even that was only 85% opaque. Since
+       this outer div is what actually spans the full viewport
+       (inset: 0), leaving it transparent meant anything sitting behind
+       it — a page's own Header/Footer when this component is used inside
+       a shared layout (e.g. Affiliate/Institutional under StaticLayout),
+       which render outside this component's own DOM subtree — showed
+       through in full everywhere except directly behind the box itself.
+       A solid background here, matching the app's own dark theme, is what
+       actually hides the whole page underneath. */
+    background: var(--color-bg);
+}
+
+.comingSoonBox {
+    /* Solid, not semi-transparent — see the comment on .comingSoonOverlay
+       above; this was letting a further 15% of whatever sits behind it
+       bleed through right around the box's own text. A slightly lighter,
+       still fully opaque, surface tone than the overlay's pure black
+       keeps it reading as a distinct card rather than blending flat into
+       the backdrop. */
+    background: var(--color-bg2);
+    padding: 2.5rem 3rem;
+    border-radius: 12px;
+    text-align: center;
+    color: var(--color-primaryText);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}

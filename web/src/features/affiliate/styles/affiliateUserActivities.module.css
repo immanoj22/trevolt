@@ -1,0 +1,9 @@
+@import "affiliateCommon.module.css";
+
+.isOnline {
+    display: inline-flex;
+    width: 5px;
+    height: 5px;
+    background-color: #00FE09;
+    border-radius: 100px;
+}

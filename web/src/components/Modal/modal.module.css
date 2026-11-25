@@ -1,0 +1,380 @@
+/* modal layout style start */
+
+.modelOverView {
+    backdrop-filter: brightness(0.5) !important;
+}
+
+.modelOverView [class='modal-content'] {
+    background: var(--color-bg15) !important;
+    border-radius: 10px !important;
+}
+
+.modalCloseButton {
+    border: none;
+    outline: none;
+    width: fit-content;
+    background: var(--color-bg10);
+}
+
+.modalCloseButton svg {
+    fill: var(--color-text-03);
+}
+
+.modelOverViewHeader {
+    position: relative;
+    border: none !important;
+}
+
+.modelOverViewHeaderBorder {
+    position: relative;
+    border: 1px solid var(--bg-color-08) !important;
+}
+
+.modalHeaderTitle {
+    font-size: var(--fs19);
+    margin-bottom: 0px !important;
+    font-weight: 550;
+    color: var(--color-text-03);
+}
+
+.modalCloseButton {
+    width: 30px;
+    height: 30px;
+    border-radius: var(--radius-8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.modalCloseButton svg {
+    font-size: var(--fs25);
+}
+
+.modelOverViewBody {
+    padding: 16px 16px !important;
+    position: relative;
+}
+
+.modelOverViewFooter {
+    padding: 16px !important;
+    border-top: 1px solid var(--color-border-01) !important;
+}
+
+.modalFooterActions {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 15px;
+}
+
+.modalPrimary {
+    backdrop-filter: brightness(0.5) !important;
+}
+
+.modalPrimary [class='modal-content'] {
+    background: var(--color-bg1) !important;
+    border-radius: var(--radius-2l) !important;
+}
+
+.modalCloseButton {
+    border: none;
+    outline: none;
+    width: fit-content;
+    background: var(--color-bg10);
+}
+
+.modalCloseButton svg {
+    fill: var(--color-text-03);
+}
+
+.modalPrimaryHeader {
+    position: relative;
+    border: none !important;
+}
+
+.modalPrimaryHeaderBorder {
+    position: relative;
+    border: 1px solid var(--bg-color-08) !important;
+}
+
+.badgeTag {
+    color: var(--color-text-03);
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.5pc;
+}
+
+.badgeTag.isOnline {
+    color: var(--color-green-02);
+}
+
+.modalCloseButton {
+    width: 30px;
+    height: 30px;
+    border-radius: var(--radius-8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.modalCloseButton svg {
+    font-size: var(--fs25);
+}
+
+.modalPrimaryBody {
+    padding: 30px 16px !important;
+}
+
+
+.modalDescription {
+    font-size: var(--fs15);
+}
+
+.modalSecondary [class='modal-dialog'] {
+    max-width: 420px !important;
+}
+
+.modalLabel {
+    color: var(--color-text-04);
+    font-size: var(--fs14);
+}
+
+.labelWhite {
+    color: var(--color-primaryText);
+}
+
+.modalSecondary [class='modal-content'] {
+    background: var(--color-bg4);
+    border-radius: 15px;
+}
+
+.modalSecondaryHeader {
+    border: none !important;
+}
+
+.modalSecondaryBody {
+    padding: 30px;
+}
+
+.networkModelHeader {
+    border-bottom: 1px solid #464646 !important;
+    margin-bottom: 2pc !important;
+}
+
+
+/* side model start*/
+/* start of offcanvas */
+
+.notificationOffcanva {
+    background: var(--color-bg1) !important;
+    color: var(--color-primaryText) !important;
+}
+
+.notificationOffcanva .headSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.notificationOffcanva .headSection .title {
+    font-size: var(--fs17);
+}
+
+.customOffCanvaCloseButton {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--color-primaryText);
+}
+
+
+.notificationOffcanva .unreadTitle {
+    font-size: var(--fs14);
+}
+
+.notificationOffcanva .footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, 0%);
+    background: var(--color-bg1) !important;
+}
+
+.bodyContent {
+    overflow-y: auto;
+}
+
+.canvaBody {
+    overflow-y: auto !important;
+    /* shrink the body's own bottom edge above the fixed-position chat
+       widget bubble, so the last rows land above it instead of needing
+       to be scrolled past into empty padding */
+    margin-bottom: 90px !important;
+}
+
+.notificationOffcanva .footer a {
+    text-decoration: underline !important;
+    font-size: var(--fs13);
+}
+
+.notificationOffcanva .footer a:hover {
+    color: var(--color-green-01) !important;
+}
+
+.noDataFound {
+    font-size: var(--fs14)
+}
+
+/* end of offcanvas */
+/* side model end*/
+
+/* welcome model start */
+.cardTemplateModel {
+    position: relative;
+}
+
+.cardModelBody {
+    min-height: 270px;
+    background-image: url("../../assets/image/welcomeCardBg.svg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 1pc;
+    padding: 2pc 2pc !important;
+}
+
+.cardModelBody .titleText {
+    color: #fff;
+    font-size: var(--fs40);
+    font-weight: 600;
+}
+
+.cardModelBody .descriptionText {
+    color: #fff;
+}
+
+.cardTemplateModel .closeBtn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 10;
+    background-color: #fff;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3pc;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.4s;
+
+    width: 40px;
+    height: 40px;
+    top: 0;
+    right: 0;
+    border-radius: 0 10px 0px 50px;
+}
+
+.cardTemplateModel .closeBtn svg {
+    position: absolute;
+    top: 6px;
+    left: 14px;
+
+}
+
+.cardTemplateModel .closeBtn:hover {
+    opacity: 0.7;
+}
+
+.closeBtnBlack .closeBtn svg {
+    color: var(--color-similar-02);
+}
+
+.bonusCardBody {
+    gap: 0.5pc;
+    background-image: url("../../assets/image/bonusCardBg.svg");
+}
+
+.bonusCardBody .titleText {
+    font-size: var(--fs35);
+}
+
+.bonusCardBody .bonusDetailPart {
+    position: relative;
+}
+
+.bonusCardBody .bonusIcon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35%;
+    min-width: 3pc;
+    max-width: 12pc;
+}
+
+.bonusCardBody .profileDetails {
+    display: flex;
+    align-items: center;
+    gap: 1pc;
+    padding: 1pc 0;
+}
+
+.bonusCardBody .profileDetails img {
+    width: 4pc;
+    height: 4pc;
+    border-radius: 100px;
+    border: 3px solid #fff;
+}
+
+.bonusCardBody .profileDetails h4 {
+    color: #fff;
+    font-size: var(--fs24);
+}
+
+.bonusCardBody .profileDetails p {
+    color: #fff;
+    font-size: var(--fs14);
+}
+
+.bonusCardBody .bonusAmtDetails {
+    color: #fff;
+    background-color: #002f00;
+    padding: 1pc;
+    border-radius: 5px;
+}
+
+.bonusCardBody .bonusAmtDetails h2 {
+    font-size: var(--fs25);
+}
+
+.bonusCardBody .bonusAmtDetails p {
+    font-size: var(--fs15);
+    margin-top: 5px !important;
+}
+
+/* welcome model end */
+
+
+@media screen and (max-width:375px) {
+    .bonusCardBody .bonusIcon {
+        display: none;
+    }
+}

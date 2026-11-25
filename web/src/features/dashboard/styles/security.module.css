@@ -1,0 +1,64 @@
+/* start of common css - start */
+
+.pageTitle {
+    font-size: var(--fs18);
+}
+
+/* start of common css - end */
+
+.card {
+    margin-top: 30px;
+    background: var(--color-bg9);
+    border: 1px solid var(--color-border-03);
+    border-radius: var(--radius-2l);
+}
+
+.cardSingleContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    padding: var(--space-xl);
+    border-bottom: 1px solid var(--color-border-03);
+}
+
+.cardSingleContainer:last-child {
+    margin-bottom: 0px;
+}
+
+.cardContainerValue {
+    font-weight: 500;
+    font-size: var(--fs15);
+}
+
+.cardContainerLabel {
+    color: var(--color-text-04);
+    font-weight: 400;
+    font-size: var(--fs14);
+    margin-top: 10px !important;
+}
+
+.cardSingleContainerRight {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* media */
+
+
+@media (max-width:575px) {}
+
+@media (min-width:576px) and (max-width:767px) {}
+
+@media (min-width:768px) and (max-width:991px) {}
+
+@media (min-width:992px) and (max-width:1199px) {}
+
+@media (min-width:1200px) and (max-width:1399px) {}
+
+@media (min-width:1400px) and (max-width:1799px) {}
+
+@media (min-width:1800px) {}

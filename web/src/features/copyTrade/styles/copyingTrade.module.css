@@ -1,0 +1,85 @@
+.subLanding {
+    padding-top: var(--header-height);
+}
+
+.copyingTradeContainer {
+    max-width: 700px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.copyingBackBtn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.pageTitle {
+    font-size: var(--fs18);
+}
+
+.labelHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.selectedpairs {
+    background: var(--color-border-03);
+    border: 1px solid var(--color-border-03);
+    border-radius: var(--radius-2l);
+    padding: var(--space-xl);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.copyingTabs {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    background-color: var(--color-bg10);
+    width: fit-content;
+    border-radius: 10px;
+}
+
+.copyingTabs button {
+    border: none;
+    outline: none;
+    background: var(--color-bg10);
+    border-radius: 5px;
+    font-size: var(--fs14);
+    padding: 7px 15px;
+    color: var(--color-text-03);
+}
+
+.copyingTabs button.active {
+    background: var(--color-green-01);
+    color: var(--color-similar-01);
+}
+
+.copyBtn {
+    margin-top: 20px;
+}
+
+.selectedPairsBorder {
+    background: var(--color-green-01);
+    border: 1px solid var(--color-border-03);
+    padding: 10px !important;
+    border-radius: var(--radius-2l);
+    color: var(--color-text-03);
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.redClr {
+    color: var(--color-red-01);
+    font-size: 14px;
+}

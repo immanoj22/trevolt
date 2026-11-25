@@ -1,0 +1,294 @@
+/* start of common css - start */
+
+.pageTitle {
+    font-size: var(--fs18);
+}
+
+.pageDescription {
+    font-size: var(--fs14);
+    line-height: 25px;
+    color: var(--color-bg8);
+    font-weight: 400;
+
+}
+
+/* start of common css - end */
+
+.innerPageHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+
+.amountShow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    /* color: #E1E1E2; */
+}
+
+.amountShow .leftSec {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+.amountShow .leftSec .value {
+    font-size: var(--fs18);
+    font-weight: 700;
+    margin-top: 4px;
+}
+
+.amountShow .leftSec .title {
+    position: relative;
+}
+
+.amountShow .leftSec .title::after {
+    content: '';
+    border-bottom: 1px dashed #8B8B8B;
+    width: 85%;
+    display: block;
+}
+
+.content {
+    padding: 30px 40px;
+    font-size: var(--fs15);
+}
+
+.currency {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.currencyBtn {
+    border-radius: 4px;
+    padding: 8px 20px;
+    /* background: #1D2022;
+    border: 1px solid #1D2022;
+    color: white; */
+    background: var(--color-bg10);
+    border: 1px solid var(--color-bg10);
+    color: var(--color-text-04);
+    font-size: var(--fs15);
+}
+
+.currencyBtn:hover {
+    color: var(--color-similar-01);
+    border: 1px solid var(--color-green-01);
+    background: var(--color-green-01);
+}
+
+.headingBtmBdr {
+    background-color: var(--color-bg10);
+    height: 5px;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.graphSection {
+    /* background-color: #16181A; */
+    padding: 30px;
+    margin-top: 30px;
+    background: var(--color-bg9);
+    border: 1px solid var(--color-border-03);
+    color: var(--color-text-03);
+    border-radius: var(--radii-s);
+}
+
+.graphSection .headSection {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.graphTitle {}
+
+.chatContent {
+    margin-top: 10px;
+}
+
+.chatContent ul li svg {
+    transform: rotate(45deg);
+}
+
+.chatContent ul li {
+    font-size: var(--fs14);
+}
+
+.graphFilter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.filterBtn {
+    /* background-color: #1D2022; */
+    background: var(--color-bg10);
+    border: 1px solid var(--color-bg10);
+    color: var(--color-text-04);
+    border-radius: var(--radii-s);
+    padding: 9px 18px;
+    font-weight: 500;
+    font-size: var(--fs15);
+    min-width: 120px;
+}
+
+.filterBtn:hover {
+    background: var(--color-bg8);
+    color: var(--color-invert-text-01);
+    border: 1px solid var(--color-bg8);
+}
+
+.filterBtn.active {
+    background: var(--color-bg8);
+    color: var(--color-invert-text-01);
+    border: 1px solid var(--color-bg8);
+}
+
+.themeclr {
+    color: var(--color-green-01);
+}
+
+.f-12 {
+    font-size: var(--fs12);
+}
+
+.commission {
+    padding: 10px 50px;
+    /* background-color: #1D2022; */
+    border-radius: var(--radius-8);
+    background: var(--color-bg10);
+    border: 1px solid var(--color-bg10);
+    /* color: var(--color-text-04); */
+}
+
+/* .tradingEquityGraph .apexcharts-canvas .apexcharts-svg {
+    background-color: transparent;
+} */
+
+.labelValue {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+.labelValue .title::after {
+    content: '';
+    border-bottom: 1px dashed #8B8B8B;
+    width: 85%;
+    display: block;
+}
+
+.labelValue .value {
+    font-size: var(--fs18);
+    font-weight: 700;
+    margin-top: 4px;
+}
+
+.winLossValues .labelValue:nth-child(1) .value {
+    color: #2563EB;
+}
+
+.winLossValues .labelValue:nth-child(3) .value {
+    color: #2563EB;
+}
+
+.winLossValues .labelValue:nth-child(4) .value {
+    color: var(--color-red-01);
+}
+
+.winLossValues .labelValue:nth-child(6) .value {
+    color: #2563EB;
+}
+
+.columnChatSec {
+    /* background-color: #2291ff; */
+    /* background-color: #16181A; */
+    background: var(--color-bg9);
+    border: 1px solid var(--color-border-03);
+    color: var(--color-text-03);
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: var(--radii-s);
+}
+
+.columnChatSec .title .value {
+    color: #2563EB;
+}
+
+.commission .referText {
+    font-size: var(--fs12);
+}
+
+.chartNoData {
+    height: 300px;
+}
+
+/* .tradingGraph {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+/* .tradingGraph >div{
+    width: 100%;
+    height: 100%;
+} */
+
+/* .customDataPicker {
+
+} */
+
+
+
+/* media */
+
+@media (max-width:575px) {}
+
+@media (min-width:576px) and (max-width:767px) {}
+
+@media (min-width:768px) and (max-width:991px) {}
+
+@media (max-width:991px) {
+    .content {
+        padding: 20px 20px;
+    }
+
+    .graphSection {
+        padding: 20px;
+    }
+
+    .filterBtn {
+        font-size: var(--fs13);
+        min-width: 100px;
+        padding: 9px 18px;
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {}
+
+@media (min-width:1200px) and (max-width:1399px) {}
+
+@media (min-width:1400px) and (max-width:1799px) {}
+
+@media (min-width:1800px) {
+    .pageTitle {
+        font-size: var(--fs18);
+    }
+
+    .content {
+        font-size: var(--fs20);
+    }
+
+    .chatContent ul li {
+        font-size: var(--fs17);
+    }
+}

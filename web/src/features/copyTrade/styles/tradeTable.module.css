@@ -1,0 +1,66 @@
+.headerTabs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.headerTabsButton {
+    background: transparent;
+    color: var(--color-text-03);
+    border: 1px solid var(--color-bg17);
+    font-size: var(--fs12);
+    padding: 3px 15px;
+    border-radius: 3px;
+}
+
+
+.headerTabsButton.active {
+    background: var(--color-bg17);
+    border: 1px solid var(--color-bg17);
+}
+
+.totalCard {
+    margin-left: auto;
+    padding: 3px 5px;
+    display: flex;
+    align-items: center;
+    gap: 0.3pc;
+    border: 1px solid var(--color-border-01);
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--color-text-03)
+}
+
+.totalCard:hover {
+    background-color: var(--color-bg17);
+}
+
+.totalCard span {
+    font-size: var(--fs13);
+}
+
+.tableSection {
+    margin-top: 20px;
+    position: relative;
+}
+
+.noDataContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loadMoreContainer {
+    border-top: 1px solid var(--color-border-03);
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

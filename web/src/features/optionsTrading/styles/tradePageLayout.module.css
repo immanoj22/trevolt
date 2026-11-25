@@ -1,0 +1,388 @@
+.layout {
+    background: var(--color-bg14);
+}
+
+.container {
+    width: 100%;
+    padding: var(--site-padding);
+}
+
+
+
+.marketTicker {
+    grid-area: marketTicker;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 5px;
+    background: var(--color-bg15);
+}
+
+.marketSummary {
+    grid-area: marketSummary;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 5px;
+    background: var(--color-bg15);
+}
+
+.strategyBuilder {
+    grid-area: strategyBuilder;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 5px;
+    background: var(--color-bg15);
+}
+
+.coinPairs {
+    grid-area: coinPairs;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 5px;
+    background: var(--color-bg15);
+}
+
+.chartAndTable {
+    grid-area: chartAndTable;
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    min-height: 0;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    background: var(--color-bg15);
+}
+
+.orderBook {
+    grid-area: orderBook;
+    background: var(--color-bg15);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 5px;
+}
+
+.recentTrades {
+    grid-area: recentTrades;
+    background: var(--color-bg15);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 5px;
+}
+
+.tradeActionPanel {
+    grid-area: tradeActionPanel;
+    background: var(--color-bg15);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 5px;
+}
+
+.tradeActionPanel::after {
+    width: 100%;
+    height: 9px;
+    background: var(--color-bg15);
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.marketNews {
+    grid-area: marketNews;
+    background: var(--color-bg15);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 5px;
+}
+
+.tradeTabs {
+    grid-area: tradeTabs;
+    background: var(--color-bg15);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 5px;
+
+}
+
+.gridTabsContainer {
+    background: var(--color-bg15);
+    width: 100%;
+    position: relative;
+    border-radius: 5px;
+}
+
+.gridTabsHeader {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 35px;
+    margin: var(--trade-cards-padding);
+}
+
+.gridTabsHeader button {
+    border: none;
+    outline: none;
+    height: 100%;
+    white-space: nowrap;
+    background: transparent;
+    font-size: var(--fs12);
+    position: relative;
+    color: var(--color-text-04);
+    padding: 0px;
+}
+
+.gridTabsHeader button.active {
+    color: var(--color-text-03);
+}
+
+.gridTabsHeader button.active::after {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 2px;
+    background: var(--color-green-01);
+    bottom: 0;
+    left: 0px;
+}
+
+.reactSelectWrapper {
+    position: relative;
+}
+
+.reactSelectWrapper.active::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    background: var(--color-green-01);
+    width: 30px;
+    height: 2px;
+}
+
+.gridTabsBody {
+    height: 550px;
+}
+
+.mobBuySellContainer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: var(--color-primaryBg);
+    height: 52px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    padding: 8px 16px;
+}
+
+.mobBuySellContainer button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color: var(--color-similar-01);
+    font-size: var(--fs14);
+    font-weight: 600;
+}
+
+.mobBuySellContainer button:hover {
+    opacity: 0.8;
+}
+
+.mobBuySellContainer button.buyButton {
+    background: var(--color-green-02);
+}
+
+.mobBuySellContainer button.sellButton {
+    background: var(--color-red-04);
+}
+
+/* start of orderForm modal */
+
+.orderFormModal {
+    background: var(--color-primaryBg) !important;
+    border-top-left-radius: 12px !important;
+    border-top-right-radius: 12px !important;
+    height: fit-content !important;
+}
+
+.orderFormModalHeader {
+    padding: 0px 16px !important;
+    height: 41px !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.orderFormModalBody {
+    padding: 0px !important;
+}
+
+/* end of orderForm modal */
+
+/* media */
+
+@media (max-width:575px) {
+    .container {
+        padding-bottom: 56px;
+    }
+
+    .gridContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media(min-width:576px) and (max-width:767px) {
+    .container {
+        padding-bottom: 56px;
+    }
+
+    .gridContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .gridTabsHeader {
+        gap: 15px;
+    }
+}
+
+@media(min-width:768px) and (max-width:991px) {
+    .container {
+        padding-bottom: 56px;
+    }
+
+    .gridContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .gridTabsHeader {
+        gap: 15px;
+    }
+}
+
+@media(min-width:992px) and (max-width:1199px) {
+    /* .gridContainer {
+        display: grid;
+        gap: 10px;
+        grid-template:
+            "marketTicker marketTicker marketTicker" 30px
+            "marketSummary marketSummary marketSummary" 56px
+            "chartAndTable chartAndTable  tradeActionPanel" 450px "tradeTabs tradeTabs orderBook" minmax(420px, 1fr) / 1fr 260px 260px
+        ;
+    } */
+
+    .gridContainer {
+        display: grid;
+        gap: 10px;
+        grid-template:
+            "chartAndTable marketSummary marketSummary" 100px
+            "chartAndTable orderBook tradeActionPanel" 340px "chartAndTable recentTrades tradeActionPanel" 150px "tradeTabs tradeTabs tradeTabs" minmax(340px, auto) / 1fr 260px 260px
+        ;
+    }
+
+    .gridContainer.strategyGrid {
+        display: grid;
+        gap: 10px;
+        grid-template:
+            "chartAndTable strategyBuilder strategyBuilder" 100px
+            "chartAndTable strategyBuilder strategyBuilder" 340px "chartAndTable strategyBuilder strategyBuilder" 150px "tradeTabs tradeTabs tradeTabs" minmax(340px, auto) / 1fr 260px 260px
+        ;
+    }
+
+}
+
+@media(min-width:1200px) and (max-width:1399px) {
+    /* .gridContainer {
+        display: grid;
+        gap: 10px;
+        grid-template:
+            "marketTicker marketTicker marketTicker" 30px
+            "marketSummary marketSummary marketSummary" 56px
+            "chartAndTable orderBook tradeActionPanel" 340px "chartAndTable recentTrades tradeActionPanel" 150px "tradeTabs tradeTabs tradeTabs" minmax(420px, auto) / 1fr 260px 260px
+        ;
+    } */
+
+
+    .gridContainer {
+        display: grid;
+        gap: 10px;
+        grid-template:
+            "chartAndTable marketSummary marketSummary" 100px
+            "chartAndTable orderBook tradeActionPanel" 340px "chartAndTable recentTrades tradeActionPanel" 150px "tradeTabs tradeTabs tradeTabs" minmax(340px, auto) / 1fr 260px 260px
+        ;
+    }
+
+    .gridContainer.strategyGrid {
+        display: grid;
+        gap: 10px;
+        grid-template:
+            "chartAndTable strategyBuilder strategyBuilder" 100px
+            "chartAndTable strategyBuilder strategyBuilder" 340px "chartAndTable strategyBuilder strategyBuilder" 150px "tradeTabs tradeTabs tradeTabs" minmax(340px, auto) / 1fr 260px 260px
+        ;
+    }
+}
+
+@media(min-width:1400px) and (max-width:1799px) {
+    .gridContainer {
+        display: grid;
+        gap: 10px;
+        grid-template:
+            "chartAndTable marketSummary marketSummary" 100px
+            "chartAndTable orderBook tradeActionPanel" 410px "chartAndTable recentTrades tradeActionPanel" 150px "tradeTabs tradeTabs tradeTabs" minmax(420px, auto) / 1fr 320px 320px
+        ;
+    }
+
+    .gridContainer.strategyGrid {
+        display: grid;
+        gap: 10px;
+        grid-template:
+            "chartAndTable strategyBuilder strategyBuilder" 100px
+            "chartAndTable strategyBuilder strategyBuilder" 410px "chartAndTable strategyBuilder strategyBuilder" 150px "tradeTabs tradeTabs tradeTabs" minmax(420px, auto) / 1fr 320px 320px
+        ;
+    }
+}
+
+@media(min-width:1800px) {
+
+    .gridContainer {
+        display: grid;
+        gap: 10px;
+        grid-template:
+            "chartAndTable marketSummary marketSummary" 100px
+            "chartAndTable orderBook tradeActionPanel" 450px "chartAndTable recentTrades tradeActionPanel" 150px "tradeTabs tradeTabs tradeTabs" minmax(450px, auto) / 1fr 350px 350px
+        ;
+    }
+
+    .gridContainer.strategyGrid {
+        display: grid;
+        gap: 10px;
+        grid-template:
+            "chartAndTable strategyBuilder strategyBuilder" 100px
+            "chartAndTable strategyBuilder strategyBuilder" 450px "chartAndTable strategyBuilder strategyBuilder" 150px "tradeTabs tradeTabs tradeTabs" minmax(450px, auto) / 1fr 350px 350px
+        ;
+    }
+}

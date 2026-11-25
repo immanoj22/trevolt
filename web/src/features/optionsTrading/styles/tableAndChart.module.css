@@ -1,0 +1,541 @@
+.container {
+    height: 100%;
+}
+
+.header {
+    padding: var(--trade-cards-padding);
+    border-bottom: 1px solid var(--color-border-03);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    position: relative;
+}
+
+.headerLeft {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.headerViewTabs {
+    display: flex;
+    align-items: center;
+}
+
+.headerViewTabs button {
+    border: none;
+    outline: none;
+    background: var(--color-bg17);
+    border-radius: 2px;
+    font-size: var(--fs12);
+    height: 28px;
+    padding: 0 12px;
+    width: auto;
+    color: var(--color-text-04);
+}
+
+.headerViewTabs button.active {
+    background: var(--color-green-01);
+    color: var(--color-similar-01);
+}
+
+.currencyTabs {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.currencyTabs button {
+    border: 1px solid var(--color-bg17);
+    outline: none;
+    background: var(--color-bg17);
+    border-radius: 2px;
+    font-size: var(--fs12);
+    height: 28px;
+    padding: 0 12px;
+    width: auto;
+    color: var(--color-text-04);
+}
+
+.currencyTabs button.active {
+    border-color: var(--color-green-01);
+    background-color: var(--color-bg17);
+    color: var(--color-green-01);
+}
+
+.currencyTabsOffcanvas {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-left: var(--site-padding);
+    padding-right: var(--site-padding);
+    margin-top: 10px;
+}
+
+.currencyTabsOffcanvas button {
+    border: 1px solid var(--color-bg10);
+    outline: none;
+    background: var(--color-bg10);
+    border-radius: 2px;
+    font-size: var(--fs12);
+    height: 28px;
+    padding: 0 12px;
+    width: auto;
+    color: var(--color-text-04);
+}
+
+.currencyTabsOffcanvas button.active {
+    border-color: var(--color-green-01);
+    background-color: var(--color-bg10);
+    color: var(--color-green-01);
+}
+
+
+
+.strategyBuilderContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.strategyText {
+    font-weight: 400;
+    color: var(--color-yellow-01);
+    font-size: var(--fs12);
+}
+
+.filterContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: var(--trade-cards-padding);
+}
+
+.expireDateContainerXl {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.expireDateContainerXl button {
+    border: 1px solid var(--color-bg17);
+    outline: none;
+    background: var(--color-bg17);
+    border-radius: 2px;
+    font-size: var(--fs12);
+    height: 28px;
+    padding: 0 12px;
+    width: auto;
+    color: var(--color-text-04);
+}
+
+.expireDateContainerXl button.active {
+    border-color: var(--color-green-01);
+    background-color: var(--color-bg17);
+    color: var(--color-green-01);
+}
+
+
+.tableFilterButton {
+    border: 1px solid var(--color-border-03);
+    background: transparent;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-04);
+    border-radius: 2px;
+}
+
+.filterContainerLeft {
+    height: 100%;
+    display: flex;
+    flex: 1;
+    min-width: 0;
+    align-items: center;
+    gap: 10px;
+}
+
+.fitlerContainerRight {
+    flex-shrink: 0;
+}
+
+.dateFilterContainer {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+    padding-left: var(--site-padding);
+    padding-right: var(--site-padding);
+}
+
+.filterScrollButton {
+    border: none;
+    outline: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filterScrollButton svg {
+    fill: var(--color-text-04);
+}
+
+.filterScrollButton:hover svg {
+    fill: var(--color-text-03)
+}
+
+.expireDateButtons {
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    min-width: 0;
+    flex: 1;
+}
+
+.expireDateButtons button {
+    border: 1px solid var(--color-bg17);
+    outline: none;
+    background: var(--color-bg17);
+    color: var(--color-text-04);
+    white-space: nowrap;
+    position: relative;
+    height: 30px;
+    font-size: var(--fs12);
+    /* padding-left: 12px;
+    padding-right: 12px; */
+    border-radius: 2px;
+}
+
+.expireDateButtons button.active {
+    border-color: var(--color-green-01);
+    background-color: var(--color-bg17);
+    color: var(--color-green-01);
+}
+
+.offCanvasExpireDateButtons {
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+}
+
+.offCanvasExpireDateButtons button {
+    border: 1px solid var(--color-bg10);
+    outline: none;
+    background: var(--color-bg10);
+    color: var(--color-text-04);
+    white-space: nowrap;
+    position: relative;
+    height: 30px;
+    font-size: var(--fs12);
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 2px;
+}
+
+.offCanvasExpireDateButtons button.active {
+    border-color: var(--color-green-01);
+    background-color: var(--color-bg10);
+    color: var(--color-green-01);
+}
+
+.tableHeaders {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--trade-cards-padding);
+    border-bottom: 1px solid var(--color-border-03);
+}
+
+.tableHeaders .title {
+    color: var(--color-text-04);
+    font-size: var(--fs13);
+}
+
+.tableHeaders .title .high {
+    color: var(--color-green-03);
+    font-weight: 500;
+}
+
+.tableHeaders .title .low {
+    color: var(--color-red-01);
+    font-weight: 500;
+}
+
+.tableHeaderExpireContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.chartSectionHeader {
+    padding: var(--trade-cards-padding);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    position: relative;
+}
+
+.chartSectionHeader p {
+    font-size: var(--fs14);
+    font-weight: 500;
+}
+
+.headerRightActions {
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    background: var(--color-bg17);
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.headerRightActions button {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--color-text-03);
+    height: 100%;
+    white-space: nowrap;
+    position: relative;
+    height: 30px;
+    font-size: var(--fs12);
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+}
+
+
+
+.headerRightActions button.active {
+    background: var(--color-green-01);
+    color: var(--color-similar-01);
+}
+
+.tableOffcanvas {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--color-text-03);
+    font-size: var(--fs13);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.tableOffcanvasBadge {
+    line-height: 10px;
+    padding: 5px;
+    background: var(--color-bg17);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    font-size: var(--fs11);
+    color: var(--color-green-01);
+    border-radius: 3px;
+}
+
+.tableOffcanvasIcon {
+    font-size: var(--fs12);
+    color: var(--color-green-01);
+}
+
+.tableOffcanvasIcon.active {
+    transform: rotate(180deg);
+}
+
+.tableSection {
+    position: relative;
+}
+
+.tradeTableOffcanvasSection {
+    margin-top: 20px;
+    position: relative;
+    height: calc(100vh - (var(--header-height) + 180px));
+}
+
+.noDataContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tableFilterOptions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.body {
+    height: 100%;
+}
+
+.chartSection {
+    height: 100%;
+}
+
+.chartSectionBody {
+    height: calc(100% - 110px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuWrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.menuButton {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.menuButton svg {
+    font-size: var(--fs20);
+}
+
+.settlementPopup {
+    position: absolute;
+    top: 38px;
+    right: 0;
+    width: 180px;
+    padding: 10px 0;
+    background: var(--color-bg9);
+    border-radius: 5px;
+    box-shadow: var(--box-shadow-02);
+    z-index: 1000;
+}
+
+.settlementItem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 16px;
+    color: var(--color-primaryText);
+    font-size: var(--fs13);
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.settlementItem:hover {
+    background: var(--color-bg10);
+    color: var(--color-green-01);
+}
+
+.settlementItem:hover .settlementIcon {
+    color: var(--color-green-01);
+}
+
+.settlementIcon {
+    font-size: 15px;
+}
+
+.arrowNavigation {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--color-border-03);
+    background-color: transparent;
+    height: 30px;
+}
+
+.arrowBtn {
+    width: 23px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    color: var(--box-shadow-02color-text-03);
+    font-size: 24px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.arrowBtn:hover {
+    background-color: var(--color-bg1);
+    border: 1px solid var(--color-border-03);
+}
+
+/* media */
+
+@media (max-width:575px) {
+    .header {
+        justify-content: start;
+    }
+
+    .chartSectionHeader p {
+        display: none;
+    }
+}
+
+@media (min-width:576px) and (max-width:767px) {
+
+    .header {
+        justify-content: start;
+    }
+
+    .chartSectionHeader p {
+        display: none;
+    }
+
+
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .header {
+        justify-content: start;
+    }
+
+    .chartSectionHeader p {
+        display: none;
+    }
+
+
+}
+
+@media (min-width:992px) and (max-width:1199px) {}
+
+@media (min-width:1200px) and (max-width:1399px) {
+    .header button {
+        font-size: var(--fs13);
+    }
+}
+
+@media (min-width:1400px) and (max-width:1799px) {}
+
+@media (min-width:1800px) {}

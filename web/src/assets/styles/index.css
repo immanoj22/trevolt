@@ -1,0 +1,144 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: var(--poppins-font) !important;
+    background-color: var(--color-bg1) !important;
+    /* color: var(--color-primaryText) !important; */
+    color: var(--color-text-03) !important;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul {
+    list-style: none !important;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+/* scrollbar - start */
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-bg11);
+    border-radius: 5px;
+}
+
+/* scrollbar - end */
+
+/* input autofill start */
+
+/* input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+} */
+
+/* input:-internal-autofill-selected {
+    background-color: transparent !important;
+} */
+
+/* input autofill end */
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:hover {
+    -webkit-text-fill-color: var(--color-text-03) !important;
+    border: none;
+    -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+    -webkit-transition: background-color 5000s ease-in-out 0s;
+    transition: background-color 5000s ease-in-out 0s;
+    caret-color: var(--color-text-03);
+}
+
+/* target the actual IDs/classes Apple injects */
+#appleid-signin {
+    max-width: 550px !important;
+    width: 100% !important;
+    height: 44px !important;
+    display: inline-block !important;
+    background: #000 !important;
+    border-radius: var(--radii-s) !important;
+}
+
+#appleid-signin>div {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+#appleid-signin svg {
+    width: 100% !important;
+    height: 100% !important;
+}
+.registerAppleLogin #appleid-signin svg {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+#appleid-signin svg text {
+    font-size: var(--fs12) !important;
+}
+
+/* .apple-login-btn {
+    width: 100%;
+    height: 44px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.apple-login-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    line-height: 1;
+}
+
+.apple-icon {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    line-height: 1;
+} */

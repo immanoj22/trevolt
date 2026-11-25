@@ -1,0 +1,38 @@
+diff --git a/node_modules/react-native-flash-message/src/FlashMessage.js b/node_modules/react-native-flash-message/src/FlashMessage.js
+--- a/node_modules/react-native-flash-message/src/FlashMessage.js
++++ b/node_modules/react-native-flash-message/src/FlashMessage.js
+@@ -514,7 +514,16 @@
+       };
+ 
+       this.setState({ isHidding: false });
+-      this.state.visibleValue.setValue(0);
++      // Only reset the animated value (and replay the open animation) when this
++      // instance isn't already showing a message. Without this guard, calling
++      // showMessage() again while a message is still visible/animating in would
++      // snap it back to hidden and restart the animation from scratch, causing a
++      // visible "hide then show again" flicker.
++      const wasAlreadyShowing = this._isShowing;
++      if (!wasAlreadyShowing) {
++        this.state.visibleValue.setValue(0);
++      }
++      this._isShowing = true;
+ 
+       if (!!onShow && typeof onShow === "function") {
+         onShow(this);
+@@ -524,7 +533,7 @@
+         StatusBar.setHidden(true, typeof hideStatusBar === "string" ? hideStatusBar : "slide");
+       }
+ 
+-      if (animated) {
++      if (animated && !wasAlreadyShowing) {
+         Animated.timing(this.state.visibleValue, {
+           toValue: 1,
+           duration: animationDuration,
+@@ -536,6 +545,7 @@
+     } else {
+       const onHide = this.prop(message, "onHide") || noop;
+       const finish = () => {
++        this._isShowing = false;
+         this.setState({ message: null, isHidding: false });
+ 
+         if (!!onHide && typeof onHide === "function") {

@@ -1,0 +1,119 @@
+/* start of offcanvas */
+
+.notificationOffcanva {
+    background: var(--color-bg1) !important;
+    color: var(--color-primaryText) !important;
+}
+
+.notificationOffcanva .headSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.notificationOffcanva .headSection .title {
+    font-size: var(--fs17);
+}
+
+.customOffCanvaCloseButton {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--color-primaryText);
+}
+
+
+.notificationOffcanva .unreadTitle {
+    font-size: var(--fs14);
+}
+
+.notificationOffcanva .footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, 0%);
+    background: var(--color-bg1) !important;
+}
+
+.bodyContent {
+    overflow-y: auto;
+    height: 90%;
+}
+
+.notificationOffcanva .footer a {
+    text-decoration: underline !important;
+    font-size: var(--fs13);
+}
+
+.notificationOffcanva .footer a:hover {
+    color: var(--color-green-01) !important;
+}
+
+.noDataFound {
+    font-size: var(--fs14)
+}
+
+/* end of offcanvas */
+
+
+/* notificationPart card start */
+.notificationPart {
+    display: flex;
+    justify-content: space-between;
+    gap: 0pc;
+    align-items: flex-start;
+    border: 1px solid var(--color-border-01);
+    border-radius: 5px;
+    padding: 1pc 1pc;
+    margin-bottom: 1pc;
+}
+
+.notificationPart .imgPart img {
+    width: 3pc;
+}
+
+.notificationPart .contentPart {
+    width: 100%;
+}
+
+.notificationPart .contentPart h3 {
+    font-size: var(--fs16);
+    margin-bottom: 0.5pc !important;
+}
+
+.notificationPart .contentPart p {
+    color: var(--color-text-04);
+    font-size: var(--fs14);
+}
+
+.notificationPart .bageTag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-green-01);
+    border-radius: 50%;
+    background-color: var(--color-green-01);
+    height: 10px;
+    width: 10px;
+}
+
+.notificationPart .dateText {
+    margin-left: auto !important;
+    font-size: var(--fs13) !important;
+}
+
+.modalCloseButton {
+    border: none;
+    outline: none;
+    width: fit-content;
+    background: var(--color-bg10);
+}
+
+.modalCloseButton svg {
+    fill: var(--color-text-03);
+}

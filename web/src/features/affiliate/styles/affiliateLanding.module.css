@@ -1,0 +1,518 @@
+.affiliateLanding {
+    padding-top: var(--header-height);
+}
+
+.affiliateBody {
+    min-height: 100%;
+    height: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+}
+
+.affiliateBody::after {
+    min-height: 100%;
+    height: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+    background-color: var(--color-bg13);
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+}
+
+.bannerSectionContainer {
+    min-height: 100%;
+    height: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.imgSectionFile {
+    min-height: 100%;
+    height: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.bannerContainer {
+    z-index: 3;
+    position: relative;
+}
+
+.bannerContainer .leftPart h2 {
+    font-weight: 700;
+    font-size: var(--fs35);
+}
+
+.bannerContainer .leftPart p {
+    font-weight: 300;
+    font-size: var(--fs15);
+}
+
+
+.bannerContainer .rightPart img {
+    width: 100%;
+}
+
+.bannerRow {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* banner start */
+.bannerTitleXl {
+    font-weight: 700;
+    font-size: var(--fs50);
+    /* line-height: 65px; */
+    line-height: 58px;
+    text-transform: capitalize;
+}
+
+.bannerDescription {
+    font-weight: 300;
+    margin-top: 25px !important;
+    font-size: var(--fs15);
+    line-height: 26px;
+}
+
+.bannerRight {
+    position: relative;
+    display: flex;
+    justify-content: end;
+}
+
+/*banner end*/
+
+/*  */
+.experience {
+    background: var(--color-bg3);
+    padding-top: 75px;
+    padding-bottom: 75px;
+    position: relative;
+}
+
+.experience.features {
+    background: var(--color-bg1);
+    padding-top: 75px;
+    padding-bottom: 75px;
+    position: relative;
+}
+
+.experienceImageOne {
+    position: absolute;
+    right: 7%;
+    top: 11%;
+    width: 50px;
+    opacity: 0.2;
+}
+
+.experienceImageTwo {
+    position: absolute;
+    left: 7%;
+    bottom: 11%;
+    width: 50px;
+    opacity: 0.2;
+}
+
+.experienceImageThree {
+    position: absolute;
+    top: 11%;
+    left: 7%;
+    width: 50px;
+    opacity: 0.2;
+}
+
+.experienceImageFour {
+    position: absolute;
+    top: 11%;
+    right: 7%;
+    width: 50px;
+    opacity: 0.2;
+}
+
+.sectionHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.sectionTitle {
+    text-align: center;
+    font-size: var(--fs30);
+    font-weight: 600;
+}
+
+.sectionDescription {
+    text-align: center;
+    color: var(--color-text-01);
+    font-weight: 300;
+    margin-top: 30px !important;
+    font-size: var(--fs15);
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+}
+
+/*  */
+.timeLineWrapper {
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.workflowCard>div {
+    background-color: var(--color-bg2);
+    border-color: var(--color-bg2);
+    box-shadow: none;
+    border-radius: 0px var(--radius-2l) 0px var(--radius-2l);
+    border: 1px solid #0000003b;
+}
+
+.workflowCard>div div {
+    /* width: 11%; */
+    width: 45px;
+    border: 1px solid var(--color-bg10);
+    top: 27px !important;
+}
+
+.timeLineWrapper>div::before {
+    background: url("../../../assets/image/timeLineBar.svg") no-repeat;
+    background-size: contain;
+}
+
+.workflowCardTitle {
+    font-size: var(--fs18);
+}
+
+.workflowCardText {
+    margin-top: 14px !important;
+}
+
+.workflowCardText li {
+    color: var(--color-bg8);
+    font-size: var(--fs13);
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+.workflowCardText .li {
+    color: var(--color-bg8);
+    font-size: var(--fs13);
+    opacity: 0.9;
+    /* margin-left: 20px; */
+    /* list-style-type: disc; */
+}
+
+.featureCardList ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 50px 0px !important;
+}
+
+.featureCardList ul li {
+    background-color: var(--color-bg11);
+    border-radius: var(--radius-2l);
+    padding: 20px;
+}
+
+.featureCardList ul li img {
+    width: 55px;
+    margin-bottom: 10px !important;
+}
+
+.featureCardList ul li h3 {
+    /* font-size: var(--fs20); */
+    font-size: var(--fs18);
+    margin-bottom: 10px !important;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.featureCardList ul li p {
+    color: var(--color-text-01);
+    font-size: var(--fs13);
+    font-weight: 300;
+}
+
+.startEarning {
+    background-color: var(--color-bg5);
+    padding: 100px 0;
+}
+
+.startEarning .startEarningContainer {
+    background: linear-gradient(90deg, #B44700 0%, #B44700 0.48%, #0B8300 100%);
+    padding: 50px;
+    position: relative;
+    z-index: 11;
+    border-radius: var(--radius-2l);
+}
+
+.startEarning .startEarningContainer::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: url("../../../assets/image/startEarningBgPatten.svg") no-repeat;
+    background-size: 50% 100%;
+    background-position: 80% 50%;
+}
+
+.startEarning .startEarningContainer img {
+    width: 100%;
+    max-width: 200px;
+}
+
+.startEarning .startEarningContainer h2,
+.startEarning .startEarningContainer p {
+    color: var(--color-similar-01)
+}
+
+
+@media (max-width:575px) {
+    .bannerTitleXl {
+        font-size: var(--fs35);
+    }
+
+    .bannerLeft {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .bannerRow {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .bannerRight {
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bannerDescription {
+        margin-top: 25px !important;
+        font-size: var(--fs13);
+        line-height: 24px;
+    }
+
+    .experience {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .sectionTitle {
+        font-size: var(--fs19);
+        line-height: 35px;
+    }
+
+    .workflowCard>div div {
+        width: 40px;
+        border: 1px solid var(--color-bg10);
+        top: 18px !important;
+        z-index: 1;
+    }
+
+    .timeLineWrapper {
+        width: 100%;
+    }
+
+    .startEarning {
+        padding: 0 10px;
+    }
+
+    .startEarning .startEarningContainer {
+        padding: 30px 10px;
+    }
+
+    .startEarning .startEarningContainer::after {
+        display: none;
+    }
+}
+
+@media (min-width:576px) and (max-width:767px) {
+    .bannerRow {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .bannerTitleXl {
+        font-size: var(--fs35);
+        /* line-height: 50px; */
+    }
+
+    .bannerLeft {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .experience {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .sectionTitle {
+        font-size: var(--fs20);
+    }
+
+    .workflowCard>div div {
+        width: 40px;
+        border: 1px solid var(--color-bg10);
+        top: 18px !important;
+        z-index: 1;
+    }
+
+    .timeLineWrapper {
+        width: 100%;
+    }
+
+    .startEarning .startEarningContainer::after {
+        display: none;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .bannerRow {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .bannerTitleXl {
+        font-size: var(--fs35);
+        /* line-height: 50px; */
+    }
+
+    .bannerRight {
+        justify-content: center;
+    }
+
+    .bannerLeft {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .experience {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .sectionTitle {
+        font-size: var(--fs23);
+    }
+
+    .workflowCard>div div {
+        width: 40px;
+        border: 1px solid var(--color-bg10);
+        top: 18px !important;
+        z-index: 1;
+    }
+
+    .timeLineWrapper {
+        width: 100%;
+    }
+
+    .startEarning .startEarningContainer::after {
+        background-size: 150%;
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    .bannerRow {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .bannerTitleXl {
+        font-size: var(--fs35);
+        /* line-height: 50px; */
+    }
+
+    .experience {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .sectionTitle {
+        font-size: var(--fs23);
+    }
+
+    .workflowCard>div div {
+        width: 40px;
+        border: 1px solid var(--color-bg10);
+        top: 18px !important;
+        z-index: 1;
+    }
+
+    .timeLineWrapper {
+        width: 100%;
+    }
+
+    .startEarning .startEarningContainer::after {
+        background-size: 100%;
+    }
+}
+
+@media (max-width:1199px) {
+    .bannerTitleXl {
+        line-height: 45px;
+    }
+}
+
+@media (min-width:1200px) and (max-width:1399px) {
+    .bannerTitleXl {
+        font-size: var(--fs40);
+        line-height: 50px;
+    }
+
+    .experience {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .sectionTitle {
+        font-size: var(--fs23);
+    }
+
+}
+
+@media (min-width:1400px) and (max-width:1799px) {
+    /* .bannerRow {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    } */
+}
+
+@media (min-width:1800px) {
+    .bannerTitleXl {
+        font-size: var(--fs65);
+        line-height: 75px;
+    }
+
+    .sectionTitle {
+        font-size: var(--fs42);
+    }
+
+    /* .bannerRow {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    } */
+}
