@@ -32,6 +32,8 @@ import config from "../../config/env";
 import AppleLogin from 'react-apple-login';
 import { isEmpty } from "../../lib/isEmpty";
 import RecaptchaV2 from "../../components/Recaptcha/RecaptchaV2";
+// Demo build: the reCAPTCHA checkbox is switched off so the login and signup forms work without a site key.
+const DEMO_NO_CAPTCHA = true;
 /** ACTIONS */
 
 
@@ -154,7 +156,7 @@ const Login = () => {
         // (set by its onChange callback), not fetched on demand like v3.
         // TEMP: disabled 2026-09-02 for API-doc/feature testing — flip
         // TEMP_DISABLE_RECAPTCHA back to false to re-enable this check.
-        const TEMP_DISABLE_RECAPTCHA = false;
+        const TEMP_DISABLE_RECAPTCHA = DEMO_NO_CAPTCHA;
         if (!TEMP_DISABLE_RECAPTCHA && !captchaToken) {
           setCaptchaError('Please verify that you are not a robot.');
           return;
@@ -392,12 +394,11 @@ const Login = () => {
                 instead of the earlier invisible v3, and why this has zero
                 effect on the native mobile apps sharing this backend. */}
             <div className="mt-3 w-100">
-              <RecaptchaV2
-                ref={captchaRef}
+              {!DEMO_NO_CAPTCHA && <RecaptchaV2                 ref={captchaRef}
                 fullWidth
                 scale={0.7}
                 onChange={(token) => { setCaptchaToken(token || ''); if (token) setCaptchaError(''); }}
-              />
+              />}
               {captchaError && (
                 <p className="text-danger mt-2 text-center">{captchaError}</p>
               )}

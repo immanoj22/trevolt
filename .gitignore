@@ -1,4 +1,4 @@
-node_modules/
+node_modules
 dist/
 build/
 .env
@@ -13,5 +13,9 @@ android/local.properties
 .cxx/
 ios/Pods/
 .DS_Store
-web/public/charting_library/
-web/public/datafeeds/
+web/public/charting_library
+web/public/datafeeds
+api/data/
+*.db
+*.db-wal
+*.db-shm

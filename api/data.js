@@ -26,10 +26,6 @@ export const user = {
   userType: 'user', status: 'active', emailStatus: 'verified', mobileStatus: 'verified',
   twoFAStatus: 'enabled', theme: 'dark', isDemo: true,
 };
-export const wallet = {
-  accountId: 'ACC1001', walletBalance: 24850.75, availableBalance: 21320.4, tradingBalance: 24850.75,
-  freezeBalance: 3530.35, unRealizedPnL: 0, totalMargin: 3530.35, currency: 'USD',
-};
 export const conversion = [
   { pair: 'EURUSD', price: 1.08652, currency: 'EUR' }, { pair: 'GBPUSD', price: 1.29438, currency: 'GBP' },
   { pair: 'XAUUSD', price: 2685.42, currency: 'XAU' }, { pair: 'USDUSD', price: 1, currency: 'USD' },

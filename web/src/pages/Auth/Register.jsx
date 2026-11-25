@@ -39,6 +39,8 @@ import { LuMailWarning } from "react-icons/lu";
 import AppleLogin from 'react-apple-login';
 import isEmpty from "is-empty";
 import RecaptchaV2 from "../../components/Recaptcha/RecaptchaV2";
+// Demo build: the reCAPTCHA checkbox is switched off so the login and signup forms work without a site key.
+const DEMO_NO_CAPTCHA = true;
 
 /** CODE START */
 
@@ -134,7 +136,7 @@ const Register = (props) => {
         // reCAPTCHA v2 — token comes from the checkbox widget's state.
         // TEMP: disabled 2026-09-02 for API-doc/feature testing — flip
         // TEMP_DISABLE_RECAPTCHA back to false to re-enable this check.
-        const TEMP_DISABLE_RECAPTCHA = false;
+        const TEMP_DISABLE_RECAPTCHA = DEMO_NO_CAPTCHA;
         if (!TEMP_DISABLE_RECAPTCHA && !captchaToken) {
           setCaptchaError('Please verify that you are not a robot.');
           return;
@@ -449,12 +451,11 @@ const Register = (props) => {
                           native mobile apps sharing this backend — see
                           RecaptchaV2.jsx and Middleware/Security/captcha.js. */}
                       <div className="mt-3 d-flex flex-column justify-content-center align-items-center w-100  ">
-                        <RecaptchaV2
-                          ref={captchaRef}
+                        {!DEMO_NO_CAPTCHA && <RecaptchaV2                           ref={captchaRef}
                           // fullWidth
                           scale={0.9}
                           onChange={(token) => { setCaptchaToken(token || ''); if (token) setCaptchaError(''); }}
-                        />
+                        />}
                         {captchaError && (
                           <p className="text-danger text-center mt-2">{captchaError}</p>
                         )}
